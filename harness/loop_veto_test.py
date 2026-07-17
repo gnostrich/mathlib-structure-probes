@@ -216,6 +216,7 @@ for REDUNDANCY_MIN in (2,3):
     # not the warm one; report both so the confound cannot hide.
     for cname,cset in [("depth",[S]), ("depth+log WARM-udeg",[S,logu]), ("depth+log COLD-udeg",[S,logcu])]:
         pr=partial_spear(Lc,Y2,cset)
+        if cname.endswith("COLD-udeg"): h3b_cold_last=pr; h3b_min_last=REDUNDANCY_MIN   # own-degree-controlled residue
         print(f"     partial rho(L_cold, Y2 | {cname}) = {pr:.3f}")
 print("  NOTE: even this refined split is a static proxy; a built-env minimal reproof")
 print("  (per pre-reg) is required to certify L_cold as the true incorruptible residue.")
@@ -228,9 +229,13 @@ print(f"  H1: {'WALL' if wall else ('GO-precondition' if go_pre else 'AMBIGUOUS'
 print(f"  H2: baseline {H2_base:.3f} -> degree-controlled {H2_degctl:.3f}  =>  "
       f"{'CLEARS' if h2_clears else 'DOES NOT CLEAR (payoff was largely a degree artefact)'}")
 print(f"  H3(a): {'PASS' if foil_ok else 'FAIL'} (distant A/∧B foils not credited & real credit unchanged)")
-print(f"  H3(b): warm loop payoff collapses under degree control; only the reuse-stripped")
-print(f"         L_cold residue keeps a WEAK positive partial (~0.19-0.23 under its own")
-print(f"         degree control) -> suggestive, NOT a cleared bar, and via a static proxy.")
+# H3(b) read is DATA-DRIVEN: the reuse-stripped, own-degree-controlled cold residue.
+_h3b_c = h3b_cold_last if 'h3b_cold_last' in dir() else float('nan')
+_h3b_word = ("clears (>=0.20)" if _h3b_c>=0.20 else
+             ("weak-positive (0.10-0.20)" if _h3b_c>=0.10 else "collapses (<0.10)"))
+print(f"  H3(b): incorruptible L_cold residue (REDUNDANCY_MIN={h3b_min_last if 'h3b_min_last' in dir() else '?'}), "
+      f"own-(cold)-degree-controlled partial rho(L_cold,Y2) = {_h3b_c:.3f} -> {_h3b_word}")
+print(f"         (static reuse-shortcut proxy; a built-env minimal reproof is still needed to certify it)")
 overall = ("GO" if (go_pre and h2_clears and foil_ok) else
            ("WALL" if wall else "AMBIGUOUS -> DO NOT WIRE"))
 print(f"  OVERALL (this substrate): {overall}")

@@ -1,0 +1,29 @@
+loading faithful graph ...
+nodes=333044 edges=7523067
+depth + condensation ...
+MinHash descendants (k=160) + per-SCC sketches ...
+C_mdl = shared content bound by v's dependencies ...
+
+== GATE 1: degree decoupling ==
+  rho(C_mdl, in-degree)=-0.056  rho(C_mdl,depth)=+0.902  -> PASS
+
+== GATE 2: anti-gaming foils (must be <10% in top decile) ==
+  500 A^B foils: 0.0% in C_mdl top decile (raw C was 32%) -> PASS
+
+== ANCHOR TEST (185 positives; report even if void, marked) ==
+  AUC(C_mdl               )=0.798  perm p=0.0010
+  AUC(raw C               )=0.827  perm p=0.0010
+  AUC(depth               )=0.814  perm p=0.0010
+  AUC(reuse(in-deg)       )=0.522  perm p=0.1588
+  AUC(C_mdl beyond depth  )=0.569  perm p=0.0020
+  [both stats] partial Spearman(C_mdl,Y|indeg,depth)=-0.105   (AUC is the valid one here)
+
+== VERDICT (against locked outcomes) ==
+  REDUCES: foil gate passed but C_mdl-beyond-depth AUC=0.569 (p=0.0020) < 0.58. The +0.616 surplus was gameable inflation -> IMPORTANCE ~= FOUNDATIONAL DEPTH; build judge on depth.
+
+== STANDING RESULT 2: partial-Spearman is inert at 0.056% prevalence (PROOF) ==
+  PERFECT ranker (AUC=1.000): plain Spearman(Y)=+0.041  partial Spearman(Y|indeg,depth)=+0.003
+  => even a perfect ranker yields Spearman ~= 0.041 at this prevalence; the -0.08 for C is within this inert band. Rank-correlation is the WRONG statistic under extreme imbalance; AUC+perm is correct.
+
+== STANDING RESULT 1: reuse-kill (from prior run) ==
+  reuse(in-degree) AUC(famous)=0.522 ~ chance -> loops=reuse != importance (exogenous).

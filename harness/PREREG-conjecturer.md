@@ -53,6 +53,28 @@ not silently skipped). Secondary reports: ratio `T_v/(E_v+1)` and local clusteri
 
 Both judge and conjecturer inherit `Lnorm`, so Phase 0 is non-negotiable and comes first.
 
+### Phase 0b — better degree-independent significance proxies (added after Phase 0)
+
+Phase 0 result: with the degree-normalized `ratio = T/E` metric the judge CLEARS H1
+(`rho(ratio,depth)=−0.341`) and H2 vs the citation proxy (`+0.501`, degree-controlled),
+but the only degree-independent significance signal tested — the theorem/lemma label Y1 —
+came back the wrong sign (−0.27). Y1 is a weak, stylistic proxy. The *concept* "degree-
+independent significance" was pre-registered; here we fix BETTER operationalizations of it
+BEFORE recomputing (all reported, no cherry-pick):
+
+- **Y3 = `@[simp]` flag** (parsed from mathlib4 v4.28.0 source: a decl carries `@[simp]` on
+  or just above its declaration, or via an `attribute [simp] name` statement). Degree-free
+  (an attribute, not a count); simp lemmas are automation-significant.
+- **Y4 = cross-subject downstream breadth** = number of DISTINCT top-level subjects among a
+  decl's in-neighbors (dependents), and its residual after controlling in-degree. "Used
+  across many areas" is significance that is not "used many times".
+
+**Pre-registered read (fixed now):** the degree-independent arm PASSES if the
+degree-controlled partial `rho(ratio, Y | depth, log-deg)` is `≥ +0.10` with the
+significance-positive sign for **at least one** of {Y3, Y4-residual}. If both are ~0 or
+negative, the judge tracks reuse-volume only (≈ connectivity), and Phase 0 is a qualified
+negative → do not build the conjecturer on it. Clean pass → proceed to Phase 1.
+
 ---
 
 ## Phase 1 — retrodictive conjecturer (the undone piece; only if Phase 0 PASSES)

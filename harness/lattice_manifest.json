@@ -1,0 +1,9566 @@
+{
+ "decls": [
+  {
+   "file": "V000",
+   "theorem": "left_ne_zero_of_mul",
+   "k": 0,
+   "kwline": 54,
+   "n_moves": 3,
+   "prefix_end": 52,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      53,
+      55
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      56,
+      57
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      58,
+      59
+     ]
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      60,
+      66
+     ],
+     "twin_start": 62,
+     "var_start": 63
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      67,
+      72
+     ],
+     "twin_start": 67,
+     "var_start": 69
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      73,
+      78
+     ],
+     "twin_start": 73,
+     "var_start": 75
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V001",
+   "theorem": "right_ne_zero_of_mul",
+   "k": 1,
+   "kwline": 57,
+   "n_moves": 3,
+   "prefix_end": 55,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      56,
+      58
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      59,
+      60
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      61,
+      62
+     ]
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      63,
+      69
+     ],
+     "twin_start": 65,
+     "var_start": 66
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      70,
+      75
+     ],
+     "twin_start": 70,
+     "var_start": 72
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      76,
+      81
+     ],
+     "twin_start": 76,
+     "var_start": 78
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V002",
+   "theorem": "ne_zero_and_ne_zero_of_mul",
+   "k": 2,
+   "kwline": 60,
+   "n_moves": 6,
+   "prefix_end": 58,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      59,
+      61
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      62,
+      63
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      64,
+      65
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      66,
+      69
+     ],
+     "twin_start": 66,
+     "var_start": 67
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      70,
+      76
+     ],
+     "twin_start": 72,
+     "var_start": 73
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      77,
+      82
+     ],
+     "twin_start": 77,
+     "var_start": 79
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      83,
+      88
+     ],
+     "twin_start": 83,
+     "var_start": 85
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      89,
+      95
+     ],
+     "twin_start": 91,
+     "var_start": 92
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      96,
+      101
+     ],
+     "twin_start": 96,
+     "var_start": 98
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V003",
+   "theorem": "mul_eq_zero_of_ne_zero_imp_eq_zero",
+   "k": 3,
+   "kwline": 63,
+   "n_moves": 6,
+   "prefix_end": 61,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      62,
+      65
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      66,
+      67
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      68,
+      69
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      70,
+      74
+     ],
+     "twin_start": 70,
+     "var_start": 71
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      75,
+      82
+     ],
+     "twin_start": 77,
+     "var_start": 78
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      83,
+      89
+     ],
+     "twin_start": 83,
+     "var_start": 85
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      90,
+      96
+     ],
+     "twin_start": 90,
+     "var_start": 92
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      97,
+      104
+     ],
+     "twin_start": 99,
+     "var_start": 100
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      105,
+      111
+     ],
+     "twin_start": 105,
+     "var_start": 107
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V004",
+   "theorem": "zero_mul_eq_const",
+   "k": 4,
+   "kwline": 68,
+   "n_moves": 3,
+   "prefix_end": 65,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      66,
+      68
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      69,
+      70
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      71,
+      72
+     ]
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      73,
+      79
+     ],
+     "twin_start": 75,
+     "var_start": 76
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      80,
+      85
+     ],
+     "twin_start": 80,
+     "var_start": 82
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      86,
+      91
+     ],
+     "twin_start": 86,
+     "var_start": 88
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V005",
+   "theorem": "mul_zero_eq_const",
+   "k": 5,
+   "kwline": 72,
+   "n_moves": 3,
+   "prefix_end": 69,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      70,
+      72
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      73,
+      74
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      75,
+      76
+     ]
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      77,
+      83
+     ],
+     "twin_start": 79,
+     "var_start": 80
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      84,
+      89
+     ],
+     "twin_start": 84,
+     "var_start": 86
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      90,
+      95
+     ],
+     "twin_start": 90,
+     "var_start": 92
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V006",
+   "theorem": "eq_zero_of_mul_self_eq_zero",
+   "k": 6,
+   "kwline": 81,
+   "n_moves": 6,
+   "prefix_end": 79,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      80,
+      82
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      83,
+      84
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      85,
+      86
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      87,
+      90
+     ],
+     "twin_start": 87,
+     "var_start": 88
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      91,
+      97
+     ],
+     "twin_start": 93,
+     "var_start": 94
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      98,
+      103
+     ],
+     "twin_start": 98,
+     "var_start": 100
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      104,
+      109
+     ],
+     "twin_start": 104,
+     "var_start": 106
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      110,
+      116
+     ],
+     "twin_start": 112,
+     "var_start": 113
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      117,
+      122
+     ],
+     "twin_start": 117,
+     "var_start": 119
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroClass",
+     "M\u2080"
+    ],
+    [
+     "Mul",
+     "M\u2080"
+    ],
+    [
+     "Zero",
+     "M\u2080"
+    ],
+    [
+     "NoZeroDivisors",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V007",
+   "theorem": "mul_ne_zero",
+   "k": 7,
+   "kwline": 84,
+   "n_moves": 7,
+   "prefix_end": 82,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      83,
+      85
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      86,
+      87
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      88,
+      89
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      90,
+      93
+     ],
+     "twin_start": 90,
+     "var_start": 91
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      94,
+      97
+     ],
+     "twin_start": 94,
+     "var_start": 95
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      98,
+      104
+     ],
+     "twin_start": 100,
+     "var_start": 101
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      105,
+      110
+     ],
+     "twin_start": 105,
+     "var_start": 107
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      111,
+      116
+     ],
+     "twin_start": 111,
+     "var_start": 113
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      117,
+      123
+     ],
+     "twin_start": 119,
+     "var_start": 120
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      124,
+      129
+     ],
+     "twin_start": 124,
+     "var_start": 126
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroClass",
+     "M\u2080"
+    ],
+    [
+     "Mul",
+     "M\u2080"
+    ],
+    [
+     "Zero",
+     "M\u2080"
+    ],
+    [
+     "NoZeroDivisors",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V008",
+   "theorem": "eq_zero_of_zero_eq_one",
+   "k": 8,
+   "kwline": 104,
+   "n_moves": 8,
+   "prefix_end": 101,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      102,
+      104
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      105,
+      106
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      107,
+      108
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      109,
+      112
+     ],
+     "twin_start": 109,
+     "var_start": 110
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      113,
+      116
+     ],
+     "twin_start": 113,
+     "var_start": 114
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      117,
+      120
+     ],
+     "twin_start": 117,
+     "var_start": 118
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      121,
+      127
+     ],
+     "twin_start": 123,
+     "var_start": 124
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      128,
+      133
+     ],
+     "twin_start": 128,
+     "var_start": 130
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      134,
+      139
+     ],
+     "twin_start": 134,
+     "var_start": 136
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      140,
+      146
+     ],
+     "twin_start": 142,
+     "var_start": 143
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      147,
+      152
+     ],
+     "twin_start": 147,
+     "var_start": 149
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V009",
+   "theorem": "subsingleton_iff_zero_eq_one",
+   "k": 9,
+   "kwline": 117,
+   "n_moves": 4,
+   "prefix_end": 113,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      114,
+      118
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      119,
+      120
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      121,
+      122
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      123,
+      128
+     ],
+     "twin_start": 123,
+     "var_start": 124
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      129,
+      137
+     ],
+     "twin_start": 131,
+     "var_start": 132
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      138,
+      145
+     ],
+     "twin_start": 138,
+     "var_start": 140
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      146,
+      153
+     ],
+     "twin_start": 146,
+     "var_start": 148
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V010",
+   "theorem": "eq_of_zero_eq_one",
+   "k": 10,
+   "kwline": 122,
+   "n_moves": 8,
+   "prefix_end": 120,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      121,
+      123
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      124,
+      125
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      126,
+      127
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      128,
+      131
+     ],
+     "twin_start": 128,
+     "var_start": 129
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      132,
+      135
+     ],
+     "twin_start": 132,
+     "var_start": 133
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      136,
+      139
+     ],
+     "twin_start": 136,
+     "var_start": 137
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      140,
+      146
+     ],
+     "twin_start": 142,
+     "var_start": 143
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      147,
+      152
+     ],
+     "twin_start": 147,
+     "var_start": 149
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      153,
+      158
+     ],
+     "twin_start": 153,
+     "var_start": 155
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      159,
+      165
+     ],
+     "twin_start": 161,
+     "var_start": 162
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      166,
+      171
+     ],
+     "twin_start": 166,
+     "var_start": 168
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V011",
+   "theorem": "zero_ne_one_or_forall_eq_0",
+   "k": 11,
+   "kwline": 126,
+   "n_moves": 4,
+   "prefix_end": 123,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      124,
+      126
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      127,
+      128
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      129,
+      130
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      131,
+      134
+     ],
+     "twin_start": 131,
+     "var_start": 132
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      135,
+      141
+     ],
+     "twin_start": 137,
+     "var_start": 138
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      142,
+      147
+     ],
+     "twin_start": 142,
+     "var_start": 144
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      148,
+      153
+     ],
+     "twin_start": 148,
+     "var_start": 150
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V012",
+   "theorem": "left_ne_zero_of_mul_eq_one",
+   "k": 12,
+   "kwline": 135,
+   "n_moves": 8,
+   "prefix_end": 133,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      134,
+      136
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      137,
+      138
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      139,
+      140
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      141,
+      144
+     ],
+     "twin_start": 141,
+     "var_start": 142
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      145,
+      148
+     ],
+     "twin_start": 145,
+     "var_start": 146
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      149,
+      152
+     ],
+     "twin_start": 149,
+     "var_start": 150
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      153,
+      159
+     ],
+     "twin_start": 155,
+     "var_start": 156
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      160,
+      165
+     ],
+     "twin_start": 160,
+     "var_start": 162
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      166,
+      171
+     ],
+     "twin_start": 166,
+     "var_start": 168
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      172,
+      178
+     ],
+     "twin_start": 174,
+     "var_start": 175
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      179,
+      184
+     ],
+     "twin_start": 179,
+     "var_start": 181
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V013",
+   "theorem": "right_ne_zero_of_mul_eq_one",
+   "k": 13,
+   "kwline": 138,
+   "n_moves": 8,
+   "prefix_end": 136,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      137,
+      139
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      140,
+      141
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      142,
+      143
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      144,
+      147
+     ],
+     "twin_start": 144,
+     "var_start": 145
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      148,
+      151
+     ],
+     "twin_start": 148,
+     "var_start": 149
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      152,
+      155
+     ],
+     "twin_start": 152,
+     "var_start": 153
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      156,
+      162
+     ],
+     "twin_start": 158,
+     "var_start": 159
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      163,
+      168
+     ],
+     "twin_start": 163,
+     "var_start": 165
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      169,
+      174
+     ],
+     "twin_start": 169,
+     "var_start": 171
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      175,
+      181
+     ],
+     "twin_start": 177,
+     "var_start": 178
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      182,
+      187
+     ],
+     "twin_start": 182,
+     "var_start": 184
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V014",
+   "theorem": "IsNilpotent.mk",
+   "k": 14,
+   "kwline": 155,
+   "n_moves": 10,
+   "prefix_end": 153,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      154,
+      156
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      157,
+      158
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      159,
+      160
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      161,
+      164
+     ],
+     "twin_start": 161,
+     "var_start": 162
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      165,
+      168
+     ],
+     "twin_start": 165,
+     "var_start": 166
+    },
+    {
+     "role": "math",
+     "move": "M1_h2",
+     "lines": [
+      169,
+      172
+     ],
+     "twin_start": 169,
+     "var_start": 170
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      173,
+      176
+     ],
+     "twin_start": 173,
+     "var_start": 174
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      177,
+      180
+     ],
+     "twin_start": 177,
+     "var_start": 178
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      181,
+      187
+     ],
+     "twin_start": 183,
+     "var_start": 184
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      188,
+      193
+     ],
+     "twin_start": 188,
+     "var_start": 190
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      194,
+      199
+     ],
+     "twin_start": 194,
+     "var_start": 196
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      200,
+      206
+     ],
+     "twin_start": 202,
+     "var_start": 203
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      207,
+      212
+     ],
+     "twin_start": 207,
+     "var_start": 209
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 3,
+   "namespace": []
+  },
+  {
+   "file": "V015",
+   "theorem": "isNilpotent_of_subsingleton",
+   "k": 15,
+   "kwline": 158,
+   "n_moves": 5,
+   "prefix_end": 156,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      157,
+      159
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      160,
+      161
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      162,
+      163
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      164,
+      167
+     ],
+     "twin_start": 164,
+     "var_start": 165
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      168,
+      171
+     ],
+     "twin_start": 168,
+     "var_start": 169
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      172,
+      178
+     ],
+     "twin_start": 174,
+     "var_start": 175
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      179,
+      184
+     ],
+     "twin_start": 179,
+     "var_start": 181
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      185,
+      190
+     ],
+     "twin_start": 185,
+     "var_start": 187
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V016",
+   "theorem": "IsNilpotent.zero",
+   "k": 16,
+   "kwline": 161,
+   "n_moves": 5,
+   "prefix_end": 159,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      160,
+      162
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      163,
+      164
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      165,
+      166
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      167,
+      170
+     ],
+     "twin_start": 167,
+     "var_start": 168
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      171,
+      174
+     ],
+     "twin_start": 171,
+     "var_start": 172
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      175,
+      181
+     ],
+     "twin_start": 177,
+     "var_start": 178
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      182,
+      187
+     ],
+     "twin_start": 182,
+     "var_start": 184
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      188,
+      193
+     ],
+     "twin_start": 188,
+     "var_start": 190
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V017",
+   "theorem": "not_isNilpotent_one",
+   "k": 17,
+   "kwline": 164,
+   "n_moves": 5,
+   "prefix_end": 162,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      163,
+      165
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      166,
+      167
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      168,
+      169
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      170,
+      174
+     ],
+     "twin_start": 170,
+     "var_start": 172
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      175,
+      179
+     ],
+     "twin_start": 175,
+     "var_start": 177
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      180,
+      187
+     ],
+     "twin_start": 182,
+     "var_start": 184
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      188,
+      194
+     ],
+     "twin_start": 188,
+     "var_start": 191
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      195,
+      201
+     ],
+     "twin_start": 195,
+     "var_start": 198
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V018",
+   "theorem": "IsNilpotent.pow_succ",
+   "k": 18,
+   "kwline": 167,
+   "n_moves": 9,
+   "prefix_end": 165,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      166,
+      170
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      171,
+      172
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      173,
+      174
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      175,
+      181
+     ],
+     "twin_start": 175,
+     "var_start": 177
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      182,
+      186
+     ],
+     "twin_start": 182,
+     "var_start": 183
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      187,
+      193
+     ],
+     "twin_start": 187,
+     "var_start": 189
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      194,
+      200
+     ],
+     "twin_start": 194,
+     "var_start": 196
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      201,
+      210
+     ],
+     "twin_start": 203,
+     "var_start": 205
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      211,
+      219
+     ],
+     "twin_start": 211,
+     "var_start": 214
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      220,
+      228
+     ],
+     "twin_start": 220,
+     "var_start": 223
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      229,
+      238
+     ],
+     "twin_start": 231,
+     "var_start": 233
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      239,
+      247
+     ],
+     "twin_start": 239,
+     "var_start": 242
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V019",
+   "theorem": "IsNilpotent.of_pow",
+   "k": 19,
+   "kwline": 172,
+   "n_moves": 8,
+   "prefix_end": 170,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      171,
+      175
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      176,
+      177
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      178,
+      179
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      180,
+      184
+     ],
+     "twin_start": 180,
+     "var_start": 181
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      185,
+      191
+     ],
+     "twin_start": 185,
+     "var_start": 187
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      192,
+      198
+     ],
+     "twin_start": 192,
+     "var_start": 194
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      199,
+      208
+     ],
+     "twin_start": 201,
+     "var_start": 203
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      209,
+      217
+     ],
+     "twin_start": 209,
+     "var_start": 212
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      218,
+      226
+     ],
+     "twin_start": 218,
+     "var_start": 221
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      227,
+      234
+     ],
+     "twin_start": 229,
+     "var_start": 230
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      235,
+      241
+     ],
+     "twin_start": 235,
+     "var_start": 237
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V020",
+   "theorem": "IsNilpotent.pow_of_pos",
+   "k": 20,
+   "kwline": 177,
+   "n_moves": 9,
+   "prefix_end": 175,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      176,
+      181
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      182,
+      183
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      184,
+      185
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      186,
+      193
+     ],
+     "twin_start": 186,
+     "var_start": 188
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      194,
+      201
+     ],
+     "twin_start": 194,
+     "var_start": 196
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      202,
+      209
+     ],
+     "twin_start": 202,
+     "var_start": 204
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      210,
+      217
+     ],
+     "twin_start": 210,
+     "var_start": 212
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      218,
+      228
+     ],
+     "twin_start": 220,
+     "var_start": 222
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      229,
+      238
+     ],
+     "twin_start": 229,
+     "var_start": 232
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      239,
+      248
+     ],
+     "twin_start": 239,
+     "var_start": 242
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      249,
+      259
+     ],
+     "twin_start": 251,
+     "var_start": 253
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      260,
+      269
+     ],
+     "twin_start": 260,
+     "var_start": 263
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V021",
+   "theorem": "IsNilpotent.pow_iff_pos",
+   "k": 21,
+   "kwline": 184,
+   "n_moves": 8,
+   "prefix_end": 181,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      182,
+      185
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      186,
+      187
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      188,
+      189
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      190,
+      195
+     ],
+     "twin_start": 190,
+     "var_start": 192
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      196,
+      201
+     ],
+     "twin_start": 196,
+     "var_start": 198
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      202,
+      207
+     ],
+     "twin_start": 202,
+     "var_start": 204
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      208,
+      216
+     ],
+     "twin_start": 210,
+     "var_start": 212
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      217,
+      224
+     ],
+     "twin_start": 217,
+     "var_start": 220
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      225,
+      232
+     ],
+     "twin_start": 225,
+     "var_start": 228
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      233,
+      241
+     ],
+     "twin_start": 235,
+     "var_start": 237
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      242,
+      249
+     ],
+     "twin_start": 242,
+     "var_start": 245
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V022",
+   "theorem": "eq_zero_of_pow_eq_zero",
+   "k": 22,
+   "kwline": 194,
+   "n_moves": 8,
+   "prefix_end": 192,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      193,
+      195
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      196,
+      197
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      198,
+      199
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      200,
+      204
+     ],
+     "twin_start": 200,
+     "var_start": 202
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      205,
+      209
+     ],
+     "twin_start": 205,
+     "var_start": 207
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      210,
+      214
+     ],
+     "twin_start": 210,
+     "var_start": 212
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      215,
+      222
+     ],
+     "twin_start": 217,
+     "var_start": 219
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      223,
+      229
+     ],
+     "twin_start": 223,
+     "var_start": 226
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      230,
+      236
+     ],
+     "twin_start": 230,
+     "var_start": 233
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      237,
+      244
+     ],
+     "twin_start": 239,
+     "var_start": 241
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      245,
+      251
+     ],
+     "twin_start": 245,
+     "var_start": 248
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V023",
+   "theorem": "IsNilpotent.eq_zero",
+   "k": 23,
+   "kwline": 201,
+   "n_moves": 8,
+   "prefix_end": 199,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      200,
+      202
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      203,
+      204
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      205,
+      206
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      207,
+      210
+     ],
+     "twin_start": 207,
+     "var_start": 208
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      211,
+      214
+     ],
+     "twin_start": 211,
+     "var_start": 212
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      215,
+      218
+     ],
+     "twin_start": 215,
+     "var_start": 216
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      219,
+      225
+     ],
+     "twin_start": 221,
+     "var_start": 222
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      226,
+      231
+     ],
+     "twin_start": 226,
+     "var_start": 228
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      232,
+      237
+     ],
+     "twin_start": 232,
+     "var_start": 234
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      238,
+      244
+     ],
+     "twin_start": 240,
+     "var_start": 241
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      245,
+      250
+     ],
+     "twin_start": 245,
+     "var_start": 247
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V024",
+   "theorem": "isNilpotent_iff_eq_zero",
+   "k": 24,
+   "kwline": 205,
+   "n_moves": 5,
+   "prefix_end": 202,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      203,
+      205
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      206,
+      207
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      208,
+      209
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      210,
+      213
+     ],
+     "twin_start": 210,
+     "var_start": 211
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      214,
+      217
+     ],
+     "twin_start": 214,
+     "var_start": 215
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      218,
+      224
+     ],
+     "twin_start": 220,
+     "var_start": 221
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      225,
+      230
+     ],
+     "twin_start": 225,
+     "var_start": 227
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      231,
+      236
+     ],
+     "twin_start": 231,
+     "var_start": 233
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V025",
+   "theorem": "exists_isNilpotent_of_not_isReduced",
+   "k": 25,
+   "kwline": 208,
+   "n_moves": 8,
+   "prefix_end": 206,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      207,
+      210
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      211,
+      212
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      213,
+      214
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      215,
+      220
+     ],
+     "twin_start": 215,
+     "var_start": 217
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      221,
+      226
+     ],
+     "twin_start": 221,
+     "var_start": 223
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      227,
+      232
+     ],
+     "twin_start": 227,
+     "var_start": 229
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      233,
+      241
+     ],
+     "twin_start": 235,
+     "var_start": 237
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      242,
+      249
+     ],
+     "twin_start": 242,
+     "var_start": 245
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      250,
+      257
+     ],
+     "twin_start": 250,
+     "var_start": 253
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      258,
+      266
+     ],
+     "twin_start": 260,
+     "var_start": 262
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      267,
+      274
+     ],
+     "twin_start": 267,
+     "var_start": 270
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V027",
+   "theorem": "zero_pow_eq",
+   "k": 27,
+   "kwline": 220,
+   "n_moves": 8,
+   "prefix_end": 218,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      219,
+      223
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      224,
+      225
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      226,
+      227
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      228,
+      233
+     ],
+     "twin_start": 228,
+     "var_start": 229
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      234,
+      239
+     ],
+     "twin_start": 234,
+     "var_start": 235
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      240,
+      245
+     ],
+     "twin_start": 240,
+     "var_start": 241
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      246,
+      254
+     ],
+     "twin_start": 248,
+     "var_start": 249
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      255,
+      262
+     ],
+     "twin_start": 255,
+     "var_start": 257
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      263,
+      270
+     ],
+     "twin_start": 263,
+     "var_start": 265
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      271,
+      279
+     ],
+     "twin_start": 273,
+     "var_start": 274
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      280,
+      287
+     ],
+     "twin_start": 280,
+     "var_start": 282
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V028",
+   "theorem": "zero_pow_eq_one\u2080",
+   "k": 28,
+   "kwline": 225,
+   "n_moves": 5,
+   "prefix_end": 223,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      224,
+      226
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      227,
+      228
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      229,
+      230
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      231,
+      234
+     ],
+     "twin_start": 231,
+     "var_start": 232
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      235,
+      238
+     ],
+     "twin_start": 235,
+     "var_start": 236
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      239,
+      245
+     ],
+     "twin_start": 241,
+     "var_start": 242
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      246,
+      251
+     ],
+     "twin_start": 246,
+     "var_start": 248
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      252,
+      257
+     ],
+     "twin_start": 252,
+     "var_start": 254
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V030",
+   "theorem": "ne_zero_pow",
+   "k": 30,
+   "kwline": 232,
+   "n_moves": 9,
+   "prefix_end": 230,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      231,
+      232
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      233,
+      234
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      235,
+      236
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      237,
+      239
+     ],
+     "twin_start": 237,
+     "var_start": 238
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      240,
+      242
+     ],
+     "twin_start": 240,
+     "var_start": 241
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      243,
+      245
+     ],
+     "twin_start": 243,
+     "var_start": 244
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      246,
+      248
+     ],
+     "twin_start": 246,
+     "var_start": 247
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      249,
+      254
+     ],
+     "twin_start": 251,
+     "var_start": 252
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      255,
+      259
+     ],
+     "twin_start": 255,
+     "var_start": 257
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      260,
+      264
+     ],
+     "twin_start": 260,
+     "var_start": 262
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      265,
+      270
+     ],
+     "twin_start": 267,
+     "var_start": 268
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      271,
+      275
+     ],
+     "twin_start": 271,
+     "var_start": 273
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V031",
+   "theorem": "zero_pow_eq_zero",
+   "k": 31,
+   "kwline": 235,
+   "n_moves": 5,
+   "prefix_end": 232,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      233,
+      235
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      236,
+      237
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      238,
+      239
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      240,
+      243
+     ],
+     "twin_start": 240,
+     "var_start": 241
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      244,
+      247
+     ],
+     "twin_start": 244,
+     "var_start": 245
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      248,
+      254
+     ],
+     "twin_start": 250,
+     "var_start": 251
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      255,
+      260
+     ],
+     "twin_start": 255,
+     "var_start": 257
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      261,
+      266
+     ],
+     "twin_start": 261,
+     "var_start": 263
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V032",
+   "theorem": "pow_mul_eq_zero_of_le",
+   "k": 32,
+   "kwline": 238,
+   "n_moves": 9,
+   "prefix_end": 236,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      237,
+      241
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      242,
+      243
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      244,
+      245
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      246,
+      252
+     ],
+     "twin_start": 246,
+     "var_start": 248
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      253,
+      257
+     ],
+     "twin_start": 253,
+     "var_start": 254
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      258,
+      264
+     ],
+     "twin_start": 258,
+     "var_start": 260
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      265,
+      271
+     ],
+     "twin_start": 265,
+     "var_start": 267
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      272,
+      281
+     ],
+     "twin_start": 274,
+     "var_start": 276
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      282,
+      290
+     ],
+     "twin_start": 282,
+     "var_start": 285
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      291,
+      299
+     ],
+     "twin_start": 291,
+     "var_start": 294
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      300,
+      309
+     ],
+     "twin_start": 302,
+     "var_start": 304
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      310,
+      318
+     ],
+     "twin_start": 310,
+     "var_start": 313
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V033",
+   "theorem": "pow_eq_zero_iff",
+   "k": 33,
+   "kwline": 254,
+   "n_moves": 8,
+   "prefix_end": 252,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      253,
+      255
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      256,
+      257
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      258,
+      259
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      260,
+      263
+     ],
+     "twin_start": 260,
+     "var_start": 261
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      264,
+      267
+     ],
+     "twin_start": 264,
+     "var_start": 265
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      268,
+      271
+     ],
+     "twin_start": 268,
+     "var_start": 269
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      272,
+      278
+     ],
+     "twin_start": 274,
+     "var_start": 275
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      279,
+      284
+     ],
+     "twin_start": 279,
+     "var_start": 281
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      285,
+      290
+     ],
+     "twin_start": 285,
+     "var_start": 287
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      291,
+      297
+     ],
+     "twin_start": 293,
+     "var_start": 294
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      298,
+      303
+     ],
+     "twin_start": 298,
+     "var_start": 300
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V034",
+   "theorem": "pow_ne_zero_iff",
+   "k": 34,
+   "kwline": 257,
+   "n_moves": 8,
+   "prefix_end": 255,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      256,
+      257
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      258,
+      259
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      260,
+      261
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      262,
+      264
+     ],
+     "twin_start": 262,
+     "var_start": 263
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      265,
+      267
+     ],
+     "twin_start": 265,
+     "var_start": 266
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      268,
+      270
+     ],
+     "twin_start": 268,
+     "var_start": 269
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      271,
+      276
+     ],
+     "twin_start": 273,
+     "var_start": 274
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      277,
+      281
+     ],
+     "twin_start": 277,
+     "var_start": 279
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      282,
+      286
+     ],
+     "twin_start": 282,
+     "var_start": 284
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      287,
+      292
+     ],
+     "twin_start": 289,
+     "var_start": 290
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      293,
+      297
+     ],
+     "twin_start": 293,
+     "var_start": 295
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V035",
+   "theorem": "pow_ne_zero",
+   "k": 35,
+   "kwline": 259,
+   "n_moves": 9,
+   "prefix_end": 257,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      258,
+      259
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      260,
+      261
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      262,
+      263
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      264,
+      266
+     ],
+     "twin_start": 264,
+     "var_start": 265
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      267,
+      269
+     ],
+     "twin_start": 267,
+     "var_start": 268
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      270,
+      272
+     ],
+     "twin_start": 270,
+     "var_start": 271
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      273,
+      275
+     ],
+     "twin_start": 273,
+     "var_start": 274
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      276,
+      281
+     ],
+     "twin_start": 278,
+     "var_start": 279
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      282,
+      286
+     ],
+     "twin_start": 282,
+     "var_start": 284
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      287,
+      291
+     ],
+     "twin_start": 287,
+     "var_start": 289
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      292,
+      297
+     ],
+     "twin_start": 294,
+     "var_start": 295
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      298,
+      302
+     ],
+     "twin_start": 298,
+     "var_start": 300
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V036",
+   "theorem": "sq_eq_zero_iff",
+   "k": 36,
+   "kwline": 263,
+   "n_moves": 5,
+   "prefix_end": 261,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      262,
+      263
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      264,
+      265
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      266,
+      267
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      268,
+      270
+     ],
+     "twin_start": 268,
+     "var_start": 269
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      271,
+      273
+     ],
+     "twin_start": 271,
+     "var_start": 272
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      274,
+      279
+     ],
+     "twin_start": 276,
+     "var_start": 277
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      280,
+      284
+     ],
+     "twin_start": 280,
+     "var_start": 282
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      285,
+      289
+     ],
+     "twin_start": 285,
+     "var_start": 287
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V037",
+   "theorem": "pow_eq_zero_iff'",
+   "k": 37,
+   "kwline": 266,
+   "n_moves": 5,
+   "prefix_end": 263,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      264,
+      266
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      267,
+      268
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      269,
+      270
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      271,
+      274
+     ],
+     "twin_start": 271,
+     "var_start": 272
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      275,
+      278
+     ],
+     "twin_start": 275,
+     "var_start": 276
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      279,
+      285
+     ],
+     "twin_start": 281,
+     "var_start": 282
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      286,
+      291
+     ],
+     "twin_start": 286,
+     "var_start": 288
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      292,
+      297
+     ],
+     "twin_start": 292,
+     "var_start": 294
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V038",
+   "theorem": "exists_right_inv_of_exists_left_inv",
+   "k": 38,
+   "kwline": 275,
+   "n_moves": 9,
+   "prefix_end": 273,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      274,
+      282
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      283,
+      284
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      285,
+      286
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      287,
+      297
+     ],
+     "twin_start": 287,
+     "var_start": 289
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      298,
+      308
+     ],
+     "twin_start": 298,
+     "var_start": 300
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      309,
+      319
+     ],
+     "twin_start": 309,
+     "var_start": 311
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      320,
+      330
+     ],
+     "twin_start": 320,
+     "var_start": 322
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      331,
+      344
+     ],
+     "twin_start": 333,
+     "var_start": 335
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      345,
+      357
+     ],
+     "twin_start": 345,
+     "var_start": 348
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      358,
+      370
+     ],
+     "twin_start": 358,
+     "var_start": 361
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      371,
+      384
+     ],
+     "twin_start": 373,
+     "var_start": 375
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      385,
+      397
+     ],
+     "twin_start": 385,
+     "var_start": 388
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V039",
+   "theorem": "mul_right_eq_self\u2080",
+   "k": 39,
+   "kwline": 291,
+   "n_moves": 5,
+   "prefix_end": 289,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      290,
+      294
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      295,
+      296
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      297,
+      298
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      299,
+      304
+     ],
+     "twin_start": 299,
+     "var_start": 300
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      305,
+      310
+     ],
+     "twin_start": 305,
+     "var_start": 306
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      311,
+      319
+     ],
+     "twin_start": 313,
+     "var_start": 314
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      320,
+      327
+     ],
+     "twin_start": 320,
+     "var_start": 322
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      328,
+      335
+     ],
+     "twin_start": 328,
+     "var_start": 330
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V040",
+   "theorem": "mul_left_eq_self\u2080",
+   "k": 40,
+   "kwline": 296,
+   "n_moves": 5,
+   "prefix_end": 294,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      295,
+      299
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      300,
+      301
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      302,
+      303
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      304,
+      309
+     ],
+     "twin_start": 304,
+     "var_start": 305
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      310,
+      315
+     ],
+     "twin_start": 310,
+     "var_start": 311
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      316,
+      324
+     ],
+     "twin_start": 318,
+     "var_start": 319
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      325,
+      332
+     ],
+     "twin_start": 325,
+     "var_start": 327
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      333,
+      340
+     ],
+     "twin_start": 333,
+     "var_start": 335
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V041",
+   "theorem": "mul_eq_left\u2080",
+   "k": 41,
+   "kwline": 302,
+   "n_moves": 8,
+   "prefix_end": 299,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      300,
+      302
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      303,
+      304
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      305,
+      306
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      307,
+      310
+     ],
+     "twin_start": 307,
+     "var_start": 308
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      311,
+      314
+     ],
+     "twin_start": 311,
+     "var_start": 312
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      315,
+      318
+     ],
+     "twin_start": 315,
+     "var_start": 316
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      319,
+      325
+     ],
+     "twin_start": 321,
+     "var_start": 322
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      326,
+      331
+     ],
+     "twin_start": 326,
+     "var_start": 328
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      332,
+      337
+     ],
+     "twin_start": 332,
+     "var_start": 334
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      338,
+      344
+     ],
+     "twin_start": 340,
+     "var_start": 341
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      345,
+      350
+     ],
+     "twin_start": 345,
+     "var_start": 347
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V042",
+   "theorem": "mul_eq_right\u2080",
+   "k": 42,
+   "kwline": 306,
+   "n_moves": 8,
+   "prefix_end": 303,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      304,
+      306
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      307,
+      308
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      309,
+      310
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      311,
+      314
+     ],
+     "twin_start": 311,
+     "var_start": 312
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      315,
+      318
+     ],
+     "twin_start": 315,
+     "var_start": 316
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      319,
+      322
+     ],
+     "twin_start": 319,
+     "var_start": 320
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      323,
+      329
+     ],
+     "twin_start": 325,
+     "var_start": 326
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      330,
+      335
+     ],
+     "twin_start": 330,
+     "var_start": 332
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      336,
+      341
+     ],
+     "twin_start": 336,
+     "var_start": 338
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      342,
+      348
+     ],
+     "twin_start": 344,
+     "var_start": 345
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      349,
+      354
+     ],
+     "twin_start": 349,
+     "var_start": 351
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V043",
+   "theorem": "left_eq_mul\u2080",
+   "k": 43,
+   "kwline": 310,
+   "n_moves": 8,
+   "prefix_end": 307,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      308,
+      310
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      311,
+      312
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      313,
+      314
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      315,
+      318
+     ],
+     "twin_start": 315,
+     "var_start": 316
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      319,
+      322
+     ],
+     "twin_start": 319,
+     "var_start": 320
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      323,
+      326
+     ],
+     "twin_start": 323,
+     "var_start": 324
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      327,
+      333
+     ],
+     "twin_start": 329,
+     "var_start": 330
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      334,
+      339
+     ],
+     "twin_start": 334,
+     "var_start": 336
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      340,
+      345
+     ],
+     "twin_start": 340,
+     "var_start": 342
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      346,
+      352
+     ],
+     "twin_start": 348,
+     "var_start": 349
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      353,
+      358
+     ],
+     "twin_start": 353,
+     "var_start": 355
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V044",
+   "theorem": "right_eq_mul\u2080",
+   "k": 44,
+   "kwline": 314,
+   "n_moves": 8,
+   "prefix_end": 311,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      312,
+      314
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      315,
+      316
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      317,
+      318
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      319,
+      322
+     ],
+     "twin_start": 319,
+     "var_start": 320
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      323,
+      326
+     ],
+     "twin_start": 323,
+     "var_start": 324
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      327,
+      330
+     ],
+     "twin_start": 327,
+     "var_start": 328
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      331,
+      337
+     ],
+     "twin_start": 333,
+     "var_start": 334
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      338,
+      343
+     ],
+     "twin_start": 338,
+     "var_start": 340
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      344,
+      349
+     ],
+     "twin_start": 344,
+     "var_start": 346
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      350,
+      356
+     ],
+     "twin_start": 352,
+     "var_start": 353
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      357,
+      362
+     ],
+     "twin_start": 357,
+     "var_start": 359
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V045",
+   "theorem": "eq_zero_of_mul_eq_self_right",
+   "k": 45,
+   "kwline": 319,
+   "n_moves": 9,
+   "prefix_end": 315,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      316,
+      319
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      320,
+      321
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      322,
+      323
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      324,
+      329
+     ],
+     "twin_start": 324,
+     "var_start": 326
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      330,
+      335
+     ],
+     "twin_start": 330,
+     "var_start": 332
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      336,
+      341
+     ],
+     "twin_start": 336,
+     "var_start": 338
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      342,
+      347
+     ],
+     "twin_start": 342,
+     "var_start": 344
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      348,
+      356
+     ],
+     "twin_start": 350,
+     "var_start": 352
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      357,
+      364
+     ],
+     "twin_start": 357,
+     "var_start": 360
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      365,
+      372
+     ],
+     "twin_start": 365,
+     "var_start": 368
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      373,
+      381
+     ],
+     "twin_start": 375,
+     "var_start": 377
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      382,
+      389
+     ],
+     "twin_start": 382,
+     "var_start": 385
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V046",
+   "theorem": "eq_zero_of_mul_eq_self_left",
+   "k": 46,
+   "kwline": 325,
+   "n_moves": 9,
+   "prefix_end": 321,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      322,
+      325
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      326,
+      327
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      328,
+      329
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      330,
+      335
+     ],
+     "twin_start": 330,
+     "var_start": 332
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      336,
+      341
+     ],
+     "twin_start": 336,
+     "var_start": 338
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      342,
+      347
+     ],
+     "twin_start": 342,
+     "var_start": 344
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      348,
+      353
+     ],
+     "twin_start": 348,
+     "var_start": 350
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      354,
+      362
+     ],
+     "twin_start": 356,
+     "var_start": 358
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      363,
+      370
+     ],
+     "twin_start": 363,
+     "var_start": 366
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      371,
+      378
+     ],
+     "twin_start": 371,
+     "var_start": 374
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      379,
+      387
+     ],
+     "twin_start": 381,
+     "var_start": 383
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      388,
+      395
+     ],
+     "twin_start": 388,
+     "var_start": 391
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V047",
+   "theorem": "GroupWithZero.mul_right_injective",
+   "k": 47,
+   "kwline": 335,
+   "n_moves": 8,
+   "prefix_end": 333,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      334,
+      337
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      338,
+      339
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      340,
+      341
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      342,
+      347
+     ],
+     "twin_start": 342,
+     "var_start": 344
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      348,
+      353
+     ],
+     "twin_start": 348,
+     "var_start": 350
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      354,
+      359
+     ],
+     "twin_start": 354,
+     "var_start": 356
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      360,
+      368
+     ],
+     "twin_start": 362,
+     "var_start": 364
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      369,
+      376
+     ],
+     "twin_start": 369,
+     "var_start": 372
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      377,
+      384
+     ],
+     "twin_start": 377,
+     "var_start": 380
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      385,
+      393
+     ],
+     "twin_start": 387,
+     "var_start": 389
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      394,
+      401
+     ],
+     "twin_start": 394,
+     "var_start": 397
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V048",
+   "theorem": "GroupWithZero.mul_left_injective",
+   "k": 48,
+   "kwline": 339,
+   "n_moves": 8,
+   "prefix_end": 337,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      338,
+      341
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      342,
+      343
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      344,
+      345
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      346,
+      351
+     ],
+     "twin_start": 346,
+     "var_start": 348
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      352,
+      357
+     ],
+     "twin_start": 352,
+     "var_start": 354
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      358,
+      363
+     ],
+     "twin_start": 358,
+     "var_start": 360
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      364,
+      372
+     ],
+     "twin_start": 366,
+     "var_start": 368
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      373,
+      380
+     ],
+     "twin_start": 373,
+     "var_start": 376
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      381,
+      388
+     ],
+     "twin_start": 381,
+     "var_start": 384
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      389,
+      397
+     ],
+     "twin_start": 391,
+     "var_start": 393
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      398,
+      405
+     ],
+     "twin_start": 398,
+     "var_start": 401
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V049",
+   "theorem": "inv_mul_cancel_right\u2080",
+   "k": 49,
+   "kwline": 344,
+   "n_moves": 9,
+   "prefix_end": 342,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      343,
+      347
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      348,
+      349
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      350,
+      351
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      352,
+      357
+     ],
+     "twin_start": 352,
+     "var_start": 353
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      358,
+      363
+     ],
+     "twin_start": 358,
+     "var_start": 359
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      364,
+      369
+     ],
+     "twin_start": 364,
+     "var_start": 365
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      370,
+      375
+     ],
+     "twin_start": 370,
+     "var_start": 371
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      376,
+      384
+     ],
+     "twin_start": 378,
+     "var_start": 379
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      385,
+      392
+     ],
+     "twin_start": 385,
+     "var_start": 387
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      393,
+      400
+     ],
+     "twin_start": 393,
+     "var_start": 395
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      401,
+      409
+     ],
+     "twin_start": 403,
+     "var_start": 404
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      410,
+      417
+     ],
+     "twin_start": 410,
+     "var_start": 412
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V050",
+   "theorem": "inv_mul_cancel_left\u2080",
+   "k": 50,
+   "kwline": 351,
+   "n_moves": 9,
+   "prefix_end": 349,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      350,
+      357
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      358,
+      359
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      360,
+      361
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      362,
+      370
+     ],
+     "twin_start": 362,
+     "var_start": 363
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      371,
+      379
+     ],
+     "twin_start": 371,
+     "var_start": 372
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      380,
+      388
+     ],
+     "twin_start": 380,
+     "var_start": 381
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      389,
+      397
+     ],
+     "twin_start": 389,
+     "var_start": 390
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      398,
+      409
+     ],
+     "twin_start": 400,
+     "var_start": 401
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      410,
+      420
+     ],
+     "twin_start": 410,
+     "var_start": 412
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      421,
+      431
+     ],
+     "twin_start": 421,
+     "var_start": 423
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      432,
+      443
+     ],
+     "twin_start": 434,
+     "var_start": 435
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      444,
+      454
+     ],
+     "twin_start": 444,
+     "var_start": 446
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V051",
+   "theorem": "inv_eq_of_mul",
+   "k": 51,
+   "kwline": 358,
+   "n_moves": 8,
+   "prefix_end": 356,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      357,
+      363
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      364,
+      365
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      366,
+      367
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      368,
+      375
+     ],
+     "twin_start": 368,
+     "var_start": 369
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      376,
+      383
+     ],
+     "twin_start": 376,
+     "var_start": 377
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      384,
+      391
+     ],
+     "twin_start": 384,
+     "var_start": 385
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      392,
+      402
+     ],
+     "twin_start": 394,
+     "var_start": 395
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      403,
+      412
+     ],
+     "twin_start": 403,
+     "var_start": 405
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      413,
+      422
+     ],
+     "twin_start": 413,
+     "var_start": 415
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      423,
+      433
+     ],
+     "twin_start": 425,
+     "var_start": 426
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      434,
+      443
+     ],
+     "twin_start": 434,
+     "var_start": 436
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V052",
+   "theorem": "zero_div",
+   "k": 52,
+   "kwline": 394,
+   "n_moves": 8,
+   "prefix_end": 391,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      392,
+      393
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      394,
+      395
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      396,
+      397
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      398,
+      400
+     ],
+     "twin_start": 398,
+     "var_start": 399
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      401,
+      403
+     ],
+     "twin_start": 401,
+     "var_start": 402
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      404,
+      406
+     ],
+     "twin_start": 404,
+     "var_start": 405
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      407,
+      412
+     ],
+     "twin_start": 409,
+     "var_start": 410
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      413,
+      417
+     ],
+     "twin_start": 413,
+     "var_start": 415
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      418,
+      422
+     ],
+     "twin_start": 418,
+     "var_start": 420
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      423,
+      428
+     ],
+     "twin_start": 425,
+     "var_start": 426
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      429,
+      433
+     ],
+     "twin_start": 429,
+     "var_start": 431
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V053",
+   "theorem": "div_zero",
+   "k": 53,
+   "kwline": 397,
+   "n_moves": 8,
+   "prefix_end": 394,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      395,
+      396
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      397,
+      398
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      399,
+      400
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      401,
+      403
+     ],
+     "twin_start": 401,
+     "var_start": 402
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      404,
+      406
+     ],
+     "twin_start": 404,
+     "var_start": 405
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      407,
+      409
+     ],
+     "twin_start": 407,
+     "var_start": 408
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      410,
+      415
+     ],
+     "twin_start": 412,
+     "var_start": 413
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      416,
+      420
+     ],
+     "twin_start": 416,
+     "var_start": 418
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      421,
+      425
+     ],
+     "twin_start": 421,
+     "var_start": 423
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      426,
+      431
+     ],
+     "twin_start": 428,
+     "var_start": 429
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      432,
+      436
+     ],
+     "twin_start": 432,
+     "var_start": 434
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V054",
+   "theorem": "mul_self_mul_inv",
+   "k": 54,
+   "kwline": 402,
+   "n_moves": 8,
+   "prefix_end": 397,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      398,
+      402
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      403,
+      404
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      405,
+      406
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      407,
+      412
+     ],
+     "twin_start": 407,
+     "var_start": 408
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      413,
+      418
+     ],
+     "twin_start": 413,
+     "var_start": 414
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      419,
+      424
+     ],
+     "twin_start": 419,
+     "var_start": 420
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      425,
+      433
+     ],
+     "twin_start": 427,
+     "var_start": 428
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      434,
+      441
+     ],
+     "twin_start": 434,
+     "var_start": 436
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      442,
+      449
+     ],
+     "twin_start": 442,
+     "var_start": 444
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      450,
+      458
+     ],
+     "twin_start": 452,
+     "var_start": 453
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      459,
+      466
+     ],
+     "twin_start": 459,
+     "var_start": 461
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V055",
+   "theorem": "mul_inv_mul_cancel",
+   "k": 55,
+   "kwline": 411,
+   "n_moves": 8,
+   "prefix_end": 406,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      407,
+      411
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      412,
+      413
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      414,
+      415
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      416,
+      421
+     ],
+     "twin_start": 416,
+     "var_start": 417
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      422,
+      427
+     ],
+     "twin_start": 422,
+     "var_start": 423
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      428,
+      433
+     ],
+     "twin_start": 428,
+     "var_start": 429
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      434,
+      442
+     ],
+     "twin_start": 436,
+     "var_start": 437
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      443,
+      450
+     ],
+     "twin_start": 443,
+     "var_start": 445
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      451,
+      458
+     ],
+     "twin_start": 451,
+     "var_start": 453
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      459,
+      467
+     ],
+     "twin_start": 461,
+     "var_start": 462
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      468,
+      475
+     ],
+     "twin_start": 468,
+     "var_start": 470
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V056",
+   "theorem": "inv_mul_mul_self",
+   "k": 56,
+   "kwline": 420,
+   "n_moves": 8,
+   "prefix_end": 415,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      416,
+      420
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      421,
+      422
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      423,
+      424
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      425,
+      430
+     ],
+     "twin_start": 425,
+     "var_start": 426
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      431,
+      436
+     ],
+     "twin_start": 431,
+     "var_start": 432
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      437,
+      442
+     ],
+     "twin_start": 437,
+     "var_start": 438
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      443,
+      451
+     ],
+     "twin_start": 445,
+     "var_start": 446
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      452,
+      459
+     ],
+     "twin_start": 452,
+     "var_start": 454
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      460,
+      467
+     ],
+     "twin_start": 460,
+     "var_start": 462
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      468,
+      476
+     ],
+     "twin_start": 470,
+     "var_start": 471
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      477,
+      484
+     ],
+     "twin_start": 477,
+     "var_start": 479
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V057",
+   "theorem": "mul_self_div_self",
+   "k": 57,
+   "kwline": 429,
+   "n_moves": 8,
+   "prefix_end": 424,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      425,
+      426
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      427,
+      428
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      429,
+      430
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      431,
+      433
+     ],
+     "twin_start": 431,
+     "var_start": 432
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      434,
+      436
+     ],
+     "twin_start": 434,
+     "var_start": 435
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      437,
+      439
+     ],
+     "twin_start": 437,
+     "var_start": 438
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      440,
+      445
+     ],
+     "twin_start": 442,
+     "var_start": 443
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      446,
+      450
+     ],
+     "twin_start": 446,
+     "var_start": 448
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      451,
+      455
+     ],
+     "twin_start": 451,
+     "var_start": 453
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      456,
+      461
+     ],
+     "twin_start": 458,
+     "var_start": 459
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      462,
+      466
+     ],
+     "twin_start": 462,
+     "var_start": 464
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V058",
+   "theorem": "div_self_mul_self",
+   "k": 58,
+   "kwline": 434,
+   "n_moves": 8,
+   "prefix_end": 429,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      430,
+      431
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      432,
+      433
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      434,
+      435
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      436,
+      438
+     ],
+     "twin_start": 436,
+     "var_start": 437
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      439,
+      441
+     ],
+     "twin_start": 439,
+     "var_start": 440
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      442,
+      444
+     ],
+     "twin_start": 442,
+     "var_start": 443
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      445,
+      450
+     ],
+     "twin_start": 447,
+     "var_start": 448
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      451,
+      455
+     ],
+     "twin_start": 451,
+     "var_start": 453
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      456,
+      460
+     ],
+     "twin_start": 456,
+     "var_start": 458
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      461,
+      466
+     ],
+     "twin_start": 463,
+     "var_start": 464
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      467,
+      471
+     ],
+     "twin_start": 467,
+     "var_start": 469
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V059",
+   "theorem": "div_self_mul_self'",
+   "k": 59,
+   "kwline": 439,
+   "n_moves": 8,
+   "prefix_end": 436,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      437,
+      441
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      442,
+      443
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      444,
+      445
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      446,
+      451
+     ],
+     "twin_start": 446,
+     "var_start": 447
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      452,
+      457
+     ],
+     "twin_start": 452,
+     "var_start": 453
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      458,
+      463
+     ],
+     "twin_start": 458,
+     "var_start": 459
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      464,
+      472
+     ],
+     "twin_start": 466,
+     "var_start": 467
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      473,
+      480
+     ],
+     "twin_start": 473,
+     "var_start": 475
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      481,
+      488
+     ],
+     "twin_start": 481,
+     "var_start": 483
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      489,
+      497
+     ],
+     "twin_start": 491,
+     "var_start": 492
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      498,
+      505
+     ],
+     "twin_start": 498,
+     "var_start": 500
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V060",
+   "theorem": "one_div_ne_zero",
+   "k": 60,
+   "kwline": 445,
+   "n_moves": 8,
+   "prefix_end": 443,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      444,
+      446
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      447,
+      448
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      449,
+      450
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      451,
+      454
+     ],
+     "twin_start": 451,
+     "var_start": 452
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      455,
+      458
+     ],
+     "twin_start": 455,
+     "var_start": 456
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      459,
+      462
+     ],
+     "twin_start": 459,
+     "var_start": 460
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      463,
+      469
+     ],
+     "twin_start": 465,
+     "var_start": 466
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      470,
+      475
+     ],
+     "twin_start": 470,
+     "var_start": 472
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      476,
+      481
+     ],
+     "twin_start": 476,
+     "var_start": 478
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      482,
+      488
+     ],
+     "twin_start": 484,
+     "var_start": 485
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      489,
+      494
+     ],
+     "twin_start": 489,
+     "var_start": 491
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V061",
+   "theorem": "inv_eq_zero",
+   "k": 61,
+   "kwline": 449,
+   "n_moves": 5,
+   "prefix_end": 446,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      447,
+      448
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      449,
+      450
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      451,
+      452
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      453,
+      455
+     ],
+     "twin_start": 453,
+     "var_start": 454
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      456,
+      458
+     ],
+     "twin_start": 456,
+     "var_start": 457
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      459,
+      464
+     ],
+     "twin_start": 461,
+     "var_start": 462
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      465,
+      469
+     ],
+     "twin_start": 465,
+     "var_start": 467
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      470,
+      474
+     ],
+     "twin_start": 470,
+     "var_start": 472
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V062",
+   "theorem": "zero_eq_inv",
+   "k": 62,
+   "kwline": 452,
+   "n_moves": 5,
+   "prefix_end": 449,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      450,
+      452
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      453,
+      454
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      455,
+      456
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      457,
+      460
+     ],
+     "twin_start": 457,
+     "var_start": 458
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      461,
+      464
+     ],
+     "twin_start": 461,
+     "var_start": 462
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      465,
+      471
+     ],
+     "twin_start": 467,
+     "var_start": 468
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      472,
+      477
+     ],
+     "twin_start": 472,
+     "var_start": 474
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      478,
+      483
+     ],
+     "twin_start": 478,
+     "var_start": 480
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V063",
+   "theorem": "div_div_self",
+   "k": 63,
+   "kwline": 458,
+   "n_moves": 8,
+   "prefix_end": 453,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      454,
+      457
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      458,
+      459
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      460,
+      461
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      462,
+      466
+     ],
+     "twin_start": 462,
+     "var_start": 463
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      467,
+      471
+     ],
+     "twin_start": 467,
+     "var_start": 468
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      472,
+      476
+     ],
+     "twin_start": 472,
+     "var_start": 473
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      477,
+      484
+     ],
+     "twin_start": 479,
+     "var_start": 480
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      485,
+      491
+     ],
+     "twin_start": 485,
+     "var_start": 487
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      492,
+      498
+     ],
+     "twin_start": 492,
+     "var_start": 494
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      499,
+      506
+     ],
+     "twin_start": 501,
+     "var_start": 502
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      507,
+      513
+     ],
+     "twin_start": 507,
+     "var_start": 509
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V064",
+   "theorem": "ne_zero_of_one_div_ne_zero",
+   "k": 64,
+   "kwline": 462,
+   "n_moves": 8,
+   "prefix_end": 460,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      461,
+      464
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      465,
+      466
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      467,
+      468
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      469,
+      473
+     ],
+     "twin_start": 469,
+     "var_start": 470
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      474,
+      478
+     ],
+     "twin_start": 474,
+     "var_start": 475
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      479,
+      483
+     ],
+     "twin_start": 479,
+     "var_start": 480
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      484,
+      491
+     ],
+     "twin_start": 486,
+     "var_start": 487
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      492,
+      498
+     ],
+     "twin_start": 492,
+     "var_start": 494
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      499,
+      505
+     ],
+     "twin_start": 499,
+     "var_start": 501
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      506,
+      513
+     ],
+     "twin_start": 508,
+     "var_start": 509
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      514,
+      520
+     ],
+     "twin_start": 514,
+     "var_start": 516
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V065",
+   "theorem": "eq_zero_of_one_div_eq_zero",
+   "k": 65,
+   "kwline": 466,
+   "n_moves": 8,
+   "prefix_end": 464,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      465,
+      467
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      468,
+      469
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      470,
+      471
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      472,
+      475
+     ],
+     "twin_start": 472,
+     "var_start": 473
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      476,
+      479
+     ],
+     "twin_start": 476,
+     "var_start": 477
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      480,
+      483
+     ],
+     "twin_start": 480,
+     "var_start": 481
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      484,
+      490
+     ],
+     "twin_start": 486,
+     "var_start": 487
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      491,
+      496
+     ],
+     "twin_start": 491,
+     "var_start": 493
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      497,
+      502
+     ],
+     "twin_start": 497,
+     "var_start": 499
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      503,
+      509
+     ],
+     "twin_start": 505,
+     "var_start": 506
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      510,
+      515
+     ],
+     "twin_start": 510,
+     "var_start": 512
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V066",
+   "theorem": "mul_left_surjective\u2080",
+   "k": 66,
+   "kwline": 469,
+   "n_moves": 8,
+   "prefix_end": 467,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      468,
+      470
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      471,
+      472
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      473,
+      474
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      475,
+      478
+     ],
+     "twin_start": 475,
+     "var_start": 476
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      479,
+      482
+     ],
+     "twin_start": 479,
+     "var_start": 480
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      483,
+      486
+     ],
+     "twin_start": 483,
+     "var_start": 484
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      487,
+      493
+     ],
+     "twin_start": 489,
+     "var_start": 490
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      494,
+      499
+     ],
+     "twin_start": 494,
+     "var_start": 496
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      500,
+      505
+     ],
+     "twin_start": 500,
+     "var_start": 502
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      506,
+      512
+     ],
+     "twin_start": 508,
+     "var_start": 509
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      513,
+      518
+     ],
+     "twin_start": 513,
+     "var_start": 515
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V067",
+   "theorem": "mul_right_surjective\u2080",
+   "k": 67,
+   "kwline": 472,
+   "n_moves": 8,
+   "prefix_end": 470,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      471,
+      473
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      474,
+      475
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      476,
+      477
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      478,
+      481
+     ],
+     "twin_start": 478,
+     "var_start": 479
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      482,
+      485
+     ],
+     "twin_start": 482,
+     "var_start": 483
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      486,
+      489
+     ],
+     "twin_start": 486,
+     "var_start": 487
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      490,
+      496
+     ],
+     "twin_start": 492,
+     "var_start": 493
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      497,
+      502
+     ],
+     "twin_start": 497,
+     "var_start": 499
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      503,
+      508
+     ],
+     "twin_start": 503,
+     "var_start": 505
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      509,
+      515
+     ],
+     "twin_start": 511,
+     "var_start": 512
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      516,
+      521
+     ],
+     "twin_start": 516,
+     "var_start": 518
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V069",
+   "theorem": "zero_zpow_eq",
+   "k": 69,
+   "kwline": 479,
+   "n_moves": 8,
+   "prefix_end": 477,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      478,
+      482
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      483,
+      484
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      485,
+      486
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      487,
+      492
+     ],
+     "twin_start": 487,
+     "var_start": 488
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      493,
+      498
+     ],
+     "twin_start": 493,
+     "var_start": 494
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      499,
+      504
+     ],
+     "twin_start": 499,
+     "var_start": 500
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      505,
+      513
+     ],
+     "twin_start": 507,
+     "var_start": 508
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      514,
+      521
+     ],
+     "twin_start": 514,
+     "var_start": 516
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      522,
+      529
+     ],
+     "twin_start": 522,
+     "var_start": 524
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      530,
+      538
+     ],
+     "twin_start": 532,
+     "var_start": 533
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      539,
+      546
+     ],
+     "twin_start": 539,
+     "var_start": 541
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V070",
+   "theorem": "zero_zpow_eq_one\u2080",
+   "k": 70,
+   "kwline": 484,
+   "n_moves": 5,
+   "prefix_end": 482,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      483,
+      485
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      486,
+      487
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      488,
+      489
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      490,
+      493
+     ],
+     "twin_start": 490,
+     "var_start": 491
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      494,
+      497
+     ],
+     "twin_start": 494,
+     "var_start": 495
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      498,
+      504
+     ],
+     "twin_start": 500,
+     "var_start": 501
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      505,
+      510
+     ],
+     "twin_start": 505,
+     "var_start": 507
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      511,
+      516
+     ],
+     "twin_start": 511,
+     "var_start": 513
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 0,
+   "namespace": []
+  },
+  {
+   "file": "V072",
+   "theorem": "zpow_sub_one\u2080",
+   "k": 72,
+   "kwline": 495,
+   "n_moves": 9,
+   "prefix_end": 493,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      494,
+      498
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      499,
+      500
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      501,
+      502
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      503,
+      508
+     ],
+     "twin_start": 503,
+     "var_start": 504
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      509,
+      514
+     ],
+     "twin_start": 509,
+     "var_start": 510
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      515,
+      520
+     ],
+     "twin_start": 515,
+     "var_start": 516
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      521,
+      526
+     ],
+     "twin_start": 521,
+     "var_start": 522
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      527,
+      535
+     ],
+     "twin_start": 529,
+     "var_start": 530
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      536,
+      543
+     ],
+     "twin_start": 536,
+     "var_start": 538
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      544,
+      551
+     ],
+     "twin_start": 544,
+     "var_start": 546
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      552,
+      560
+     ],
+     "twin_start": 554,
+     "var_start": 555
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      561,
+      568
+     ],
+     "twin_start": 561,
+     "var_start": 563
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V073",
+   "theorem": "zpow_add\u2080",
+   "k": 73,
+   "kwline": 500,
+   "n_moves": 9,
+   "prefix_end": 498,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      499,
+      504
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      505,
+      506
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      507,
+      508
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      509,
+      515
+     ],
+     "twin_start": 509,
+     "var_start": 510
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      516,
+      522
+     ],
+     "twin_start": 516,
+     "var_start": 517
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      523,
+      529
+     ],
+     "twin_start": 523,
+     "var_start": 524
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      530,
+      536
+     ],
+     "twin_start": 530,
+     "var_start": 531
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      537,
+      546
+     ],
+     "twin_start": 539,
+     "var_start": 540
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      547,
+      555
+     ],
+     "twin_start": 547,
+     "var_start": 549
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      556,
+      564
+     ],
+     "twin_start": 556,
+     "var_start": 558
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      565,
+      574
+     ],
+     "twin_start": 567,
+     "var_start": 568
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      575,
+      583
+     ],
+     "twin_start": 575,
+     "var_start": 577
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V074",
+   "theorem": "zpow_add'",
+   "k": 74,
+   "kwline": 506,
+   "n_moves": 8,
+   "prefix_end": 504,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      505,
+      516
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      517,
+      518
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      519,
+      520
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      521,
+      534
+     ],
+     "twin_start": 521,
+     "var_start": 523
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      535,
+      548
+     ],
+     "twin_start": 535,
+     "var_start": 537
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      549,
+      562
+     ],
+     "twin_start": 549,
+     "var_start": 551
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      563,
+      579
+     ],
+     "twin_start": 565,
+     "var_start": 567
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      580,
+      595
+     ],
+     "twin_start": 580,
+     "var_start": 583
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      596,
+      611
+     ],
+     "twin_start": 596,
+     "var_start": 599
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      612,
+      628
+     ],
+     "twin_start": 614,
+     "var_start": 616
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      629,
+      644
+     ],
+     "twin_start": 629,
+     "var_start": 632
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V075",
+   "theorem": "zpow_one_add\u2080",
+   "k": 75,
+   "kwline": 518,
+   "n_moves": 9,
+   "prefix_end": 516,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      517,
+      518
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      519,
+      520
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      521,
+      522
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      523,
+      525
+     ],
+     "twin_start": 523,
+     "var_start": 524
+    },
+    {
+     "role": "math",
+     "move": "M1_h1",
+     "lines": [
+      526,
+      528
+     ],
+     "twin_start": 526,
+     "var_start": 527
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      529,
+      531
+     ],
+     "twin_start": 529,
+     "var_start": 530
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      532,
+      534
+     ],
+     "twin_start": 532,
+     "var_start": 533
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      535,
+      540
+     ],
+     "twin_start": 537,
+     "var_start": 538
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      541,
+      545
+     ],
+     "twin_start": 541,
+     "var_start": 543
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      546,
+      550
+     ],
+     "twin_start": 546,
+     "var_start": 548
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      551,
+      556
+     ],
+     "twin_start": 553,
+     "var_start": 554
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      557,
+      561
+     ],
+     "twin_start": 557,
+     "var_start": 559
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 2,
+   "namespace": []
+  },
+  {
+   "file": "V076",
+   "theorem": "div_mul_eq_mul_div\u2080",
+   "k": 76,
+   "kwline": 526,
+   "n_moves": 8,
+   "prefix_end": 524,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      525,
+      527
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      528,
+      529
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      530,
+      531
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      532,
+      535
+     ],
+     "twin_start": 532,
+     "var_start": 533
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      536,
+      539
+     ],
+     "twin_start": 536,
+     "var_start": 537
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      540,
+      543
+     ],
+     "twin_start": 540,
+     "var_start": 541
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      544,
+      550
+     ],
+     "twin_start": 546,
+     "var_start": 547
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      551,
+      556
+     ],
+     "twin_start": 551,
+     "var_start": 553
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      557,
+      562
+     ],
+     "twin_start": 557,
+     "var_start": 559
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      563,
+      569
+     ],
+     "twin_start": 565,
+     "var_start": 566
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      570,
+      575
+     ],
+     "twin_start": 570,
+     "var_start": 572
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  },
+  {
+   "file": "V077",
+   "theorem": "div_sq_cancel",
+   "k": 77,
+   "kwline": 529,
+   "n_moves": 8,
+   "prefix_end": 527,
+   "entries": [
+    {
+     "role": "canary_survive",
+     "move": "C1",
+     "lines": [
+      528,
+      532
+     ]
+    },
+    {
+     "role": "canary_break",
+     "move": "C2",
+     "lines": [
+      533,
+      534
+     ]
+    },
+    {
+     "role": "canary_na",
+     "move": "C3",
+     "lines": [
+      535,
+      536
+     ]
+    },
+    {
+     "role": "math",
+     "move": "M1_h0",
+     "lines": [
+      537,
+      542
+     ],
+     "twin_start": 537,
+     "var_start": 538
+    },
+    {
+     "role": "math",
+     "move": "M2_MulZeroOneClass",
+     "lines": [
+      543,
+      548
+     ],
+     "twin_start": 543,
+     "var_start": 544
+    },
+    {
+     "role": "math",
+     "move": "M3_Nontrivial",
+     "lines": [
+      549,
+      554
+     ],
+     "twin_start": 549,
+     "var_start": 550
+    },
+    {
+     "role": "infra",
+     "move": "I1_shadow",
+     "lines": [
+      555,
+      563
+     ],
+     "twin_start": 557,
+     "var_start": 558
+    },
+    {
+     "role": "infra",
+     "move": "I2_synthHB",
+     "lines": [
+      564,
+      571
+     ],
+     "twin_start": 564,
+     "var_start": 566
+    },
+    {
+     "role": "infra",
+     "move": "I3_synthSize",
+     "lines": [
+      572,
+      579
+     ],
+     "twin_start": 572,
+     "var_start": 574
+    },
+    {
+     "role": "pair",
+     "move": "P1_M1xI1",
+     "lines": [
+      580,
+      588
+     ],
+     "twin_start": 582,
+     "var_start": 583
+    },
+    {
+     "role": "pair",
+     "move": "P2_M1xI2",
+     "lines": [
+      589,
+      596
+     ],
+     "twin_start": 589,
+     "var_start": 591
+    }
+   ],
+   "amb": [
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ],
+    [
+     "Nontrivial",
+     "M\u2080"
+    ],
+    [
+     "MonoidWithZero",
+     "M\u2080"
+    ],
+    [
+     "IsReduced",
+     "M\u2080"
+    ],
+    [
+     "MulZeroOneClass",
+     "M\u2080"
+    ]
+   ],
+   "tyv": "M\u2080",
+   "n_hyp": 1,
+   "namespace": []
+  }
+ ],
+ "skips": [
+  {
+   "theorem": "zero_pow",
+   "reason": "no depth-0 ':'/':=' parse"
+  },
+  {
+   "theorem": "pow_eq_zero_of_le",
+   "reason": "no depth-0 ':'/':=' parse"
+  },
+  {
+   "theorem": "zero_zpow",
+   "reason": "no depth-0 ':'/':=' parse"
+  },
+  {
+   "theorem": "zpow_add_one\u2080",
+   "reason": "no depth-0 ':'/':=' parse"
+  }
+ ]
+}

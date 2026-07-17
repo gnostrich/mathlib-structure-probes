@@ -28,12 +28,25 @@
   approx extractor (newer Mathlib commit 9944fe29, 229,502 decls): baseline
   rho(L,Y2|depth)=0.554 -> degree-controlled 0.087 (collapses); H3(a) 0/3000;
   L_cold ~0.14-0.18. Same verdict. Log: veto_ext_v2approx.log.
-- Faithful DECL graph: the local build is egress-blocked (github releases 403,
-  api.github.com 403, mathlib4.blob.core.windows.net 502 — policy binds at session
-  start). Being obtained instead via the Aristotle API (Harmonic), whose agent runs
-  in a built Mathlib v4.28.0 env: DumpDeps.lean is run there and decl_deps.jsonl is
-  pulled back with get_files(), then fed to loop_veto_test.py for the decisive
-  faithful run. (In progress at time of writing.)
+- FAITHFUL DECL GRAPH — DONE via Aristotle. Local build was egress-blocked (github
+  releases 403, api.github.com 403, mathlib4.blob.core.windows.net 502). Instead ran
+  DumpDeps.lean inside Aristotle's (Harmonic) built Mathlib v4.28.0 env and pulled
+  decl_deps.jsonl back via get_files() (see aristotle_faithful_dump.py). Two independent
+  jobs returned BYTE-IDENTICAL output (md5 9f3a3c36...): 333,044 decls / 7,523,067 edges,
+  avg 28.7 value-deps (proof-synthesized edges present). Graph kept out of repo (395MB).
+- FAITHFUL DECISIVE RUN (loop_veto_test.py on decl_deps.jsonl) — the payoff FLIPS:
+  * H2 baseline 0.539 -> degree-controlled 0.372 => CLEARS (approx graphs collapsed to
+    ~0). Residual-corr cross-check agrees (0.372). Loop-residue carries significance
+    beyond depth AND degree on real proof structure -- the pre-registered claim.
+  * H3(a) PASS (0/3000 foils). H3(b) L_cold own-degree-controlled 0.146 (min2) / 0.305
+    (min3) -> the incorruptible residue also carries signal here.
+  * H1 dissociation rho(L,depth)=0.528 > 0.40 precondition -> AMBIGUOUS by the STRICT
+    pre-reg gate (not a payoff failure). OVERALL: AMBIGUOUS -> DO NOT WIRE.
+  Full log: veto_faithful.log; writeup + cross-substrate table: RESULTS-faithful.md.
+  Read: substantively POSITIVE (payoff holds on faithful, refuted on approx), but not a
+  clean GO because loop/depth co-vary above the fixed 0.40 bar. Next: a less depth-
+  entangled loop metric (birth-simplex / non-backtracking residue), re-run, then wire
+  per docs/05 only if H1 drops below 0.40 with H2 still up.
 
 Decisive path: DumpDeps.lean (or LeanDojo) -> decl_deps.jsonl -> loop_veto_test.py
 -> if H1 GO-precondition AND H2 clears (degree-controlled) AND H3 foils hold, wire per docs/05.

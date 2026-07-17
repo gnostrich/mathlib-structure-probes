@@ -33,10 +33,10 @@ indeg=dict(G2.in_degree())                       # times-used (SLIDE & also Y2 p
 UG=G2.to_undirected()
 # depth-from-axioms: longest chain along dependencies (condense SCCs for safety)
 Cg=nx.condensation(G2); cdep={}
-for c in nx.topological_sort(Cg):
+for c in reversed(list(nx.topological_sort(Cg))):  # successors (deps) first, else every depth collapses to 0
     ds=[cdep[s]+1 for s in Cg.successors(c) if s in cdep]; cdep[c]=max(ds) if ds else 0
 mp=Cg.graph['mapping']; depth={n:cdep[mp[n]] for n in nodes}
-sq=nx.square_clustering(UG); tri=nx.triangles(UG)
+tri=nx.triangles(UG)                             # LOOP metric; square_clustering was unused (dropped: O(n<k>^2), intractable on full Mathlib)
 
 xi=np.array([indeg[n] for n in nodes],float)
 xd=np.array([depth[n] for n in nodes],float)

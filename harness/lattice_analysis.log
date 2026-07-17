@@ -1,0 +1,24 @@
+runs found: ['run0', 'run1']
+  run0/hb200k: files=74 cells=533 {'SURVIVE': 276, 'BREAK': 153, 'MOVE_ERROR': 77, 'NA': 27} canaries=FAIL [('V009', 'C1', 'errored'), ('V021', 'C1', 'errored')]
+  run0/hb50k: files=74 cells=533 {'SURVIVE': 276, 'BREAK': 153, 'MOVE_ERROR': 77, 'NA': 27} canaries=FAIL [('V009', 'C1', 'errored'), ('V021', 'C1', 'errored')]
+  run1/hb200k: files=74 cells=533 {'SURVIVE': 276, 'BREAK': 153, 'MOVE_ERROR': 77, 'NA': 27} canaries=FAIL [('V009', 'C1', 'errored'), ('V021', 'C1', 'errored')]
+  run1/hb50k: files=74 cells=533 {'SURVIVE': 276, 'BREAK': 153, 'MOVE_ERROR': 77, 'NA': 27} canaries=FAIL [('V009', 'C1', 'errored'), ('V021', 'C1', 'errored')]
+double-run identity: 533 common cells, 0 mismatches
+budget flip-rate (200k vs 50k): 0/533 = 0.000 (ok, <=0.10)
+lattice rows: 74
+graph-matched: 69/74
+
+== STRUCTURED gate ==
+  distinct patterns=26 (need>=3)  max-share=0.16 (need<=0.70)
+  breakers>=10% of broken: 6 ['P1_M1xI1', 'M1_h0', 'P2_M1xI2', 'M1_h1', 'M3_Nontrivial', 'M2_MulZeroOneClass'] (need>=3)
+  never-break fraction=0.31 (DEGENERATE if >0.50)
+
+== INFRA-DISTINCT gate (decisive) ==
+  infra-res: mean=0.95 degenerate-share=0.95 (need<0.90)
+  1-R2(infra ~ indeg+outdeg+n_amb+math) = 0.951 (need>=0.30)
+  split-consistency corr(I1-resid, I2&I3-resid) = 1.000 (need>=0.5)
+
+== VERDICT (locked; n=74, power caveat SE~0.11) ==
+  AMBIGUOUS: structured but infra-distinctness inconsistent -> report, do not build.
+
+rows -> lattice_rows.json

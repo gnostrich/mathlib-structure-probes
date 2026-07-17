@@ -1,0 +1,17 @@
+computing cross-subject downstream breadth Y4 ...
+
+== PHASE 0b: degree-INDEPENDENT significance arm (metric = ratio T/E) ==
+  coverage: simp-flagged=44543 (13.4%)  Y4 breadth: median=1 max=29
+  degree-linkage of each Y (rho with in-degree): Y3=-0.084  Y4=+0.912  Y1=-0.358
+  partial rho(ratio, Y | controls):
+    Y3 @[simp] (deg-indep)     | depth=-0.087   | depth+log-deg=-0.108   | depth+log-indeg=-0.015
+    Y4 cross-subj breadth      | depth=+0.234   | depth+log-deg=+0.411   | depth+log-indeg=-0.091
+    Y1 thm/lemma label         | depth=-0.190   | depth+log-deg=-0.274   | depth+log-indeg=-0.121
+    Y2 citation (ref)          | depth=+0.341   | depth+log-deg=+0.501   | depth+log-indeg=+0.005
+
+== PHASE 0b READ (honest: gate on actual degree-independence) ==
+    Y3 @[simp]   deg-linkage(|rho in-deg|)=0.084 [degree-INDEP]  partial rho(ratio,Y|depth,in-deg)=-0.015
+    Y4 breadth   deg-linkage(|rho in-deg|)=0.912 [degree-LINKED -> not a valid proxy]  partial rho(ratio,Y|depth,in-deg)=-0.091
+    Y1 label     deg-linkage(|rho in-deg|)=0.358 [degree-INDEP]  partial rho(ratio,Y|depth,in-deg)=-0.121
+  genuinely degree-independent proxies: ['Y3 @[simp]=-0.015', 'Y1 label=-0.121']
+  degree-independent arm: FAIL -> QUALIFIED NEGATIVE: judge predicts reuse-volume/citation, not degree-free significance

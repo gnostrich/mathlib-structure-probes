@@ -64,12 +64,53 @@ it comes back the wrong sign.
   (the strongest, cleanest judge result of the session) — but the **degree-independent Y arm
   fails** (Y1 = −0.27, wrong sign).
 
-**Read:** the judge is validated as an **incorruptible predictor of downstream reuse**,
-robust to metric choice and to degree control, and now clearing the dissociation
-precondition it previously missed. It is **not** validated as a predictor of a
-degree-independent notion of "importance," because the only such proxy available (the
-theorem/lemma label) is not tracked. Per the letter of the pre-registration this is
-therefore **a qualified PASS, not a clean one** — strong on the primary citation proxy,
-open on degree-free significance. The disciplined next step before spending prover compute
-is to settle that arm with a better degree-independent significance proxy (e.g. `@[simp]` /
-named-theorem / cross-subject downstream fan-out), not the stylistic label — then re-read.
+**Read (pre-Phase-0b):** the judge is validated as an **incorruptible predictor of
+downstream reuse**, robust to metric choice and to degree control, and now clearing the
+dissociation precondition it previously missed. It is **not** validated as a predictor of a
+degree-independent notion of "importance." Phase 0b (below) settles that arm.
+
+## Phase 0b — better degree-independent significance proxies (pre-registered in PREREG-conjecturer.md)
+
+Two stronger degree-free proxies, fixed before computing (log: `phase0b.log`; scripts
+`simp_flags.py`, `phase0b_analysis.py`):
+- **Y3 = `@[simp]` flag** (parsed from mathlib4 v4.28.0 source). Genuinely degree-free:
+  `rho(Y3, in-degree) = −0.084`.
+- **Y4 = cross-subject downstream breadth** (# distinct subjects among dependents). Turned
+  out **degree-LINKED**: `rho(Y4, in-degree) = +0.912` — it is essentially in-degree, so it
+  is NOT a valid degree-independent proxy (a pre-registration mis-step, reported honestly).
+
+Result — degree-controlled partial `rho(ratio, Y | depth, in-degree)` (each Y controlled for
+its OWN degree confound, in-degree):
+
+| proxy | degree-linkage `\|rho(Y,indeg)\|` | valid degree-indep? | partial `rho(ratio, Y)` |
+|-------|:---:|:---:|:---:|
+| Y3 `@[simp]` | 0.084 | yes | **−0.015** (null) |
+| Y1 theorem/lemma label | 0.358 | yes | **−0.121** (negative) |
+| Y4 cross-subject breadth | 0.912 | **no (≈in-degree)** | −0.091 (residual) |
+| Y2 citation (reference) | — | no (IS in-degree) | +0.005 (near-circular floor) |
+
+**Every genuinely degree-independent significance proxy is null or negative.** The apparent
+"+0.411" for Y4 under an *undirected*-degree control is an artifact: Y4 is degree-linked, and
+under its correct (in-degree) control it is −0.091. So the loop-residue predicts **reuse
+volume / citation** (which is degree-flavored) but predicts **no degree-free notion of
+significance** we can measure.
+
+## FINAL verdict (Phase 0 + 0b) — qualified NEGATIVE for the significance claim
+
+- **What holds (robustly):** with a principled degree-normalized metric (`ratio = T/E`,
+  degree-decoupled at −0.315), the loop judge **clears H1** (dissociation −0.341, first
+  metric this session to do so) and **H2 vs citation** (+0.501), and foils are not credited.
+  The "loop-residue predicts downstream reuse beyond degree" claim is **real and not an
+  artifact** of raw counts or degree.
+- **What fails:** the judge does **not** predict any genuinely degree-independent
+  significance (`@[simp]` −0.02, label −0.12, breadth-residual −0.09). The "significance" it
+  captures is **reuse-volume ≈ connectivity**, not a degree-free notion of mathematical
+  importance.
+
+Per the pre-registered verdict grid, the degree-independent arm being ~0/negative on both
+strengthened proxies is a **qualified NEGATIVE**: *the judge tracks reuse-volume only → do
+NOT build the conjecturer as a "significance" conjecturer on this coordinate.* The reuse/H1
+findings stand as a genuine, publishable result about the loop coordinate; the strong
+"incorruptible significance judge" claim is not supported. (Caveat both ways: no strong
+degree-free *importance* proxy exists in this data — `@[simp]`/label are utility/stylistic
+markers — so this refutes the strong claim without positively measuring "importance".)

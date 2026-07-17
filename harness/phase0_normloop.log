@@ -1,0 +1,23 @@
+loading faithful graph ...
+nodes=333044 edges=7523067
+triangles ...
+configuration-model expected triangles E_v ...
+depth via SCC condensation ...
+
+== PHASE 0: degree-normalized loop metric Lnorm (config-model triangle residue) ==
+  b1-ish: sum T=70832409  sum E=1403863074
+  DEGREE DECOUPLING (design goal: LOW):
+    rho(rawT, degree)  = 0.949
+    rho(Lnorm, degree) = -0.650   rho(ratio,degree)=-0.315   rho(clust,degree)=-0.603
+  H1 dissociation rho(Lnorm, depth) = -0.588  (GO<=0.40, wall>=0.70)
+  H2 payoff (partial Spearman), Lnorm vs each Y:
+    Y2 log in-deg (degree-linked)    | depth=+0.104   | depth+log-deg=+0.435
+    Y1 thm/lemma (degree-INDEP)      | depth=-0.119   | depth+log-deg=-0.311
+  (for reference, raw triangle metric:)
+    rawT vs Y2 | depth=+0.539  | depth+log-deg=+0.372
+  H3(a) forward foil: 0/2000 distant A^B foils get Lnorm>0.5 (want ~0)
+
+== PHASE 0 VERDICT ==
+  metric degree-decoupled: False (rho(Lnorm,deg)=-0.650)
+  H2 degree-controlled: Y2(citation)=+0.435  Y1(degree-indep label)=-0.311
+  => FAIL: degree-normalized metric does not carry the H2 signal — judge was metric/degree-fragile.

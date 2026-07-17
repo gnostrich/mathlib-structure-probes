@@ -24,10 +24,16 @@
     only the reuse-stripped L_cold residue keeps a weak ~0.19-0.23 partial (suggestive,
     not a bar; static proxy — a prover reproof is still needed to certify L_cold).
   * OVERALL on this substrate: AMBIGUOUS -> DO NOT WIRE.
-- Faithful graph run STILL pending a built env: the Lean toolchain (github releases
-  403), api.github.com (403) and the Mathlib olean cache (mathlib4.blob.core.windows.net,
-  502) are policy-blocked at the egress gateway. Policy binds at session start, so a
-  fresh session on an updated egress policy is required to retry the faithful build.
+- REPLICATION: the H2 degree-collapse + H3 results reproduce on an independent v2
+  approx extractor (newer Mathlib commit 9944fe29, 229,502 decls): baseline
+  rho(L,Y2|depth)=0.554 -> degree-controlled 0.087 (collapses); H3(a) 0/3000;
+  L_cold ~0.14-0.18. Same verdict. Log: veto_ext_v2approx.log.
+- Faithful DECL graph: the local build is egress-blocked (github releases 403,
+  api.github.com 403, mathlib4.blob.core.windows.net 502 — policy binds at session
+  start). Being obtained instead via the Aristotle API (Harmonic), whose agent runs
+  in a built Mathlib v4.28.0 env: DumpDeps.lean is run there and decl_deps.jsonl is
+  pulled back with get_files(), then fed to loop_veto_test.py for the decisive
+  faithful run. (In progress at time of writing.)
 
 Decisive path: DumpDeps.lean (or LeanDojo) -> decl_deps.jsonl -> loop_veto_test.py
 -> if H1 GO-precondition AND H2 clears (degree-controlled) AND H3 foils hold, wire per docs/05.

@@ -130,7 +130,32 @@ differently is the open question, and it needs a built Lean environment.
 
 ---
 
-## Environment block (why the faithful run still didn't happen)
+## Robustness replication on an independent approx extractor
+
+The H2-collapse finding replicates on a **second, independently produced** approx
+decl graph (`decl_dep_extract_v2.py`, a different source-parser, from a **newer**
+Mathlib commit `9944fe29`, 2026-07-16): 229,502 analysed decls / 1,328,674 edges.
+Full log: `veto_ext_v2approx.log`.
+
+| metric | graph 1 (v4.28.0 tag, 213,929) | graph 2 (v2 extractor, 229,502) |
+|--------|:---:|:---:|
+| H1 verdict | GO-precondition | GO-precondition |
+| H2 baseline `rho(L, Y2 \| depth)` | 0.485 | 0.554 |
+| **H2 degree-controlled** `\| depth+log-udeg` | **−0.046** | **0.087** |
+| H3(a) foils credited | 0 / 3000 | 0 / 3000 |
+| L_cold (own-degree control) | 0.19–0.23 | 0.14–0.18 |
+| overall | AMBIGUOUS → do not wire | AMBIGUOUS → do not wire |
+
+Two independent extractors, two Mathlib snapshots, **same conclusion**: the H2
+citation-proxy payoff is largely a node-degree artifact and does **not** clear a
+degree control on the approximate (statement-reference) graph. The `L_cold` weak
+residual (~0.14–0.23) also replicates — consistently positive but far below any
+GO bar. This is a real, reproducible negative on the approx substrate; whether
+the **faithful** (proof-edge) graph behaves differently remains the open question.
+
+---
+
+## Environment block (why the faithful run still didn't happen locally)
 
 The faithful graph needs a Lean toolchain + Mathlib oleans. In this session the
 required downloads are **policy-blocked at the egress gateway** (git-clone and

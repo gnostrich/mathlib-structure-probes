@@ -1,0 +1,36 @@
+loading faithful graph (type/value deps split) ...
+nodes=333044 edges=7523067
+theorem population with labels=165905; sample=40000 (r=0,1), 10000 (r=2, node-cap 5000)
+
+computing T at r=0 over 40000 theorems ...
+  0/40000
+  10000/40000
+  20000/40000
+  30000/40000
+  r=0: median N=11 E=12  E==0 frac=0.045
+  raw:   AUC(T,simp)=0.552   rho(T,Ya)=+0.291   rho(T,simp)=+0.080
+  DEGREE-RESIDUAL (decisive): partial(T,Ya|deg)=-0.015   partial(T,simp|deg)=+0.008
+
+computing T at r=1 over 40000 theorems ...
+  0/40000
+  10000/40000
+  20000/40000
+  30000/40000
+  r=1: median N=35 E=94  E==0 frac=0.027
+  raw:   AUC(T,simp)=0.517   rho(T,Ya)=+0.468   rho(T,simp)=+0.025
+  DEGREE-RESIDUAL (decisive): partial(T,Ya|deg)=-0.039   partial(T,simp|deg)=-0.020
+
+computing T at r=2 over 10000 theorems ...
+  0/10000
+  r=2: median N=65 E=208  E==0 frac=0.026  capped=0
+  raw:   AUC(T,simp)=0.503   rho(T,Ya)=+0.489   rho(T,simp)=+0.004
+  DEGREE-RESIDUAL (decisive): partial(T,Ya|deg)=-0.036   partial(T,simp|deg)=-0.014
+
+== JOINT TABLE (radius x raw-signal x degree-residual) ==
+   r  AUC(simp)   rho(Ya)  resid(Ya)  resid(simp)
+   0      0.552    +0.291     -0.015       +0.008
+   1      0.517    +0.468     -0.039       -0.020
+   2      0.503    +0.489     -0.036       -0.014
+
+== VERDICT (locked) ==
+  AMBIGUOUS: mixed pattern; report, do not build.

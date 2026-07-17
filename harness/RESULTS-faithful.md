@@ -80,3 +80,14 @@ was fixed in advance, and 0.528 misses it.
   Only then does wiring (`docs/05`) become warranted.
 
 Bottom line: **promising positive, verify-before-you-build — not yet a wire-it GO.**
+
+## UPDATE — metric-robustness caveat (see RESULTS-style-modes.md)
+
+A follow-up swapped the triangle loop-count `L` for a **birth-simplex** cycle metric `B`
+(1-cycles born at each decl's introduction, via a union-find filtration). It does NOT
+behave like `L`: `rho(B,depth)=0.715` and `rho(B,degree)=0.805` (a late high-degree lemma
+trivially closes many cycles, so `B ≈ degree`), and its **degree-controlled H2 goes
+negative (−0.585)**. So the `+0.372` H2 payoff above is **specific to the triangle
+metric**, not a general "loop-residue" property. This tempers the "positive" read: the
+signal is real for triangle-clustering but does not survive a birth-simplex reformulation
+of "loop". A non-backtracking-cycle residue is the next metric to try before any wiring.

@@ -1,0 +1,1862 @@
+{
+"goals": [
+{
+"batch": "B1",
+"file": "B1_G00",
+"theorem": "card_image_polynomial_eval",
+"goal": 0,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "0 < p.degree",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "StrInst",
+"frm": "Finite",
+"to": "Fintype",
+"rest": "R",
+"truth": true,
+"cost": 1
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 2,
+"truth_mask": 3,
+"entries": [
+{
+"lines": [
+71,
+72
+],
+"role": "canary_break"
+},
+{
+"lines": [
+73,
+74
+],
+"role": "canary_na"
+},
+{
+"lines": [
+75,
+79
+],
+"role": "state",
+"mask": 0,
+"twin_start": 75,
+"var_start": 77
+},
+{
+"lines": [
+80,
+84
+],
+"role": "state",
+"mask": 1,
+"twin_start": 80,
+"var_start": 82
+},
+{
+"lines": [
+85,
+89
+],
+"role": "state",
+"mask": 2,
+"twin_start": 85,
+"var_start": 87
+},
+{
+"lines": [
+90,
+94
+],
+"role": "state",
+"mask": 3,
+"twin_start": 90,
+"var_start": 92
+},
+{
+"lines": [
+95,
+99
+],
+"role": "state",
+"mask": 4,
+"twin_start": 95,
+"var_start": 97
+},
+{
+"lines": [
+100,
+104
+],
+"role": "state",
+"mask": 5,
+"twin_start": 100,
+"var_start": 102
+},
+{
+"lines": [
+105,
+109
+],
+"role": "state",
+"mask": 6,
+"twin_start": 105,
+"var_start": 107
+},
+{
+"lines": [
+110,
+114
+],
+"role": "state",
+"mask": 7,
+"twin_start": 110,
+"var_start": 112
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G01",
+"theorem": "exists_root_sum_quadratic",
+"goal": 1,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "degree g = 2",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Fintype.card R % 2 = 1",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 2,
+"truth_mask": 3,
+"entries": [
+{
+"lines": [
+82,
+83
+],
+"role": "canary_break"
+},
+{
+"lines": [
+84,
+85
+],
+"role": "canary_na"
+},
+{
+"lines": [
+86,
+88
+],
+"role": "state",
+"mask": 0,
+"twin_start": 86,
+"var_start": 87
+},
+{
+"lines": [
+89,
+93
+],
+"role": "state",
+"mask": 1,
+"twin_start": 89,
+"var_start": 91
+},
+{
+"lines": [
+94,
+98
+],
+"role": "state",
+"mask": 2,
+"twin_start": 94,
+"var_start": 96
+},
+{
+"lines": [
+99,
+103
+],
+"role": "state",
+"mask": 3,
+"twin_start": 99,
+"var_start": 101
+},
+{
+"lines": [
+104,
+108
+],
+"role": "state",
+"mask": 4,
+"twin_start": 104,
+"var_start": 106
+},
+{
+"lines": [
+109,
+113
+],
+"role": "state",
+"mask": 5,
+"twin_start": 109,
+"var_start": 111
+},
+{
+"lines": [
+114,
+118
+],
+"role": "state",
+"mask": 6,
+"twin_start": 114,
+"var_start": 116
+},
+{
+"lines": [
+119,
+123
+],
+"role": "state",
+"mask": 7,
+"twin_start": 119,
+"var_start": 121
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G02",
+"theorem": "prod_univ_units_id_eq_neg_one",
+"goal": 2,
+"menu": [
+{
+"kind": "StrInst",
+"frm": "NoZeroDivisors",
+"to": "IsDomain",
+"rest": "K",
+"truth": true,
+"cost": 1
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+109,
+110
+],
+"role": "canary_break"
+},
+{
+"lines": [
+111,
+112
+],
+"role": "canary_na"
+},
+{
+"lines": [
+113,
+117
+],
+"role": "state",
+"mask": 0,
+"twin_start": 113,
+"var_start": 115
+},
+{
+"lines": [
+118,
+122
+],
+"role": "state",
+"mask": 1,
+"twin_start": 118,
+"var_start": 120
+},
+{
+"lines": [
+123,
+127
+],
+"role": "state",
+"mask": 2,
+"twin_start": 123,
+"var_start": 125
+},
+{
+"lines": [
+128,
+132
+],
+"role": "state",
+"mask": 3,
+"twin_start": 128,
+"var_start": 130
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G03",
+"theorem": "card_cast_subgroup_card_ne_zero",
+"goal": 3,
+"menu": [
+{
+"kind": "StrInst",
+"frm": "Finite",
+"to": "Fintype",
+"rest": "G",
+"truth": true,
+"cost": 1
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+118,
+119
+],
+"role": "canary_break"
+},
+{
+"lines": [
+120,
+121
+],
+"role": "canary_na"
+},
+{
+"lines": [
+122,
+126
+],
+"role": "state",
+"mask": 0,
+"twin_start": 122,
+"var_start": 124
+},
+{
+"lines": [
+127,
+131
+],
+"role": "state",
+"mask": 1,
+"twin_start": 127,
+"var_start": 129
+},
+{
+"lines": [
+132,
+136
+],
+"role": "state",
+"mask": 2,
+"twin_start": 132,
+"var_start": 134
+},
+{
+"lines": [
+137,
+141
+],
+"role": "state",
+"mask": 3,
+"twin_start": 137,
+"var_start": 139
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G04",
+"theorem": "sum_subgroup_units_eq_zero",
+"goal": 4,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "G \u2260 \u22a5",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "StrInst",
+"frm": "Finite",
+"to": "Fintype",
+"rest": "G",
+"truth": true,
+"cost": 1
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 2,
+"truth_mask": 3,
+"entries": [
+{
+"lines": [
+144,
+145
+],
+"role": "canary_break"
+},
+{
+"lines": [
+146,
+147
+],
+"role": "canary_na"
+},
+{
+"lines": [
+148,
+154
+],
+"role": "state",
+"mask": 0,
+"twin_start": 148,
+"var_start": 151
+},
+{
+"lines": [
+155,
+161
+],
+"role": "state",
+"mask": 1,
+"twin_start": 155,
+"var_start": 158
+},
+{
+"lines": [
+162,
+168
+],
+"role": "state",
+"mask": 2,
+"twin_start": 162,
+"var_start": 165
+},
+{
+"lines": [
+169,
+175
+],
+"role": "state",
+"mask": 3,
+"twin_start": 169,
+"var_start": 172
+},
+{
+"lines": [
+176,
+182
+],
+"role": "state",
+"mask": 4,
+"twin_start": 176,
+"var_start": 179
+},
+{
+"lines": [
+183,
+189
+],
+"role": "state",
+"mask": 5,
+"twin_start": 183,
+"var_start": 186
+},
+{
+"lines": [
+190,
+196
+],
+"role": "state",
+"mask": 6,
+"twin_start": 190,
+"var_start": 193
+},
+{
+"lines": [
+197,
+203
+],
+"role": "state",
+"mask": 7,
+"twin_start": 197,
+"var_start": 200
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G05",
+"theorem": "sum_subgroup_units",
+"goal": 5,
+"menu": [
+{
+"kind": "StrInst",
+"frm": "Finite",
+"to": "Fintype",
+"rest": "G",
+"truth": true,
+"cost": 1
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+168,
+169
+],
+"role": "canary_break"
+},
+{
+"lines": [
+170,
+171
+],
+"role": "canary_na"
+},
+{
+"lines": [
+172,
+178
+],
+"role": "state",
+"mask": 0,
+"twin_start": 172,
+"var_start": 175
+},
+{
+"lines": [
+179,
+185
+],
+"role": "state",
+"mask": 1,
+"twin_start": 179,
+"var_start": 182
+},
+{
+"lines": [
+186,
+192
+],
+"role": "state",
+"mask": 2,
+"twin_start": 186,
+"var_start": 189
+},
+{
+"lines": [
+193,
+199
+],
+"role": "state",
+"mask": 3,
+"twin_start": 193,
+"var_start": 196
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G06",
+"theorem": "sum_subgroup_pow_eq_zero",
+"goal": 6,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "k < Fintype.card G",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+181,
+182
+],
+"role": "canary_break"
+},
+{
+"lines": [
+183,
+184
+],
+"role": "canary_na"
+},
+{
+"lines": [
+185,
+191
+],
+"role": "state",
+"mask": 0,
+"twin_start": 185,
+"var_start": 188
+},
+{
+"lines": [
+192,
+198
+],
+"role": "state",
+"mask": 1,
+"twin_start": 192,
+"var_start": 195
+},
+{
+"lines": [
+199,
+205
+],
+"role": "state",
+"mask": 2,
+"twin_start": 199,
+"var_start": 202
+},
+{
+"lines": [
+206,
+212
+],
+"role": "state",
+"mask": 3,
+"twin_start": 206,
+"var_start": 209
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G07",
+"theorem": "pow_card_sub_one_eq_one",
+"goal": 7,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a \u2260 0",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+220,
+221
+],
+"role": "canary_break"
+},
+{
+"lines": [
+222,
+223
+],
+"role": "canary_na"
+},
+{
+"lines": [
+224,
+226
+],
+"role": "state",
+"mask": 0,
+"twin_start": 224,
+"var_start": 225
+},
+{
+"lines": [
+227,
+229
+],
+"role": "state",
+"mask": 1,
+"twin_start": 227,
+"var_start": 228
+},
+{
+"lines": [
+230,
+232
+],
+"role": "state",
+"mask": 2,
+"twin_start": 230,
+"var_start": 231
+},
+{
+"lines": [
+233,
+235
+],
+"role": "state",
+"mask": 3,
+"twin_start": 233,
+"var_start": 234
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G08",
+"theorem": "sum_pow_lt_card_sub_one",
+"goal": 8,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "i < q - 1",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+302,
+303
+],
+"role": "canary_break"
+},
+{
+"lines": [
+304,
+305
+],
+"role": "canary_na"
+},
+{
+"lines": [
+306,
+308
+],
+"role": "state",
+"mask": 0,
+"twin_start": 306,
+"var_start": 307
+},
+{
+"lines": [
+309,
+311
+],
+"role": "state",
+"mask": 1,
+"twin_start": 309,
+"var_start": 310
+},
+{
+"lines": [
+312,
+314
+],
+"role": "state",
+"mask": 2,
+"twin_start": 312,
+"var_start": 313
+},
+{
+"lines": [
+315,
+317
+],
+"role": "state",
+"mask": 3,
+"twin_start": 315,
+"var_start": 316
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G09",
+"theorem": "X_pow_card_sub_X_natDegree_eq",
+"goal": 9,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "1 < p",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+426,
+427
+],
+"role": "canary_break"
+},
+{
+"lines": [
+428,
+429
+],
+"role": "canary_na"
+},
+{
+"lines": [
+430,
+432
+],
+"role": "state",
+"mask": 0,
+"twin_start": 430,
+"var_start": 431
+},
+{
+"lines": [
+433,
+435
+],
+"role": "state",
+"mask": 1,
+"twin_start": 433,
+"var_start": 434
+},
+{
+"lines": [
+436,
+438
+],
+"role": "state",
+"mask": 2,
+"twin_start": 436,
+"var_start": 437
+},
+{
+"lines": [
+439,
+441
+],
+"role": "state",
+"mask": 3,
+"twin_start": 439,
+"var_start": 440
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G10",
+"theorem": "X_pow_card_pow_sub_X_natDegree_eq",
+"goal": 10,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "1 < p",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+432,
+433
+],
+"role": "canary_break"
+},
+{
+"lines": [
+434,
+435
+],
+"role": "canary_na"
+},
+{
+"lines": [
+436,
+440
+],
+"role": "state",
+"mask": 0,
+"twin_start": 436,
+"var_start": 438
+},
+{
+"lines": [
+441,
+445
+],
+"role": "state",
+"mask": 1,
+"twin_start": 441,
+"var_start": 443
+},
+{
+"lines": [
+446,
+450
+],
+"role": "state",
+"mask": 2,
+"twin_start": 446,
+"var_start": 448
+},
+{
+"lines": [
+451,
+455
+],
+"role": "state",
+"mask": 3,
+"twin_start": 451,
+"var_start": 453
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G11",
+"theorem": "X_pow_card_sub_X_ne_zero",
+"goal": 11,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "1 < p",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+436,
+437
+],
+"role": "canary_break"
+},
+{
+"lines": [
+438,
+439
+],
+"role": "canary_na"
+},
+{
+"lines": [
+440,
+442
+],
+"role": "state",
+"mask": 0,
+"twin_start": 440,
+"var_start": 441
+},
+{
+"lines": [
+443,
+445
+],
+"role": "state",
+"mask": 1,
+"twin_start": 443,
+"var_start": 444
+},
+{
+"lines": [
+446,
+448
+],
+"role": "state",
+"mask": 2,
+"twin_start": 446,
+"var_start": 447
+},
+{
+"lines": [
+449,
+451
+],
+"role": "state",
+"mask": 3,
+"twin_start": 449,
+"var_start": 450
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G12",
+"theorem": "X_pow_card_pow_sub_X_ne_zero",
+"goal": 12,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "1 < p",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+442,
+443
+],
+"role": "canary_break"
+},
+{
+"lines": [
+444,
+445
+],
+"role": "canary_na"
+},
+{
+"lines": [
+446,
+448
+],
+"role": "state",
+"mask": 0,
+"twin_start": 446,
+"var_start": 447
+},
+{
+"lines": [
+449,
+451
+],
+"role": "state",
+"mask": 1,
+"twin_start": 449,
+"var_start": 450
+},
+{
+"lines": [
+452,
+454
+],
+"role": "state",
+"mask": 2,
+"twin_start": 452,
+"var_start": 453
+},
+{
+"lines": [
+455,
+457
+],
+"role": "state",
+"mask": 3,
+"twin_start": 455,
+"var_start": 456
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G13",
+"theorem": "frobenius_pow",
+"goal": 13,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "q = p ^ n",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+464,
+465
+],
+"role": "canary_break"
+},
+{
+"lines": [
+466,
+467
+],
+"role": "canary_na"
+},
+{
+"lines": [
+468,
+472
+],
+"role": "state",
+"mask": 0,
+"twin_start": 468,
+"var_start": 470
+},
+{
+"lines": [
+473,
+477
+],
+"role": "state",
+"mask": 1,
+"twin_start": 473,
+"var_start": 475
+},
+{
+"lines": [
+478,
+482
+],
+"role": "state",
+"mask": 2,
+"twin_start": 478,
+"var_start": 480
+},
+{
+"lines": [
+483,
+487
+],
+"role": "state",
+"mask": 3,
+"twin_start": 483,
+"var_start": 485
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G14",
+"theorem": "sq_add_sq",
+"goal": 14,
+"menu": [
+{
+"kind": "StrInst",
+"frm": "NoZeroDivisors",
+"to": "IsDomain",
+"rest": "R",
+"truth": true,
+"cost": 1
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+529,
+530
+],
+"role": "canary_break"
+},
+{
+"lines": [
+531,
+532
+],
+"role": "canary_na"
+},
+{
+"lines": [
+533,
+537
+],
+"role": "state",
+"mask": 0,
+"twin_start": 533,
+"var_start": 535
+},
+{
+"lines": [
+538,
+542
+],
+"role": "state",
+"mask": 1,
+"twin_start": 538,
+"var_start": 540
+},
+{
+"lines": [
+543,
+547
+],
+"role": "state",
+"mask": 2,
+"twin_start": 543,
+"var_start": 545
+},
+{
+"lines": [
+548,
+552
+],
+"role": "state",
+"mask": 3,
+"twin_start": 548,
+"var_start": 550
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G15",
+"theorem": "fieldRange_castHom_eq_bot",
+"goal": 15,
+"menu": [
+{
+"kind": "StrInst",
+"frm": "Ring",
+"to": "DivisionRing",
+"rest": "K",
+"truth": true,
+"cost": 1
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+576,
+577
+],
+"role": "canary_break"
+},
+{
+"lines": [
+578,
+579
+],
+"role": "canary_na"
+},
+{
+"lines": [
+580,
+584
+],
+"role": "state",
+"mask": 0,
+"twin_start": 580,
+"var_start": 582
+},
+{
+"lines": [
+585,
+589
+],
+"role": "state",
+"mask": 1,
+"twin_start": 585,
+"var_start": 587
+},
+{
+"lines": [
+590,
+594
+],
+"role": "state",
+"mask": 2,
+"twin_start": 590,
+"var_start": 592
+},
+{
+"lines": [
+595,
+599
+],
+"role": "state",
+"mask": 3,
+"twin_start": 595,
+"var_start": 597
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G16",
+"theorem": "pow_card_sub_one_eq_one",
+"goal": 16,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a \u2260 0",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+604,
+605
+],
+"role": "canary_break"
+},
+{
+"lines": [
+606,
+607
+],
+"role": "canary_na"
+},
+{
+"lines": [
+608,
+612
+],
+"role": "state",
+"mask": 0,
+"twin_start": 608,
+"var_start": 610
+},
+{
+"lines": [
+613,
+617
+],
+"role": "state",
+"mask": 1,
+"twin_start": 613,
+"var_start": 615
+},
+{
+"lines": [
+618,
+622
+],
+"role": "state",
+"mask": 2,
+"twin_start": 618,
+"var_start": 620
+},
+{
+"lines": [
+623,
+627
+],
+"role": "state",
+"mask": 3,
+"twin_start": 623,
+"var_start": 625
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G17",
+"theorem": "orderOf_dvd_card_sub_one",
+"goal": 17,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a \u2260 0",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+619,
+620
+],
+"role": "canary_break"
+},
+{
+"lines": [
+621,
+622
+],
+"role": "canary_na"
+},
+{
+"lines": [
+623,
+627
+],
+"role": "state",
+"mask": 0,
+"twin_start": 623,
+"var_start": 625
+},
+{
+"lines": [
+628,
+632
+],
+"role": "state",
+"mask": 1,
+"twin_start": 628,
+"var_start": 630
+},
+{
+"lines": [
+633,
+637
+],
+"role": "state",
+"mask": 2,
+"twin_start": 633,
+"var_start": 635
+},
+{
+"lines": [
+638,
+642
+],
+"role": "state",
+"mask": 3,
+"twin_start": 638,
+"var_start": 640
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G18",
+"theorem": "Int.ModEq.pow_card_sub_one_eq_one",
+"goal": 18,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "Nat.Prime p",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+630,
+631
+],
+"role": "canary_break"
+},
+{
+"lines": [
+632,
+633
+],
+"role": "canary_na"
+},
+{
+"lines": [
+634,
+638
+],
+"role": "state",
+"mask": 0,
+"twin_start": 634,
+"var_start": 636
+},
+{
+"lines": [
+639,
+643
+],
+"role": "state",
+"mask": 1,
+"twin_start": 639,
+"var_start": 641
+},
+{
+"lines": [
+644,
+648
+],
+"role": "state",
+"mask": 2,
+"twin_start": 644,
+"var_start": 646
+},
+{
+"lines": [
+649,
+653
+],
+"role": "state",
+"mask": 3,
+"twin_start": 649,
+"var_start": 651
+}
+]
+},
+{
+"batch": "B1",
+"file": "B1_G19",
+"theorem": "Int.prime_dvd_pow_sub_one",
+"goal": 19,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "Nat.Prime p",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial K",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+640,
+641
+],
+"role": "canary_break"
+},
+{
+"lines": [
+642,
+643
+],
+"role": "canary_na"
+},
+{
+"lines": [
+644,
+648
+],
+"role": "state",
+"mask": 0,
+"twin_start": 644,
+"var_start": 646
+},
+{
+"lines": [
+649,
+653
+],
+"role": "state",
+"mask": 1,
+"twin_start": 649,
+"var_start": 651
+},
+{
+"lines": [
+654,
+658
+],
+"role": "state",
+"mask": 2,
+"twin_start": 654,
+"var_start": 656
+},
+{
+"lines": [
+659,
+663
+],
+"role": "state",
+"mask": 3,
+"twin_start": 659,
+"var_start": 661
+}
+]
+}
+],
+"skips": [
+[
+"pow_card",
+"no removable site"
+],
+[
+"pow_card_pow",
+"no removable site"
+],
+[
+"card",
+"no removable site"
+],
+[
+"card'",
+"no removable site"
+],
+[
+"isPrimePow_card",
+"no removable site"
+],
+[
+"cast_card_eq_zero",
+"no removable site"
+],
+[
+"forall_pow_eq_one_iff",
+"no removable site"
+],
+[
+"sum_pow_units",
+"no removable site"
+],
+[
+"coe_frobeniusAlgHom",
+"no removable site"
+],
+[
+"coe_frobeniusAlgEquivOfAlgebraic",
+"no removable site"
+],
+[
+"coe_frobeniusAlgEquivOfAlgebraic_iterate",
+"no removable site"
+],
+[
+"orderOf_frobeniusAlgHom",
+"no removable site"
+],
+[
+"orderOf_frobeniusAlgEquivOfAlgebraic",
+"no removable site"
+],
+[
+"bijective_frobeniusAlgHom_pow",
+"no removable site"
+],
+[
+"bijective_frobeniusAlgEquivOfAlgebraic_pow",
+"no removable site"
+],
+[
+"minpoly_frobeniusAlgHom",
+"no removable site"
+],
+[
+"roots_X_pow_card_sub_X",
+"no removable site"
+],
+[
+"expand_card",
+"no removable site"
+],
+[
+"sq_add_sq",
+"no removable site"
+],
+[
+"Nat.sq_add_sq_zmodEq",
+"no removable site"
+],
+[
+"Nat.sq_add_sq_modEq",
+"no removable site"
+],
+[
+"ZMod.pow_totient",
+"no removable site"
+],
+[
+"Nat.ModEq.pow_totient",
+"no removable site"
+],
+[
+"pow_card",
+"no removable site"
+],
+[
+"pow_card_pow",
+"no removable site"
+],
+[
+"frobenius_zmod",
+"no removable site"
+],
+[
+"card_units",
+"no removable site"
+],
+[
+"units_pow_card_sub_one_eq_one",
+"no removable site"
+],
+[
+"pow_card_sub_one",
+"no removable site"
+],
+[
+"orderOf_units_dvd_card_sub_one",
+"no removable site"
+],
+[
+"expand_card",
+"no removable site"
+]
+]
+}

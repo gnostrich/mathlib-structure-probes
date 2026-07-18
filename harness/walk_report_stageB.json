@@ -1,0 +1,23 @@
+{
+ "B3A": {
+  "verdict": "DEGENERATE",
+  "evaluable": 0,
+  "n": 9,
+  "step0": 0,
+  "hostile": 9,
+  "kgroups": {
+   "unsolved-goal": 6,
+   "stmt-NA": 3
+  }
+ },
+ "B3B": {
+  "verdict": "DEGENERATE",
+  "evaluable": 0,
+  "n": 5,
+  "step0": 0,
+  "hostile": 5,
+  "kgroups": {
+   "unsolved-goal": 5
+  }
+ }
+}

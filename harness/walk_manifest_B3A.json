@@ -1,0 +1,551 @@
+{
+"goals": [
+{
+"batch": "B3A",
+"file": "B3A_G00",
+"theorem": "border_old",
+"goal": 0,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "Fin n \u2192 \u211d",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+24,
+25
+],
+"role": "canary_break"
+},
+{
+"lines": [
+26,
+27
+],
+"role": "canary_na"
+},
+{
+"lines": [
+28,
+32
+],
+"role": "state",
+"mask": 0,
+"twin_start": 28,
+"var_start": 30
+},
+{
+"lines": [
+33,
+37
+],
+"role": "state",
+"mask": 1,
+"twin_start": 33,
+"var_start": 35
+}
+]
+},
+{
+"batch": "B3A",
+"file": "B3A_G01",
+"theorem": "border_last_col",
+"goal": 1,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "Fin n \u2192 \u211d",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+28,
+29
+],
+"role": "canary_break"
+},
+{
+"lines": [
+30,
+31
+],
+"role": "canary_na"
+},
+{
+"lines": [
+32,
+36
+],
+"role": "state",
+"mask": 0,
+"twin_start": 32,
+"var_start": 34
+},
+{
+"lines": [
+37,
+41
+],
+"role": "state",
+"mask": 1,
+"twin_start": 37,
+"var_start": 39
+}
+]
+},
+{
+"batch": "B3A",
+"file": "B3A_G02",
+"theorem": "border_last_row",
+"goal": 2,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "Fin n \u2192 \u211d",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+32,
+33
+],
+"role": "canary_break"
+},
+{
+"lines": [
+34,
+35
+],
+"role": "canary_na"
+},
+{
+"lines": [
+36,
+40
+],
+"role": "state",
+"mask": 0,
+"twin_start": 36,
+"var_start": 38
+},
+{
+"lines": [
+41,
+45
+],
+"role": "state",
+"mask": 1,
+"twin_start": 41,
+"var_start": 43
+}
+]
+},
+{
+"batch": "B3A",
+"file": "B3A_G03",
+"theorem": "border_corner",
+"goal": 3,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "Fin n \u2192 \u211d",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+36,
+37
+],
+"role": "canary_break"
+},
+{
+"lines": [
+38,
+39
+],
+"role": "canary_na"
+},
+{
+"lines": [
+40,
+44
+],
+"role": "state",
+"mask": 0,
+"twin_start": 40,
+"var_start": 42
+},
+{
+"lines": [
+45,
+49
+],
+"role": "state",
+"mask": 1,
+"twin_start": 45,
+"var_start": 47
+}
+]
+},
+{
+"batch": "B3A",
+"file": "B3A_G04",
+"theorem": "border_transpose",
+"goal": 4,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "A\u1d40 = A",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Fin n \u2192 \u211d",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 2,
+"truth_mask": 3,
+"entries": [
+{
+"lines": [
+40,
+41
+],
+"role": "canary_break"
+},
+{
+"lines": [
+42,
+43
+],
+"role": "canary_na"
+},
+{
+"lines": [
+44,
+48
+],
+"role": "state",
+"mask": 0,
+"twin_start": 44,
+"var_start": 46
+},
+{
+"lines": [
+49,
+53
+],
+"role": "state",
+"mask": 1,
+"twin_start": 49,
+"var_start": 51
+},
+{
+"lines": [
+54,
+58
+],
+"role": "state",
+"mask": 2,
+"twin_start": 54,
+"var_start": 56
+},
+{
+"lines": [
+59,
+63
+],
+"role": "state",
+"mask": 3,
+"twin_start": 59,
+"var_start": 61
+}
+]
+},
+{
+"batch": "B3A",
+"file": "B3A_G05",
+"theorem": "border_quadForm_complete",
+"goal": 5,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "A\u1d40 = A",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Fin (n + 1) \u2192 \u211d",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 2,
+"truth_mask": 3,
+"entries": [
+{
+"lines": [
+20,
+21
+],
+"role": "canary_break"
+},
+{
+"lines": [
+22,
+23
+],
+"role": "canary_na"
+},
+{
+"lines": [
+24,
+34
+],
+"role": "state",
+"mask": 0,
+"twin_start": 24,
+"var_start": 29
+},
+{
+"lines": [
+35,
+45
+],
+"role": "state",
+"mask": 1,
+"twin_start": 35,
+"var_start": 40
+},
+{
+"lines": [
+46,
+56
+],
+"role": "state",
+"mask": 2,
+"twin_start": 46,
+"var_start": 51
+},
+{
+"lines": [
+57,
+67
+],
+"role": "state",
+"mask": 3,
+"twin_start": 57,
+"var_start": 62
+}
+]
+},
+{
+"batch": "B3A",
+"file": "B3A_G06",
+"theorem": "schur_pos_isPDq",
+"goal": 6,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "0 < schur A b d",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+20,
+21
+],
+"role": "canary_break"
+},
+{
+"lines": [
+22,
+23
+],
+"role": "canary_na"
+},
+{
+"lines": [
+24,
+30
+],
+"role": "state",
+"mask": 0,
+"twin_start": 24,
+"var_start": 27
+},
+{
+"lines": [
+31,
+37
+],
+"role": "state",
+"mask": 1,
+"twin_start": 31,
+"var_start": 34
+}
+]
+},
+{
+"batch": "B3A",
+"file": "B3A_G07",
+"theorem": "border_pd_old_pd",
+"goal": 7,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "Fin n \u2192 \u211d",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+20,
+21
+],
+"role": "canary_break"
+},
+{
+"lines": [
+22,
+23
+],
+"role": "canary_na"
+},
+{
+"lines": [
+24,
+28
+],
+"role": "state",
+"mask": 0,
+"twin_start": 24,
+"var_start": 26
+},
+{
+"lines": [
+29,
+33
+],
+"role": "state",
+"mask": 1,
+"twin_start": 29,
+"var_start": 31
+}
+]
+},
+{
+"batch": "B3A",
+"file": "B3A_G08",
+"theorem": "border_pd_schur_pos",
+"goal": 8,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "A\u1d40 = A",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Fin n \u2192 \u211d",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 2,
+"truth_mask": 3,
+"entries": [
+{
+"lines": [
+20,
+21
+],
+"role": "canary_break"
+},
+{
+"lines": [
+22,
+23
+],
+"role": "canary_na"
+},
+{
+"lines": [
+24,
+30
+],
+"role": "state",
+"mask": 0,
+"twin_start": 24,
+"var_start": 27
+},
+{
+"lines": [
+31,
+37
+],
+"role": "state",
+"mask": 1,
+"twin_start": 31,
+"var_start": 34
+},
+{
+"lines": [
+38,
+44
+],
+"role": "state",
+"mask": 2,
+"twin_start": 38,
+"var_start": 41
+},
+{
+"lines": [
+45,
+51
+],
+"role": "state",
+"mask": 3,
+"twin_start": 45,
+"var_start": 48
+}
+]
+}
+],
+"skips": []
+}

@@ -1,37 +1,72 @@
-# NeurReps loop-veto kit — context + harness for the decl-level test
+# mathlib-structure-probes
 
-Purpose: everything needed to run the **decisive** test of the "loop-residue as
-incorruptible significance veto over Mathlib" idea in Claude Code, against the
-real declaration-level dependency graph and wired to the certified generator as
-it was actually built.
+**Pre-registered measurement gates on Mathlib's proof-dependency structure — one robust positive,
+a stack of clean negatives, and a reusable deterministic Lean-variant measurement harness.
+No usable end product was built; that is a finding, not an apology.**
 
-## Honest access caveat (read first)
-The certified generator itself (the Lean object: `GramState`/`expand`/inertia
-meter, Suzuki zeta-kernel PD window) was built in the chat "Gauge-covariant free
-energy and state transitions" and lives in **`certified-positivity-artifact.zip`**
-in *that* chat's outputs. Chat sandboxes do not persist across sessions, so it is
-NOT embedded here and I did not reconstruct the Lean source (that would be a fake
-of the real thing). `docs/04-provenance-and-manifest.md` lists exactly which
-external files to drop into the repo.
+> Suggested repo settings — name: `mathlib-structure-probes`; description:
+> *"Pre-registered probes of Mathlib's proof structure: importance ≈ foundational depth (exogenously
+> validated); loops/compression/circulation/style-modes/residue-guidance all tested and killed at
+> locked lines. Plus a deterministic Lean variant-elaboration harness."*
+> (The name `Structure-Backprop` belongs to the earlier neural-net project now in `archive/`.)
 
-## What IS in here (all faithful)
-- `docs/` — the idea, the surviving delta, the closest-work sweep, the corrected
-  pre-registration, provenance, and how the loop-veto connects to the generator.
-- `harness/mathlib_slide_loop_pretest.py` — the coarse module-level pre-test I
-  actually ran this session (+ `RESULTS-module-pretest.md`). Result: no wall;
-  loop is a distinct axis from centrality. This is the skeleton for the real test.
-- `harness/DumpDeps.lean` — native faithful decl-dependency extractor (needs a
-  Mathlib build in the repo).
-- `harness/decl_dep_extract.py` — no-build APPROX fallback (statement-reference
-  graph from source) + postprocessor.
-- `harness/loop_veto_test.py` — the decisive dissociation + significance-join +
-  floor hooks, pre-registration baked in as asserts.
+## What this repo is
 
-## Run order in Claude Code
-1. Drop in `certified-positivity-artifact.zip` (see manifest) and `lake build`.
-2. Get the real decl graph: either run `DumpDeps.lean` in the built env, or trace
-   with LeanDojo (recommended, robust). Fallback: `decl_dep_extract.py`.
-3. `loop_veto_test.py` — runs H1 (loop ⟂ slide), H2 (loop predicts significance
-   beyond slide — the payoff), H3 (incorruptibility: gaming foil + warm/cold floor).
-4. Only if H2 clears its pre-registered bar, wire the meter into the generator's
-   expansion-point selection (docs/05).
+A sequence of experiments on the faithful declaration-level dependency graph of Mathlib
+(333,044 declarations / 7,523,067 kernel edges, extracted with the real elaborator) and on
+Lean-checked theorem variants, run under a fixed discipline:
+
+- **pre-registration committed before results** (metrics, controls, verdict lines locked in advance);
+- **degree/confound controls as the decisive numbers**, never raw correlations;
+- **deterministic fidelity**: independent double runs, must-fail canaries, budget-sensitivity checks;
+- **negatives honored at full weight** — no post-hoc reinterpretation to keep ideas alive.
+
+## What survived (the standing results)
+
+1. **Human importance ≈ foundational depth.** Longest-prerequisite-chain depth separates the
+   famous theorems (exact-matched 100/1000-theorem lists, an anchor *outside* the graph) at
+   **AUC 0.81**; reuse/in-degree sits at **0.52 ≈ chance**. Importance is *not* popularity, and it
+   has exactly one cheap structural correlate we could find. (`RESULTS-compression-importance.md`)
+2. **De-gamed compression adds nothing beyond depth** (0.569 vs a locked 0.58 line) — and the
+   gameable part of raw compression was identified and removed by construction. (`RESULTS-compression-mdl.md`)
+3. **Methods:** rank-correlation is mechanically inert under extreme class imbalance (a *perfect*
+   ranker scores ρ≈0.04 at 0.056% prevalence) — use AUC + permutation. Proven, transferable.
+4. **A working instrument** (see below) for turning "loosen/perturb a theorem, see what still
+   elaborates" into deterministic, canary-guarded, kernel-checked data.
+
+## What was tested and killed (each at pre-committed lines)
+
+| probe | verdict | doc |
+|---|---|---|
+| loop-residue as significance signal | = reuse volume; collapses under degree control on approx graphs; triangle-only positive on faithful graph, not metric-robust | `RESULTS-faithful.md`, `RESULTS-phase0-normloop.md` |
+| discrete "style/taste" modes | continuous smear; author style < subject | `RESULTS-style-modes.md` |
+| order-holonomy / circulation in accumulation order | ~92% pure gradient (curl ≤ 0.076) | `RESULTS-holonomy-gate.md` |
+| real Schur-gate atomicity self-selection (cell 5) | selects an even purer gradient (curl 0.0009) | `RESULTS-cell5.md` |
+| local Hodge tension → forced-vs-open | degree in a hat / flat | `RESULTS-tension-gate.md` |
+| type-theoretic (infra) loosening axis | flat — 4 breaks in 216 cells; math axis richly structured | `RESULTS-loosening-lattice.md` |
+| stuck-proof shape → missing constraint (compass) | BLIND — the removed premise is textually absent from the residue | `RESULTS-v3-walk.md` |
+
+Aggregate reading: **Mathlib's proof structure is a near-pure hierarchy whose one legible
+human-meaningful coordinate is depth.** Every antisymmetric / stylistic / guidance signal we
+probed either reduced to degree/gradient or wasn't there.
+
+## The reusable instrument
+
+`harness/` contains a pipeline that (a) generates kernel-checkable variants of real Mathlib
+theorems (hypothesis drops, class-ladder weakenings, instance perturbations) with sorry-twin
+statement adjudication and must-fail canaries; (b) runs them through the **actual Lean elaborator**
+at fixed heartbeat budgets using a remote built-Mathlib environment as a dumb deterministic
+runner; (c) parses per-declaration outcomes with line-level attribution. Measured fidelity across
+independent runs: **0 mismatches in ~900 cells; 0.000 budget flip-rate.** Also here: the faithful
+kernel-edge graph extractor (`DumpDeps.lean` + retrieval scripts).
+
+## Map
+
+- `harness/` — all preregs (`PREREG-*.md`), results (`RESULTS-*.md`), scripts, logs, manifests.
+- `output-final_aristotle/` — the certified-positivity Lean artifact (external prover output) used
+  as the program-native substrate.
+- `docs/` — the original loop-veto kit framing (including `README-original-kit.md`) and provenance.
+- `archive/` — the unrelated earlier Structure-First Backpropagation project (pre-rename history).
+
+Large artifacts (the 395 MB faithful graph, Mathlib clone, olean caches) are kept out of the repo;
+every one is regenerable from committed scripts.

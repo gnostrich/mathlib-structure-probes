@@ -4,12 +4,6 @@
 a stack of clean negatives, and a reusable deterministic Lean-variant measurement harness.
 No usable end product was built; that is a finding, not an apology.**
 
-> Suggested repo settings — name: `mathlib-structure-probes`; description:
-> *"Pre-registered probes of Mathlib's proof structure: importance ≈ foundational depth (exogenously
-> validated); loops/compression/circulation/style-modes/residue-guidance all tested and killed at
-> locked lines. Plus a deterministic Lean variant-elaboration harness."*
-> (The name `Structure-Backprop` belongs to the earlier neural-net project now in `archive/`.)
-
 ## What this repo is
 
 A sequence of experiments on the faithful declaration-level dependency graph of Mathlib

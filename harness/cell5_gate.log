@@ -1,0 +1,25 @@
+loading faithful graph ...
+nodes=333044 edges=7523067
+computing Schur preference field s over 7523067 edges (real gate, 1x1 context) ...
+  s: mean=44.113 std=53.232
+
+== TAUTOLOGY CHECK ==
+  curl_fraction of pure node-potential flow = 4.43e-04 (~0)
+
+== MAIN: curl of the Schur preference field s ==
+  curl_fraction(s) = 0.0009   [lsqr istop=7]   (scalar-proxy baseline = 0.076)
+  (control: curl of the potential-only part Kuu-Kvv = 1.75e-04 ~0 -> any curl is operator cross-term)
+
+== CONTROL: module conditioning ==
+  intra-module edges=828851  curl_fraction(s|intra)=0.0058  ratio=6.16
+
+== REPRODUCIBILITY ==
+  curl_fraction(reordered)=0.0009  |d|=3.82e-08
+
+== CONFIRMATION: REAL singleton->expand(argmax schur) on bounded regions ==
+  region 'PartialOrder' (N=89): real gate admitted 89/89 sites via argmax-schur (halt when all schur<=0). Real expand ran on the bridge.
+  region 'Submersive' (N=108): real gate admitted 108/108 sites via argmax-schur (halt when all schur<=0). Real expand ran on the bridge.
+  region 'Defs' (N=100): real gate admitted 100/100 sites via argmax-schur (halt when all schur<=0). Real expand ran on the bridge.
+
+== VERDICT (locked) ==
+  DEAD: curl_fraction(s)=0.001 <= 0.10 (proxy-level). The atomicity gate self-selects a near-gradient order too. Cell 5 closed on the real gate (incidence-kernel bridge). The epitaph stands.

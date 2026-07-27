@@ -1,0 +1,64 @@
+### style_phase12.py (birth-simplex H1-fix + Step A + Step B)
+loading faithful graph ...
+nodes=333044 edges=7523067
+depth via SCC condensation ...
+birth-simplex via union-find filtration ...
+  sum B (b1) = 7193050
+
+== PHASE 1: birth-simplex metric — H1/H2 re-run ==
+  rho(B, depth)=0.715   rho(B, undirected-degree)=0.805
+  H1 dissociation (GO needs |rho(B,depth)|<=0.40): FAILS
+  H2 partial rho(B, Y2 | depth)=0.006  | depth+log-udeg=-0.585  (does not clear)
+
+== PHASE 2 Step A: style-feature spectrum ==
+  feature corr matrix (Pearson):
+    loop_residue  +1.00 +0.44 -0.07 -0.64 +0.46 +0.05
+    proof_size    +0.44 +1.00 +0.46 -0.20 +0.76 +0.18
+    depth         -0.07 +0.46 +1.00 -0.09 +0.57 +0.10
+    in_degree     -0.64 -0.20 -0.09 +1.00 -0.14 +0.01
+    out_degree    +0.46 +0.76 +0.57 -0.14 +1.00 +0.15
+    classical     +0.05 +0.18 +0.10 +0.01 +0.15 +1.00
+  singular values: 928.009 688.480 562.518 464.848 302.281 197.923
+  variance frac  : 0.431 0.237 0.158 0.108 0.046 0.020
+  consecutive ratios sigma_k/sigma_k+1: 1.35 1.22 1.21 1.54 1.53
+  largest gap after k=4  (pre-reg: gap at k in [3,8] => discrete; else smear)
+  Step B will cluster k=4 modes
+
+== PHASE 2 Step B: MI(mode; subject) vs MI(mode; style) ==
+  NMI(mode; subject) = 0.085
+  NMI(mode; out_degree   ) = 0.229
+  NMI(mode; proof_size   ) = 0.216
+  NMI(mode; depth        ) = 0.210
+  NMI(mode; in_degree    ) = 0.157
+  NMI(mode; loop_residue ) = 0.154
+  NMI(mode; classical    ) = 0.000
+  -> subject NMI=0.085 vs max style NMI=0.229
+  Step B read: style-dominated (schools-of-practice)
+
+saved features -> /tmp/claude-0/-home-user-Structure-Backprop/a747742e-9a2f-5c79-9f64-ed3bc601f93e/scratchpad/style_features.npz
+
+== STYLE-MODE VERDICT (pre-registered grid) ==
+  Step A: GAP at k=4 -> discrete tastes
+  Step B: style-dominated (schools-of-practice)
+  => sharp modes + style-dominated: candidate genuine tastes (Step C decides personal-ness)
+
+### style_phase3.py (Step A' discreteness + Step C authors)
+== STEP A' discreteness (modes vs smear) ==
+  GMM BIC k=1..10: 575192 176209 102244 52774 11038 -1654 -18876 -26064 -40488 -47676
+  BIC deltas      : -398983 -73965 -49470 -41736 -12692 -17222 -7188 -14423 -7188
+  BIC argmin k=10; relative drops: 0.694 0.420 0.484 0.791 1.150 10.412 0.381 0.553 0.178
+  silhouette at k=4: 0.255  (>=0.25 separated modes; <0.15 smear)
+  Step A' read: SMEAR (continuous)
+
+== STEP C author fingerprints ==
+  decls with author: 204226/333044 (61.3%)
+  top 20 authors (by #decls): Yaël Dillies(16322), Yury G. Kudryashov(15776), Joël Riou(11227), Jeremy Tan Jie Rui(7896), Anne Baanen(7202), Ruben Van de Velde(6084), Matthew Robert Ballard(5058), Jireh Loreaux(4782) ...
+  analysing 117251 decls across 20 authors
+  author-prediction accuracy: majority=0.139  subject-only=0.296  STYLE=0.172
+  mode-mixture JS: within-author(split)=0.016  between-author=0.146
+  separability: between >> within  (9.37x)
+
+== STEP C read ==
+  style predicts author beyond subject: False (style 0.172 vs subj 0.296)
+  author mode-fingerprints separable & stable: True
+  => style adds little over subject for placing authors (taste != person, or ~ field)

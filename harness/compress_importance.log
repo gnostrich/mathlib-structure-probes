@@ -1,0 +1,32 @@
+loading faithful graph ...
+nodes=333044 edges=7523067
+depth + condensation ...
+transitive-descendant MinHash (k=96) ...
+
+== PHASE A: compression metric C = log(1+descendants) — GATE ==
+  D: median=160 max=34864 mean=1378
+  rho(C, in-degree)=-0.039   rho(C, undirected-deg)=+0.597   rho(C, out-degree)=+0.763
+  GATE |rho(C,in-degree)|<0.40: PASS   (out-degree note: not just out-degree)
+
+== PHASE B: exogenous anchor Y* (famous theorems) — 185 positives / 333044 ==
+
+== PAYOFF: C vs Y* (controlling in-degree, depth) ==
+  partial Spearman(C, Y* | log-indeg, depth) = -0.079   perm p=0.900
+  AUC(C)=0.827   AUC(in-degree)=0.522   AUC(subject-freq)=0.780
+  C beats degree: True   C beats subject: True
+  median C: famous=8.30  non-famous=5.08  (overall rank-biserial rho(C,Y)=+0.027)
+
+== ANTI-GAMING: A^B conjunction foils (C via descendant-union) ==
+  500 A^B foils of deep A,B: foil C >= max(dA,dB); 32% would land in top-decile C -> descendant-C IS gameable by conjunction
+
+== VERDICT ==
+  KILL: C vs Y* ~0/negative or does not beat degree/subject (part=-0.079 p=0.900 AUC_C=0.827 vs in=0.522 subj=0.780).
+    => human importance is NOT a structural invariant of Mathlib's proof library.
+
+== PERMUTATION-AUC (appropriate statistic for 0.056% prevalence anchor) ==
+  AUC(C                   )=0.827  perm p=0.0010  (null 0.499±0.021)
+  AUC(depth               )=0.814  perm p=0.0010  (null 0.501±0.021)
+  AUC(in-degree           )=0.522  perm p=0.1389  (null 0.500±0.020)
+  AUC(C-resid-after-depth )=0.616  perm p=0.0010  (null 0.500±0.021)
+  Mann-Whitney C-resid-after-depth famous>non-famous: p=0.0000
+rho(C,depth)=0.961  median C famous=8.30 non-famous=5.08

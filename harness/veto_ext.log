@@ -1,0 +1,65 @@
+nodes=213929 edges=1574452
+
+== H1 dissociation ==
+  rho(L, slide=depth)=0.267   rho(L, in-degree)=0.419
+  R2(L ~ slide+deg)=0.016
+  cells: high-slide/low-loop=9927  low-slide/high-loop=24427
+
+== H2 loop predicts significance beyond slide (PAYOFF) ==
+  partial rho(L, Y1 thm/lemma | slide)=-0.092
+  partial rho(L, Y2 log in-deg | slide)=0.485
+
+== H2b DEGREE CONFOUND CONTROL (task 4) ==
+  Concern: L (triangles) and Y2 (in-degree) both grow with node degree; the
+  baseline partial controls depth only. Below we add degree controls. Note
+  Y2==log(in-degree), so controlling Y2 for IN-degree is near-circular and is
+  reported only as a floor; the honest test is the OUT-degree / undirected-
+  degree control (degree the triangle count depends on, not identical to Y2).
+  -- Y1 thm/lemma --
+     partial rho(L,Y | depth only (baseline)) = -0.092
+     partial rho(L,Y | depth + log out-degree) = 0.016
+     partial rho(L,Y | depth + log undirected-degree) = -0.021
+     partial rho(L,Y | depth + log out + log undirected) = -0.029
+     partial rho(L,Y | depth + log in-degree (near-circular floor)) = -0.114
+  -- Y2 log in-deg --
+     partial rho(L,Y | depth only (baseline)) = 0.485
+     partial rho(L,Y | depth + log out-degree) = 0.567
+     partial rho(L,Y | depth + log undirected-degree) = -0.046
+     partial rho(L,Y | depth + log out + log undirected) = 0.104
+     partial rho(L,Y | depth + log in-degree (near-circular floor)) = 0.014
+  residual-corr method  rho(res L, res Y2 | depth,log-udeg) = -0.046
+  >>> H2 read: baseline=0.485 -> degree-controlled=-0.046 (COLLAPSES the degree control)
+
+== H3(a) gaming foil: cheap cross-region conjunctions (task 5) ==
+  injected 3000 distant A∧B conjunction foils
+  foils receiving ANY loop credit (triangles>0): 0/3000 (0.00%)
+  real endpoints whose loop credit CHANGED after foil injection: 0/2000
+  (context: median triangle count of real loop-bearing decls = 8; foils sit at the floor 0)
+  H3(a) verdict: foils NOT credited and real credit unchanged -> PASS
+
+== H3(b) warm/cold floor: reuse-shortcut minimisation (task 5) ==
+  [REDUNDANCY_MIN=2] edges: warm=1574452 stripped as reuse shortcuts=588702 (scanned=213929, ultra-hub kept=0)
+     triangle mass: warm=7800357  cold(L_cold)=537207  survival=6.9%
+     node-level Spearman(L_warm, L_cold) = 0.594   decls carrying path-debt = 76.6%
+     partial rho(L_cold, Y2 | depth) = 0.512
+     partial rho(L_cold, Y2 | depth+log WARM-udeg) = 0.326
+     partial rho(L_cold, Y2 | depth+log COLD-udeg) = 0.186
+  [REDUNDANCY_MIN=3] edges: warm=1574452 stripped as reuse shortcuts=425758 (scanned=213929, ultra-hub kept=0)
+     triangle mass: warm=7800357  cold(L_cold)=1126755  survival=14.4%
+     node-level Spearman(L_warm, L_cold) = 0.713   decls carrying path-debt = 69.4%
+     partial rho(L_cold, Y2 | depth) = 0.588
+     partial rho(L_cold, Y2 | depth+log WARM-udeg) = 0.343
+     partial rho(L_cold, Y2 | depth+log COLD-udeg) = 0.226
+  NOTE: even this refined split is a static proxy; a built-env minimal reproof
+  (per pre-reg) is required to certify L_cold as the true incorruptible residue.
+
+== VERDICT (H1 precondition + H2 payoff/confound + H3 foils) ==
+  H1: GO-precondition
+  H2: baseline 0.485 -> degree-controlled -0.046  =>  DOES NOT CLEAR (payoff was largely a degree artefact)
+  H3(a): PASS (distant A/∧B foils not credited & real credit unchanged)
+  H3(b): warm loop payoff collapses under degree control; only the reuse-stripped
+         L_cold residue keeps a WEAK positive partial (~0.19-0.23 under its own
+         degree control) -> suggestive, NOT a cleared bar, and via a static proxy.
+  OVERALL (this substrate): AMBIGUOUS -> DO NOT WIRE
+  NOTE: this is the APPROX (statement-reference) graph unless you passed a faithful
+  decl_deps.jsonl. A faithful (proof-edge) graph needs a built Lean env; see HANDOFF.

@@ -1,0 +1,3892 @@
+{
+"goals": [
+{
+"batch": "B2",
+"file": "B2_G00",
+"theorem": "pow_dite",
+"goal": 0,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "\u00ac p \u2192 \u03b2",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+33,
+34
+],
+"role": "canary_break"
+},
+{
+"lines": [
+35,
+36
+],
+"role": "canary_na"
+},
+{
+"lines": [
+37,
+41
+],
+"role": "state",
+"mask": 0,
+"twin_start": 37,
+"var_start": 39
+},
+{
+"lines": [
+42,
+46
+],
+"role": "state",
+"mask": 1,
+"twin_start": 42,
+"var_start": 44
+},
+{
+"lines": [
+47,
+51
+],
+"role": "state",
+"mask": 2,
+"twin_start": 47,
+"var_start": 49
+},
+{
+"lines": [
+52,
+56
+],
+"role": "state",
+"mask": 3,
+"twin_start": 52,
+"var_start": 54
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G01",
+"theorem": "dite_pow",
+"goal": 1,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "p \u2192 \u03b1",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+37,
+38
+],
+"role": "canary_break"
+},
+{
+"lines": [
+39,
+40
+],
+"role": "canary_na"
+},
+{
+"lines": [
+41,
+45
+],
+"role": "state",
+"mask": 0,
+"twin_start": 41,
+"var_start": 43
+},
+{
+"lines": [
+46,
+50
+],
+"role": "state",
+"mask": 1,
+"twin_start": 46,
+"var_start": 48
+},
+{
+"lines": [
+51,
+55
+],
+"role": "state",
+"mask": 2,
+"twin_start": 51,
+"var_start": 53
+},
+{
+"lines": [
+56,
+60
+],
+"role": "state",
+"mask": 3,
+"twin_start": 56,
+"var_start": 58
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G02",
+"theorem": "eq_one_iff_eq_one_of_mul_eq_one",
+"goal": 2,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a * b = 1",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+99,
+100
+],
+"role": "canary_break"
+},
+{
+"lines": [
+101,
+102
+],
+"role": "canary_na"
+},
+{
+"lines": [
+103,
+105
+],
+"role": "state",
+"mask": 0,
+"twin_start": 103,
+"var_start": 104
+},
+{
+"lines": [
+106,
+108
+],
+"role": "state",
+"mask": 1,
+"twin_start": 106,
+"var_start": 107
+},
+{
+"lines": [
+109,
+111
+],
+"role": "state",
+"mask": 2,
+"twin_start": 109,
+"var_start": 110
+},
+{
+"lines": [
+112,
+114
+],
+"role": "state",
+"mask": 3,
+"twin_start": 112,
+"var_start": 113
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G03",
+"theorem": "pow_mul_pow_sub",
+"goal": 3,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "m \u2264 n",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+152,
+153
+],
+"role": "canary_break"
+},
+{
+"lines": [
+154,
+155
+],
+"role": "canary_na"
+},
+{
+"lines": [
+156,
+158
+],
+"role": "state",
+"mask": 0,
+"twin_start": 156,
+"var_start": 157
+},
+{
+"lines": [
+159,
+161
+],
+"role": "state",
+"mask": 1,
+"twin_start": 159,
+"var_start": 160
+},
+{
+"lines": [
+162,
+164
+],
+"role": "state",
+"mask": 2,
+"twin_start": 162,
+"var_start": 163
+},
+{
+"lines": [
+165,
+167
+],
+"role": "state",
+"mask": 3,
+"twin_start": 165,
+"var_start": 166
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G04",
+"theorem": "pow_sub_mul_pow",
+"goal": 4,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "m \u2264 n",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+156,
+157
+],
+"role": "canary_break"
+},
+{
+"lines": [
+158,
+159
+],
+"role": "canary_na"
+},
+{
+"lines": [
+160,
+162
+],
+"role": "state",
+"mask": 0,
+"twin_start": 160,
+"var_start": 161
+},
+{
+"lines": [
+163,
+165
+],
+"role": "state",
+"mask": 1,
+"twin_start": 163,
+"var_start": 164
+},
+{
+"lines": [
+166,
+168
+],
+"role": "state",
+"mask": 2,
+"twin_start": 166,
+"var_start": 167
+},
+{
+"lines": [
+169,
+171
+],
+"role": "state",
+"mask": 3,
+"twin_start": 169,
+"var_start": 170
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G05",
+"theorem": "mul_pow_sub_one",
+"goal": 5,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "n \u2260 0",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+160,
+161
+],
+"role": "canary_break"
+},
+{
+"lines": [
+162,
+163
+],
+"role": "canary_na"
+},
+{
+"lines": [
+164,
+166
+],
+"role": "state",
+"mask": 0,
+"twin_start": 164,
+"var_start": 165
+},
+{
+"lines": [
+167,
+169
+],
+"role": "state",
+"mask": 1,
+"twin_start": 167,
+"var_start": 168
+},
+{
+"lines": [
+170,
+172
+],
+"role": "state",
+"mask": 2,
+"twin_start": 170,
+"var_start": 171
+},
+{
+"lines": [
+173,
+175
+],
+"role": "state",
+"mask": 3,
+"twin_start": 173,
+"var_start": 174
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G06",
+"theorem": "pow_sub_one_mul",
+"goal": 6,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "n \u2260 0",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+164,
+165
+],
+"role": "canary_break"
+},
+{
+"lines": [
+166,
+167
+],
+"role": "canary_na"
+},
+{
+"lines": [
+168,
+170
+],
+"role": "state",
+"mask": 0,
+"twin_start": 168,
+"var_start": 169
+},
+{
+"lines": [
+171,
+173
+],
+"role": "state",
+"mask": 1,
+"twin_start": 171,
+"var_start": 172
+},
+{
+"lines": [
+174,
+176
+],
+"role": "state",
+"mask": 2,
+"twin_start": 174,
+"var_start": 175
+},
+{
+"lines": [
+177,
+179
+],
+"role": "state",
+"mask": 3,
+"twin_start": 177,
+"var_start": 178
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G07",
+"theorem": "pow_eq_pow_mod",
+"goal": 7,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a ^ n = 1",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+168,
+169
+],
+"role": "canary_break"
+},
+{
+"lines": [
+170,
+171
+],
+"role": "canary_na"
+},
+{
+"lines": [
+172,
+174
+],
+"role": "state",
+"mask": 0,
+"twin_start": 172,
+"var_start": 173
+},
+{
+"lines": [
+175,
+177
+],
+"role": "state",
+"mask": 1,
+"twin_start": 175,
+"var_start": 176
+},
+{
+"lines": [
+178,
+180
+],
+"role": "state",
+"mask": 2,
+"twin_start": 178,
+"var_start": 179
+},
+{
+"lines": [
+181,
+183
+],
+"role": "state",
+"mask": 3,
+"twin_start": 181,
+"var_start": 182
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G08",
+"theorem": "inv_unique",
+"goal": 8,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "x * y = 1",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "x * z = 1",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+}
+],
+"n_removed": 2,
+"truth_mask": 3,
+"entries": [
+{
+"lines": [
+217,
+218
+],
+"role": "canary_break"
+},
+{
+"lines": [
+219,
+220
+],
+"role": "canary_na"
+},
+{
+"lines": [
+221,
+223
+],
+"role": "state",
+"mask": 0,
+"twin_start": 221,
+"var_start": 222
+},
+{
+"lines": [
+224,
+226
+],
+"role": "state",
+"mask": 1,
+"twin_start": 224,
+"var_start": 225
+},
+{
+"lines": [
+227,
+229
+],
+"role": "state",
+"mask": 2,
+"twin_start": 227,
+"var_start": 228
+},
+{
+"lines": [
+230,
+232
+],
+"role": "state",
+"mask": 3,
+"twin_start": 230,
+"var_start": 231
+},
+{
+"lines": [
+233,
+235
+],
+"role": "state",
+"mask": 4,
+"twin_start": 233,
+"var_start": 234
+},
+{
+"lines": [
+236,
+238
+],
+"role": "state",
+"mask": 5,
+"twin_start": 236,
+"var_start": 237
+},
+{
+"lines": [
+239,
+241
+],
+"role": "state",
+"mask": 6,
+"twin_start": 239,
+"var_start": 240
+},
+{
+"lines": [
+242,
+244
+],
+"role": "state",
+"mask": 7,
+"twin_start": 242,
+"var_start": 243
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G09",
+"theorem": "eq_iff_eq_of_mul_eq_mul",
+"goal": 9,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a * b = c * d",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+272,
+273
+],
+"role": "canary_break"
+},
+{
+"lines": [
+274,
+275
+],
+"role": "canary_na"
+},
+{
+"lines": [
+276,
+278
+],
+"role": "state",
+"mask": 0,
+"twin_start": 276,
+"var_start": 277
+},
+{
+"lines": [
+279,
+281
+],
+"role": "state",
+"mask": 1,
+"twin_start": 279,
+"var_start": 280
+},
+{
+"lines": [
+282,
+284
+],
+"role": "state",
+"mask": 2,
+"twin_start": 282,
+"var_start": 283
+},
+{
+"lines": [
+285,
+287
+],
+"role": "state",
+"mask": 3,
+"twin_start": 285,
+"var_start": 286
+},
+{
+"lines": [
+288,
+290
+],
+"role": "state",
+"mask": 4,
+"twin_start": 288,
+"var_start": 289
+},
+{
+"lines": [
+291,
+293
+],
+"role": "state",
+"mask": 5,
+"twin_start": 291,
+"var_start": 292
+},
+{
+"lines": [
+294,
+296
+],
+"role": "state",
+"mask": 6,
+"twin_start": 294,
+"var_start": 295
+},
+{
+"lines": [
+297,
+299
+],
+"role": "state",
+"mask": 7,
+"twin_start": 297,
+"var_start": 298
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G10",
+"theorem": "eq_inv_of_mul_eq_one_right",
+"goal": 10,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a * b = 1",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+356,
+357
+],
+"role": "canary_break"
+},
+{
+"lines": [
+358,
+359
+],
+"role": "canary_na"
+},
+{
+"lines": [
+360,
+362
+],
+"role": "state",
+"mask": 0,
+"twin_start": 360,
+"var_start": 361
+},
+{
+"lines": [
+363,
+365
+],
+"role": "state",
+"mask": 1,
+"twin_start": 363,
+"var_start": 364
+},
+{
+"lines": [
+366,
+368
+],
+"role": "state",
+"mask": 2,
+"twin_start": 366,
+"var_start": 367
+},
+{
+"lines": [
+369,
+371
+],
+"role": "state",
+"mask": 3,
+"twin_start": 369,
+"var_start": 370
+},
+{
+"lines": [
+372,
+374
+],
+"role": "state",
+"mask": 4,
+"twin_start": 372,
+"var_start": 373
+},
+{
+"lines": [
+375,
+377
+],
+"role": "state",
+"mask": 5,
+"twin_start": 375,
+"var_start": 376
+},
+{
+"lines": [
+378,
+380
+],
+"role": "state",
+"mask": 6,
+"twin_start": 378,
+"var_start": 379
+},
+{
+"lines": [
+381,
+383
+],
+"role": "state",
+"mask": 7,
+"twin_start": 381,
+"var_start": 382
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G11",
+"theorem": "eq_one_div_of_mul_eq_one_left",
+"goal": 11,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "b * a = 1",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+360,
+361
+],
+"role": "canary_break"
+},
+{
+"lines": [
+362,
+363
+],
+"role": "canary_na"
+},
+{
+"lines": [
+364,
+366
+],
+"role": "state",
+"mask": 0,
+"twin_start": 364,
+"var_start": 365
+},
+{
+"lines": [
+367,
+369
+],
+"role": "state",
+"mask": 1,
+"twin_start": 367,
+"var_start": 368
+},
+{
+"lines": [
+370,
+372
+],
+"role": "state",
+"mask": 2,
+"twin_start": 370,
+"var_start": 371
+},
+{
+"lines": [
+373,
+375
+],
+"role": "state",
+"mask": 3,
+"twin_start": 373,
+"var_start": 374
+},
+{
+"lines": [
+376,
+378
+],
+"role": "state",
+"mask": 4,
+"twin_start": 376,
+"var_start": 377
+},
+{
+"lines": [
+379,
+381
+],
+"role": "state",
+"mask": 5,
+"twin_start": 379,
+"var_start": 380
+},
+{
+"lines": [
+382,
+384
+],
+"role": "state",
+"mask": 6,
+"twin_start": 382,
+"var_start": 383
+},
+{
+"lines": [
+385,
+387
+],
+"role": "state",
+"mask": 7,
+"twin_start": 385,
+"var_start": 386
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G12",
+"theorem": "eq_one_div_of_mul_eq_one_right",
+"goal": 12,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a * b = 1",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+364,
+365
+],
+"role": "canary_break"
+},
+{
+"lines": [
+366,
+367
+],
+"role": "canary_na"
+},
+{
+"lines": [
+368,
+370
+],
+"role": "state",
+"mask": 0,
+"twin_start": 368,
+"var_start": 369
+},
+{
+"lines": [
+371,
+373
+],
+"role": "state",
+"mask": 1,
+"twin_start": 371,
+"var_start": 372
+},
+{
+"lines": [
+374,
+376
+],
+"role": "state",
+"mask": 2,
+"twin_start": 374,
+"var_start": 375
+},
+{
+"lines": [
+377,
+379
+],
+"role": "state",
+"mask": 3,
+"twin_start": 377,
+"var_start": 378
+},
+{
+"lines": [
+380,
+382
+],
+"role": "state",
+"mask": 4,
+"twin_start": 380,
+"var_start": 381
+},
+{
+"lines": [
+383,
+385
+],
+"role": "state",
+"mask": 5,
+"twin_start": 383,
+"var_start": 384
+},
+{
+"lines": [
+386,
+388
+],
+"role": "state",
+"mask": 6,
+"twin_start": 386,
+"var_start": 387
+},
+{
+"lines": [
+389,
+391
+],
+"role": "state",
+"mask": 7,
+"twin_start": 389,
+"var_start": 390
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G13",
+"theorem": "eq_of_div_eq_one",
+"goal": 13,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a / b = 1",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+368,
+369
+],
+"role": "canary_break"
+},
+{
+"lines": [
+370,
+371
+],
+"role": "canary_na"
+},
+{
+"lines": [
+372,
+374
+],
+"role": "state",
+"mask": 0,
+"twin_start": 372,
+"var_start": 373
+},
+{
+"lines": [
+375,
+377
+],
+"role": "state",
+"mask": 1,
+"twin_start": 375,
+"var_start": 376
+},
+{
+"lines": [
+378,
+380
+],
+"role": "state",
+"mask": 2,
+"twin_start": 378,
+"var_start": 379
+},
+{
+"lines": [
+381,
+383
+],
+"role": "state",
+"mask": 3,
+"twin_start": 381,
+"var_start": 382
+},
+{
+"lines": [
+384,
+386
+],
+"role": "state",
+"mask": 4,
+"twin_start": 384,
+"var_start": 385
+},
+{
+"lines": [
+387,
+389
+],
+"role": "state",
+"mask": 5,
+"twin_start": 387,
+"var_start": 388
+},
+{
+"lines": [
+390,
+392
+],
+"role": "state",
+"mask": 6,
+"twin_start": 390,
+"var_start": 391
+},
+{
+"lines": [
+393,
+395
+],
+"role": "state",
+"mask": 7,
+"twin_start": 393,
+"var_start": 394
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G14",
+"theorem": "eq_of_inv_mul_eq_one",
+"goal": 14,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a\u207b\u00b9 * b = 1",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+372,
+373
+],
+"role": "canary_break"
+},
+{
+"lines": [
+374,
+375
+],
+"role": "canary_na"
+},
+{
+"lines": [
+376,
+378
+],
+"role": "state",
+"mask": 0,
+"twin_start": 376,
+"var_start": 377
+},
+{
+"lines": [
+379,
+381
+],
+"role": "state",
+"mask": 1,
+"twin_start": 379,
+"var_start": 380
+},
+{
+"lines": [
+382,
+384
+],
+"role": "state",
+"mask": 2,
+"twin_start": 382,
+"var_start": 383
+},
+{
+"lines": [
+385,
+387
+],
+"role": "state",
+"mask": 3,
+"twin_start": 385,
+"var_start": 386
+},
+{
+"lines": [
+388,
+390
+],
+"role": "state",
+"mask": 4,
+"twin_start": 388,
+"var_start": 389
+},
+{
+"lines": [
+391,
+393
+],
+"role": "state",
+"mask": 5,
+"twin_start": 391,
+"var_start": 392
+},
+{
+"lines": [
+394,
+396
+],
+"role": "state",
+"mask": 6,
+"twin_start": 394,
+"var_start": 395
+},
+{
+"lines": [
+397,
+399
+],
+"role": "state",
+"mask": 7,
+"twin_start": 397,
+"var_start": 398
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G15",
+"theorem": "eq_of_mul_inv_eq_one",
+"goal": 15,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a * b\u207b\u00b9 = 1",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+375,
+376
+],
+"role": "canary_break"
+},
+{
+"lines": [
+377,
+378
+],
+"role": "canary_na"
+},
+{
+"lines": [
+379,
+381
+],
+"role": "state",
+"mask": 0,
+"twin_start": 379,
+"var_start": 380
+},
+{
+"lines": [
+382,
+384
+],
+"role": "state",
+"mask": 1,
+"twin_start": 382,
+"var_start": 383
+},
+{
+"lines": [
+385,
+387
+],
+"role": "state",
+"mask": 2,
+"twin_start": 385,
+"var_start": 386
+},
+{
+"lines": [
+388,
+390
+],
+"role": "state",
+"mask": 3,
+"twin_start": 388,
+"var_start": 389
+},
+{
+"lines": [
+391,
+393
+],
+"role": "state",
+"mask": 4,
+"twin_start": 391,
+"var_start": 392
+},
+{
+"lines": [
+394,
+396
+],
+"role": "state",
+"mask": 5,
+"twin_start": 394,
+"var_start": 395
+},
+{
+"lines": [
+397,
+399
+],
+"role": "state",
+"mask": 6,
+"twin_start": 397,
+"var_start": 398
+},
+{
+"lines": [
+400,
+402
+],
+"role": "state",
+"mask": 7,
+"twin_start": 400,
+"var_start": 401
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G16",
+"theorem": "eq_of_one_div_eq_one_div",
+"goal": 16,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "1 / a = 1 / b",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+459,
+460
+],
+"role": "canary_break"
+},
+{
+"lines": [
+461,
+462
+],
+"role": "canary_na"
+},
+{
+"lines": [
+463,
+465
+],
+"role": "state",
+"mask": 0,
+"twin_start": 463,
+"var_start": 464
+},
+{
+"lines": [
+466,
+468
+],
+"role": "state",
+"mask": 1,
+"twin_start": 466,
+"var_start": 467
+},
+{
+"lines": [
+469,
+471
+],
+"role": "state",
+"mask": 2,
+"twin_start": 469,
+"var_start": 470
+},
+{
+"lines": [
+472,
+474
+],
+"role": "state",
+"mask": 3,
+"twin_start": 472,
+"var_start": 473
+},
+{
+"lines": [
+475,
+477
+],
+"role": "state",
+"mask": 4,
+"twin_start": 475,
+"var_start": 476
+},
+{
+"lines": [
+478,
+480
+],
+"role": "state",
+"mask": 5,
+"twin_start": 478,
+"var_start": 479
+},
+{
+"lines": [
+481,
+483
+],
+"role": "state",
+"mask": 6,
+"twin_start": 481,
+"var_start": 482
+},
+{
+"lines": [
+484,
+486
+],
+"role": "state",
+"mask": 7,
+"twin_start": 484,
+"var_start": 485
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G17",
+"theorem": "eq_mul_inv_of_mul_eq",
+"goal": 17,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a * c = b",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+607,
+608
+],
+"role": "canary_break"
+},
+{
+"lines": [
+609,
+610
+],
+"role": "canary_na"
+},
+{
+"lines": [
+611,
+613
+],
+"role": "state",
+"mask": 0,
+"twin_start": 611,
+"var_start": 612
+},
+{
+"lines": [
+614,
+616
+],
+"role": "state",
+"mask": 1,
+"twin_start": 614,
+"var_start": 615
+},
+{
+"lines": [
+617,
+619
+],
+"role": "state",
+"mask": 2,
+"twin_start": 617,
+"var_start": 618
+},
+{
+"lines": [
+620,
+622
+],
+"role": "state",
+"mask": 3,
+"twin_start": 620,
+"var_start": 621
+},
+{
+"lines": [
+623,
+625
+],
+"role": "state",
+"mask": 4,
+"twin_start": 623,
+"var_start": 624
+},
+{
+"lines": [
+626,
+628
+],
+"role": "state",
+"mask": 5,
+"twin_start": 626,
+"var_start": 627
+},
+{
+"lines": [
+629,
+631
+],
+"role": "state",
+"mask": 6,
+"twin_start": 629,
+"var_start": 630
+},
+{
+"lines": [
+632,
+634
+],
+"role": "state",
+"mask": 7,
+"twin_start": 632,
+"var_start": 633
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G18",
+"theorem": "eq_inv_mul_of_mul_eq",
+"goal": 18,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "b * a = c",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+610,
+611
+],
+"role": "canary_break"
+},
+{
+"lines": [
+612,
+613
+],
+"role": "canary_na"
+},
+{
+"lines": [
+614,
+616
+],
+"role": "state",
+"mask": 0,
+"twin_start": 614,
+"var_start": 615
+},
+{
+"lines": [
+617,
+619
+],
+"role": "state",
+"mask": 1,
+"twin_start": 617,
+"var_start": 618
+},
+{
+"lines": [
+620,
+622
+],
+"role": "state",
+"mask": 2,
+"twin_start": 620,
+"var_start": 621
+},
+{
+"lines": [
+623,
+625
+],
+"role": "state",
+"mask": 3,
+"twin_start": 623,
+"var_start": 624
+},
+{
+"lines": [
+626,
+628
+],
+"role": "state",
+"mask": 4,
+"twin_start": 626,
+"var_start": 627
+},
+{
+"lines": [
+629,
+631
+],
+"role": "state",
+"mask": 5,
+"twin_start": 629,
+"var_start": 630
+},
+{
+"lines": [
+632,
+634
+],
+"role": "state",
+"mask": 6,
+"twin_start": 632,
+"var_start": 633
+},
+{
+"lines": [
+635,
+637
+],
+"role": "state",
+"mask": 7,
+"twin_start": 635,
+"var_start": 636
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G19",
+"theorem": "inv_mul_eq_of_eq_mul",
+"goal": 19,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "b = a * c",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+613,
+614
+],
+"role": "canary_break"
+},
+{
+"lines": [
+615,
+616
+],
+"role": "canary_na"
+},
+{
+"lines": [
+617,
+619
+],
+"role": "state",
+"mask": 0,
+"twin_start": 617,
+"var_start": 618
+},
+{
+"lines": [
+620,
+622
+],
+"role": "state",
+"mask": 1,
+"twin_start": 620,
+"var_start": 621
+},
+{
+"lines": [
+623,
+625
+],
+"role": "state",
+"mask": 2,
+"twin_start": 623,
+"var_start": 624
+},
+{
+"lines": [
+626,
+628
+],
+"role": "state",
+"mask": 3,
+"twin_start": 626,
+"var_start": 627
+},
+{
+"lines": [
+629,
+631
+],
+"role": "state",
+"mask": 4,
+"twin_start": 629,
+"var_start": 630
+},
+{
+"lines": [
+632,
+634
+],
+"role": "state",
+"mask": 5,
+"twin_start": 632,
+"var_start": 633
+},
+{
+"lines": [
+635,
+637
+],
+"role": "state",
+"mask": 6,
+"twin_start": 635,
+"var_start": 636
+},
+{
+"lines": [
+638,
+640
+],
+"role": "state",
+"mask": 7,
+"twin_start": 638,
+"var_start": 639
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G20",
+"theorem": "mul_inv_eq_of_eq_mul",
+"goal": 20,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a = c * b",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+616,
+617
+],
+"role": "canary_break"
+},
+{
+"lines": [
+618,
+619
+],
+"role": "canary_na"
+},
+{
+"lines": [
+620,
+622
+],
+"role": "state",
+"mask": 0,
+"twin_start": 620,
+"var_start": 621
+},
+{
+"lines": [
+623,
+625
+],
+"role": "state",
+"mask": 1,
+"twin_start": 623,
+"var_start": 624
+},
+{
+"lines": [
+626,
+628
+],
+"role": "state",
+"mask": 2,
+"twin_start": 626,
+"var_start": 627
+},
+{
+"lines": [
+629,
+631
+],
+"role": "state",
+"mask": 3,
+"twin_start": 629,
+"var_start": 630
+},
+{
+"lines": [
+632,
+634
+],
+"role": "state",
+"mask": 4,
+"twin_start": 632,
+"var_start": 633
+},
+{
+"lines": [
+635,
+637
+],
+"role": "state",
+"mask": 5,
+"twin_start": 635,
+"var_start": 636
+},
+{
+"lines": [
+638,
+640
+],
+"role": "state",
+"mask": 6,
+"twin_start": 638,
+"var_start": 639
+},
+{
+"lines": [
+641,
+643
+],
+"role": "state",
+"mask": 7,
+"twin_start": 641,
+"var_start": 642
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G21",
+"theorem": "eq_mul_of_mul_inv_eq",
+"goal": 21,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a * c\u207b\u00b9 = b",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+619,
+620
+],
+"role": "canary_break"
+},
+{
+"lines": [
+621,
+622
+],
+"role": "canary_na"
+},
+{
+"lines": [
+623,
+625
+],
+"role": "state",
+"mask": 0,
+"twin_start": 623,
+"var_start": 624
+},
+{
+"lines": [
+626,
+628
+],
+"role": "state",
+"mask": 1,
+"twin_start": 626,
+"var_start": 627
+},
+{
+"lines": [
+629,
+631
+],
+"role": "state",
+"mask": 2,
+"twin_start": 629,
+"var_start": 630
+},
+{
+"lines": [
+632,
+634
+],
+"role": "state",
+"mask": 3,
+"twin_start": 632,
+"var_start": 633
+},
+{
+"lines": [
+635,
+637
+],
+"role": "state",
+"mask": 4,
+"twin_start": 635,
+"var_start": 636
+},
+{
+"lines": [
+638,
+640
+],
+"role": "state",
+"mask": 5,
+"twin_start": 638,
+"var_start": 639
+},
+{
+"lines": [
+641,
+643
+],
+"role": "state",
+"mask": 6,
+"twin_start": 641,
+"var_start": 642
+},
+{
+"lines": [
+644,
+646
+],
+"role": "state",
+"mask": 7,
+"twin_start": 644,
+"var_start": 645
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G22",
+"theorem": "eq_mul_of_inv_mul_eq",
+"goal": 22,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "b\u207b\u00b9 * a = c",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+622,
+623
+],
+"role": "canary_break"
+},
+{
+"lines": [
+624,
+625
+],
+"role": "canary_na"
+},
+{
+"lines": [
+626,
+628
+],
+"role": "state",
+"mask": 0,
+"twin_start": 626,
+"var_start": 627
+},
+{
+"lines": [
+629,
+631
+],
+"role": "state",
+"mask": 1,
+"twin_start": 629,
+"var_start": 630
+},
+{
+"lines": [
+632,
+634
+],
+"role": "state",
+"mask": 2,
+"twin_start": 632,
+"var_start": 633
+},
+{
+"lines": [
+635,
+637
+],
+"role": "state",
+"mask": 3,
+"twin_start": 635,
+"var_start": 636
+},
+{
+"lines": [
+638,
+640
+],
+"role": "state",
+"mask": 4,
+"twin_start": 638,
+"var_start": 639
+},
+{
+"lines": [
+641,
+643
+],
+"role": "state",
+"mask": 5,
+"twin_start": 641,
+"var_start": 642
+},
+{
+"lines": [
+644,
+646
+],
+"role": "state",
+"mask": 6,
+"twin_start": 644,
+"var_start": 645
+},
+{
+"lines": [
+647,
+649
+],
+"role": "state",
+"mask": 7,
+"twin_start": 647,
+"var_start": 648
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G23",
+"theorem": "mul_eq_of_eq_inv_mul",
+"goal": 23,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "b = a\u207b\u00b9 * c",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+625,
+626
+],
+"role": "canary_break"
+},
+{
+"lines": [
+627,
+628
+],
+"role": "canary_na"
+},
+{
+"lines": [
+629,
+631
+],
+"role": "state",
+"mask": 0,
+"twin_start": 629,
+"var_start": 630
+},
+{
+"lines": [
+632,
+634
+],
+"role": "state",
+"mask": 1,
+"twin_start": 632,
+"var_start": 633
+},
+{
+"lines": [
+635,
+637
+],
+"role": "state",
+"mask": 2,
+"twin_start": 635,
+"var_start": 636
+},
+{
+"lines": [
+638,
+640
+],
+"role": "state",
+"mask": 3,
+"twin_start": 638,
+"var_start": 639
+},
+{
+"lines": [
+641,
+643
+],
+"role": "state",
+"mask": 4,
+"twin_start": 641,
+"var_start": 642
+},
+{
+"lines": [
+644,
+646
+],
+"role": "state",
+"mask": 5,
+"twin_start": 644,
+"var_start": 645
+},
+{
+"lines": [
+647,
+649
+],
+"role": "state",
+"mask": 6,
+"twin_start": 647,
+"var_start": 648
+},
+{
+"lines": [
+650,
+652
+],
+"role": "state",
+"mask": 7,
+"twin_start": 650,
+"var_start": 651
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G24",
+"theorem": "mul_eq_of_eq_mul_inv",
+"goal": 24,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a = c * b\u207b\u00b9",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+628,
+629
+],
+"role": "canary_break"
+},
+{
+"lines": [
+630,
+631
+],
+"role": "canary_na"
+},
+{
+"lines": [
+632,
+634
+],
+"role": "state",
+"mask": 0,
+"twin_start": 632,
+"var_start": 633
+},
+{
+"lines": [
+635,
+637
+],
+"role": "state",
+"mask": 1,
+"twin_start": 635,
+"var_start": 636
+},
+{
+"lines": [
+638,
+640
+],
+"role": "state",
+"mask": 2,
+"twin_start": 638,
+"var_start": 639
+},
+{
+"lines": [
+641,
+643
+],
+"role": "state",
+"mask": 3,
+"twin_start": 641,
+"var_start": 642
+},
+{
+"lines": [
+644,
+646
+],
+"role": "state",
+"mask": 4,
+"twin_start": 644,
+"var_start": 645
+},
+{
+"lines": [
+647,
+649
+],
+"role": "state",
+"mask": 5,
+"twin_start": 647,
+"var_start": 648
+},
+{
+"lines": [
+650,
+652
+],
+"role": "state",
+"mask": 6,
+"twin_start": 650,
+"var_start": 651
+},
+{
+"lines": [
+653,
+655
+],
+"role": "state",
+"mask": 7,
+"twin_start": 653,
+"var_start": 654
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G25",
+"theorem": "eq_div_of_mul_eq'",
+"goal": 25,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a * c = b",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+702,
+703
+],
+"role": "canary_break"
+},
+{
+"lines": [
+704,
+705
+],
+"role": "canary_na"
+},
+{
+"lines": [
+706,
+708
+],
+"role": "state",
+"mask": 0,
+"twin_start": 706,
+"var_start": 707
+},
+{
+"lines": [
+709,
+711
+],
+"role": "state",
+"mask": 1,
+"twin_start": 709,
+"var_start": 710
+},
+{
+"lines": [
+712,
+714
+],
+"role": "state",
+"mask": 2,
+"twin_start": 712,
+"var_start": 713
+},
+{
+"lines": [
+715,
+717
+],
+"role": "state",
+"mask": 3,
+"twin_start": 715,
+"var_start": 716
+},
+{
+"lines": [
+718,
+720
+],
+"role": "state",
+"mask": 4,
+"twin_start": 718,
+"var_start": 719
+},
+{
+"lines": [
+721,
+723
+],
+"role": "state",
+"mask": 5,
+"twin_start": 721,
+"var_start": 722
+},
+{
+"lines": [
+724,
+726
+],
+"role": "state",
+"mask": 6,
+"twin_start": 724,
+"var_start": 725
+},
+{
+"lines": [
+727,
+729
+],
+"role": "state",
+"mask": 7,
+"twin_start": 727,
+"var_start": 728
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G26",
+"theorem": "div_eq_of_eq_mul''",
+"goal": 26,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a = c * b",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+705,
+706
+],
+"role": "canary_break"
+},
+{
+"lines": [
+707,
+708
+],
+"role": "canary_na"
+},
+{
+"lines": [
+709,
+711
+],
+"role": "state",
+"mask": 0,
+"twin_start": 709,
+"var_start": 710
+},
+{
+"lines": [
+712,
+714
+],
+"role": "state",
+"mask": 1,
+"twin_start": 712,
+"var_start": 713
+},
+{
+"lines": [
+715,
+717
+],
+"role": "state",
+"mask": 2,
+"twin_start": 715,
+"var_start": 716
+},
+{
+"lines": [
+718,
+720
+],
+"role": "state",
+"mask": 3,
+"twin_start": 718,
+"var_start": 719
+},
+{
+"lines": [
+721,
+723
+],
+"role": "state",
+"mask": 4,
+"twin_start": 721,
+"var_start": 722
+},
+{
+"lines": [
+724,
+726
+],
+"role": "state",
+"mask": 5,
+"twin_start": 724,
+"var_start": 725
+},
+{
+"lines": [
+727,
+729
+],
+"role": "state",
+"mask": 6,
+"twin_start": 727,
+"var_start": 728
+},
+{
+"lines": [
+730,
+732
+],
+"role": "state",
+"mask": 7,
+"twin_start": 730,
+"var_start": 731
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G27",
+"theorem": "eq_mul_of_div_eq",
+"goal": 27,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a / c = b",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+708,
+709
+],
+"role": "canary_break"
+},
+{
+"lines": [
+710,
+711
+],
+"role": "canary_na"
+},
+{
+"lines": [
+712,
+714
+],
+"role": "state",
+"mask": 0,
+"twin_start": 712,
+"var_start": 713
+},
+{
+"lines": [
+715,
+717
+],
+"role": "state",
+"mask": 1,
+"twin_start": 715,
+"var_start": 716
+},
+{
+"lines": [
+718,
+720
+],
+"role": "state",
+"mask": 2,
+"twin_start": 718,
+"var_start": 719
+},
+{
+"lines": [
+721,
+723
+],
+"role": "state",
+"mask": 3,
+"twin_start": 721,
+"var_start": 722
+},
+{
+"lines": [
+724,
+726
+],
+"role": "state",
+"mask": 4,
+"twin_start": 724,
+"var_start": 725
+},
+{
+"lines": [
+727,
+729
+],
+"role": "state",
+"mask": 5,
+"twin_start": 727,
+"var_start": 728
+},
+{
+"lines": [
+730,
+732
+],
+"role": "state",
+"mask": 6,
+"twin_start": 730,
+"var_start": 731
+},
+{
+"lines": [
+733,
+735
+],
+"role": "state",
+"mask": 7,
+"twin_start": 733,
+"var_start": 734
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G28",
+"theorem": "mul_eq_of_eq_div",
+"goal": 28,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a = c / b",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+711,
+712
+],
+"role": "canary_break"
+},
+{
+"lines": [
+713,
+714
+],
+"role": "canary_na"
+},
+{
+"lines": [
+715,
+717
+],
+"role": "state",
+"mask": 0,
+"twin_start": 715,
+"var_start": 716
+},
+{
+"lines": [
+718,
+720
+],
+"role": "state",
+"mask": 1,
+"twin_start": 718,
+"var_start": 719
+},
+{
+"lines": [
+721,
+723
+],
+"role": "state",
+"mask": 2,
+"twin_start": 721,
+"var_start": 722
+},
+{
+"lines": [
+724,
+726
+],
+"role": "state",
+"mask": 3,
+"twin_start": 724,
+"var_start": 725
+},
+{
+"lines": [
+727,
+729
+],
+"role": "state",
+"mask": 4,
+"twin_start": 727,
+"var_start": 728
+},
+{
+"lines": [
+730,
+732
+],
+"role": "state",
+"mask": 5,
+"twin_start": 730,
+"var_start": 731
+},
+{
+"lines": [
+733,
+735
+],
+"role": "state",
+"mask": 6,
+"twin_start": 733,
+"var_start": 734
+},
+{
+"lines": [
+736,
+738
+],
+"role": "state",
+"mask": 7,
+"twin_start": 736,
+"var_start": 737
+}
+]
+},
+{
+"batch": "B2",
+"file": "B2_G29",
+"theorem": "eq_iff_eq_of_div_eq_div",
+"goal": 29,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "a / b = c / d",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "Nontrivial \u03b1",
+"truth": false,
+"cost": 2,
+"inst": true
+},
+{
+"kind": "AddHyp",
+"P": "a = a",
+"truth": false,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+752,
+753
+],
+"role": "canary_break"
+},
+{
+"lines": [
+754,
+755
+],
+"role": "canary_na"
+},
+{
+"lines": [
+756,
+758
+],
+"role": "state",
+"mask": 0,
+"twin_start": 756,
+"var_start": 757
+},
+{
+"lines": [
+759,
+761
+],
+"role": "state",
+"mask": 1,
+"twin_start": 759,
+"var_start": 760
+},
+{
+"lines": [
+762,
+764
+],
+"role": "state",
+"mask": 2,
+"twin_start": 762,
+"var_start": 763
+},
+{
+"lines": [
+765,
+767
+],
+"role": "state",
+"mask": 3,
+"twin_start": 765,
+"var_start": 766
+},
+{
+"lines": [
+768,
+770
+],
+"role": "state",
+"mask": 4,
+"twin_start": 768,
+"var_start": 769
+},
+{
+"lines": [
+771,
+773
+],
+"role": "state",
+"mask": 5,
+"twin_start": 771,
+"var_start": 772
+},
+{
+"lines": [
+774,
+776
+],
+"role": "state",
+"mask": 6,
+"twin_start": 774,
+"var_start": 775
+},
+{
+"lines": [
+777,
+779
+],
+"role": "state",
+"mask": 7,
+"twin_start": 777,
+"var_start": 778
+}
+]
+}
+],
+"skips": [
+[
+"pow_ite",
+"no removable site"
+],
+[
+"ite_pow",
+"no removable site"
+],
+[
+"comp_mul_left",
+"no removable site"
+],
+[
+"comp_mul_right",
+"no removable site"
+],
+[
+"ite_mul_one",
+"no removable site"
+],
+[
+"ite_one_mul",
+"no removable site"
+],
+[
+"one_mul_eq_id",
+"no removable site"
+],
+[
+"mul_one_eq_id",
+"no removable site"
+],
+[
+"mul_left_comm",
+"no removable site"
+],
+[
+"mul_right_comm",
+"no removable site"
+],
+[
+"mul_mul_mul_comm",
+"no removable site"
+],
+[
+"mul_mul_mul_comm'",
+"no removable site"
+],
+[
+"mul_rotate",
+"no removable site"
+],
+[
+"mul_rotate'",
+"no removable site"
+],
+[
+"pow_boole",
+"no removable site"
+],
+[
+"pow_mul_pow_eq_one",
+"no removable site"
+],
+[
+"mul_left_iterate",
+"parse"
+],
+[
+"mul_right_iterate",
+"parse"
+],
+[
+"mul_left_iterate_apply",
+"no removable site"
+],
+[
+"mul_right_iterate_apply",
+"no removable site"
+],
+[
+"mul_left_iterate_apply_one",
+"no removable site"
+],
+[
+"mul_right_iterate_apply_one",
+"no removable site"
+],
+[
+"pow_iterate",
+"parse"
+],
+[
+"mul_pow",
+"parse"
+],
+[
+"mul_eq_left",
+"no removable site"
+],
+[
+"left_eq_mul",
+"no removable site"
+],
+[
+"mul_ne_left",
+"no removable site"
+],
+[
+"left_ne_mul",
+"no removable site"
+],
+[
+"mul_eq_right",
+"no removable site"
+],
+[
+"right_eq_mul",
+"no removable site"
+],
+[
+"mul_ne_right",
+"no removable site"
+],
+[
+"right_ne_mul",
+"no removable site"
+],
+[
+"inv_involutive",
+"no removable site"
+],
+[
+"inv_surjective",
+"no removable site"
+],
+[
+"inv_injective",
+"no removable site"
+],
+[
+"inv_inj",
+"no removable site"
+],
+[
+"inv_eq_iff_eq_inv",
+"no removable site"
+],
+[
+"inv_comp_inv",
+"no removable site"
+],
+[
+"leftInverse_inv",
+"no removable site"
+],
+[
+"rightInverse_inv",
+"no removable site"
+],
+[
+"mul_one_div",
+"no removable site"
+],
+[
+"mul_div_assoc'",
+"no removable site"
+],
+[
+"mul_div",
+"no removable site"
+],
+[
+"div_eq_mul_one_div",
+"no removable site"
+],
+[
+"div_one",
+"no removable site"
+],
+[
+"one_div_one",
+"no removable site"
+],
+[
+"div_ne_one_of_ne",
+"no removable site"
+],
+[
+"one_div_mul_one_div_rev",
+"no removable site"
+],
+[
+"inv_div_left",
+"no removable site"
+],
+[
+"inv_div",
+"no removable site"
+],
+[
+"one_div_div",
+"no removable site"
+],
+[
+"one_div_one_div",
+"no removable site"
+],
+[
+"div_eq_div_iff_comm",
+"no removable site"
+],
+[
+"inv_pow",
+"parse"
+],
+[
+"one_zpow",
+"parse"
+],
+[
+"zpow_neg",
+"parse"
+],
+[
+"mul_zpow_neg_one",
+"no removable site"
+],
+[
+"inv_zpow",
+"parse"
+],
+[
+"inv_zpow'",
+"no removable site"
+],
+[
+"one_div_pow",
+"no removable site"
+],
+[
+"one_div_zpow",
+"no removable site"
+],
+[
+"inv_eq_one",
+"no removable site"
+],
+[
+"one_eq_inv",
+"no removable site"
+],
+[
+"inv_ne_one",
+"no removable site"
+],
+[
+"zpow_mul",
+"parse"
+],
+[
+"zpow_mul'",
+"no removable site"
+],
+[
+"zpow_comm",
+"no removable site"
+],
+[
+"div_div_eq_mul_div",
+"no removable site"
+],
+[
+"div_inv_eq_mul",
+"no removable site"
+],
+[
+"div_mul_eq_div_div_swap",
+"no removable site"
+],
+[
+"mul_inv",
+"no removable site"
+],
+[
+"inv_div'",
+"no removable site"
+],
+[
+"div_eq_inv_mul",
+"no removable site"
+],
+[
+"inv_mul_eq_div",
+"no removable site"
+],
+[
+"inv_div_comm",
+"no removable site"
+],
+[
+"inv_mul'",
+"no removable site"
+],
+[
+"inv_div_inv",
+"no removable site"
+],
+[
+"inv_inv_div_inv",
+"no removable site"
+],
+[
+"one_div_mul_one_div",
+"no removable site"
+],
+[
+"div_right_comm",
+"no removable site"
+],
+[
+"div_div",
+"no removable site"
+],
+[
+"div_mul",
+"no removable site"
+],
+[
+"mul_div_left_comm",
+"no removable site"
+],
+[
+"mul_div_right_comm",
+"no removable site"
+],
+[
+"div_mul_eq_div_div",
+"no removable site"
+],
+[
+"div_mul_eq_mul_div",
+"no removable site"
+],
+[
+"one_div_mul_eq_div",
+"no removable site"
+],
+[
+"mul_comm_div",
+"no removable site"
+],
+[
+"div_mul_comm",
+"no removable site"
+],
+[
+"div_mul_eq_div_mul_one_div",
+"no removable site"
+],
+[
+"div_div_div_eq",
+"no removable site"
+],
+[
+"div_div_div_comm",
+"no removable site"
+],
+[
+"div_mul_div_comm",
+"no removable site"
+],
+[
+"mul_div_mul_comm",
+"no removable site"
+],
+[
+"mul_zpow",
+"parse"
+],
+[
+"div_pow",
+"no removable site"
+],
+[
+"div_zpow",
+"no removable site"
+],
+[
+"div_eq_inv_self",
+"no removable site"
+],
+[
+"mul_left_surjective",
+"no removable site"
+],
+[
+"mul_right_surjective",
+"no removable site"
+],
+[
+"mul_eq_one_iff_eq_inv",
+"no removable site"
+],
+[
+"mul_eq_one_iff_inv_eq",
+"no removable site"
+],
+[
+"mul_eq_one_iff_eq_inv'",
+"no removable site"
+],
+[
+"mul_eq_one_iff_inv_eq'",
+"no removable site"
+],
+[
+"eq_inv_iff_mul_eq_one",
+"no removable site"
+],
+[
+"inv_eq_iff_mul_eq_one",
+"no removable site"
+],
+[
+"eq_mul_inv_iff_mul_eq",
+"no removable site"
+],
+[
+"eq_inv_mul_iff_mul_eq",
+"no removable site"
+],
+[
+"inv_mul_eq_iff_eq_mul",
+"no removable site"
+],
+[
+"mul_inv_eq_iff_eq_mul",
+"no removable site"
+],
+[
+"mul_inv_eq_one",
+"no removable site"
+],
+[
+"inv_mul_eq_one",
+"no removable site"
+],
+[
+"conj_eq_one_iff",
+"no removable site"
+],
+[
+"div_left_injective",
+"no removable site"
+],
+[
+"div_right_injective",
+"no removable site"
+],
+[
+"div_mul_cancel_right",
+"no removable site"
+],
+[
+"mul_div_mul_right_eq_div",
+"no removable site"
+],
+[
+"div_right_inj",
+"no removable site"
+],
+[
+"div_left_inj",
+"no removable site"
+],
+[
+"div_mul_div_cancel",
+"no removable site"
+],
+[
+"div_div_div_cancel_right",
+"no removable site"
+],
+[
+"div_eq_one",
+"no removable site"
+],
+[
+"div_ne_one",
+"no removable site"
+],
+[
+"div_eq_self",
+"no removable site"
+],
+[
+"eq_div_iff_mul_eq'",
+"no removable site"
+],
+[
+"div_eq_iff_eq_mul",
+"no removable site"
+]
+]
+}

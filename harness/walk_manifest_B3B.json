@@ -1,0 +1,368 @@
+{
+"goals": [
+{
+"batch": "B3B",
+"file": "B3B_G00",
+"theorem": "summable_L",
+"goal": 0,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "0 \u2264 t",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+43,
+44
+],
+"role": "canary_break"
+},
+{
+"lines": [
+45,
+46
+],
+"role": "canary_na"
+},
+{
+"lines": [
+47,
+51
+],
+"role": "state",
+"mask": 0,
+"twin_start": 47,
+"var_start": 49
+},
+{
+"lines": [
+52,
+56
+],
+"role": "state",
+"mask": 1,
+"twin_start": 52,
+"var_start": 54
+}
+]
+},
+{
+"batch": "B3B",
+"file": "B3B_G01",
+"theorem": "primeSum_eq_zero",
+"goal": 1,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "t < Real.log 2",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 1,
+"truth_mask": 1,
+"entries": [
+{
+"lines": [
+36,
+37
+],
+"role": "canary_break"
+},
+{
+"lines": [
+38,
+39
+],
+"role": "canary_na"
+},
+{
+"lines": [
+40,
+44
+],
+"role": "state",
+"mask": 0,
+"twin_start": 40,
+"var_start": 42
+},
+{
+"lines": [
+45,
+49
+],
+"role": "state",
+"mask": 1,
+"twin_start": 45,
+"var_start": 47
+}
+]
+},
+{
+"batch": "B3B",
+"file": "B3B_G02",
+"theorem": "Psi_eq_arch",
+"goal": 2,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "0 \u2264 t",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "t < Real.log 2",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 2,
+"truth_mask": 3,
+"entries": [
+{
+"lines": [
+70,
+71
+],
+"role": "canary_break"
+},
+{
+"lines": [
+72,
+73
+],
+"role": "canary_na"
+},
+{
+"lines": [
+74,
+78
+],
+"role": "state",
+"mask": 0,
+"twin_start": 74,
+"var_start": 76
+},
+{
+"lines": [
+79,
+83
+],
+"role": "state",
+"mask": 1,
+"twin_start": 79,
+"var_start": 81
+},
+{
+"lines": [
+84,
+88
+],
+"role": "state",
+"mask": 2,
+"twin_start": 84,
+"var_start": 86
+},
+{
+"lines": [
+89,
+93
+],
+"role": "state",
+"mask": 3,
+"twin_start": 89,
+"var_start": 91
+}
+]
+},
+{
+"batch": "B3B",
+"file": "B3B_G03",
+"theorem": "primeSum_first_window",
+"goal": 3,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "Real.log 2 \u2264 t",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "t < Real.log 3",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 2,
+"truth_mask": 3,
+"entries": [
+{
+"lines": [
+36,
+37
+],
+"role": "canary_break"
+},
+{
+"lines": [
+38,
+39
+],
+"role": "canary_na"
+},
+{
+"lines": [
+40,
+44
+],
+"role": "state",
+"mask": 0,
+"twin_start": 40,
+"var_start": 42
+},
+{
+"lines": [
+45,
+49
+],
+"role": "state",
+"mask": 1,
+"twin_start": 45,
+"var_start": 47
+},
+{
+"lines": [
+50,
+54
+],
+"role": "state",
+"mask": 2,
+"twin_start": 50,
+"var_start": 52
+},
+{
+"lines": [
+55,
+59
+],
+"role": "state",
+"mask": 3,
+"twin_start": 55,
+"var_start": 57
+}
+]
+},
+{
+"batch": "B3B",
+"file": "B3B_G04",
+"theorem": "Psi_first_window",
+"goal": 4,
+"menu": [
+{
+"kind": "AddHyp",
+"P": "Real.log 2 \u2264 t",
+"truth": true,
+"cost": 2
+},
+{
+"kind": "AddHyp",
+"P": "t < Real.log 3",
+"truth": true,
+"cost": 2
+}
+],
+"n_removed": 2,
+"truth_mask": 3,
+"entries": [
+{
+"lines": [
+89,
+90
+],
+"role": "canary_break"
+},
+{
+"lines": [
+91,
+92
+],
+"role": "canary_na"
+},
+{
+"lines": [
+93,
+97
+],
+"role": "state",
+"mask": 0,
+"twin_start": 93,
+"var_start": 95
+},
+{
+"lines": [
+98,
+102
+],
+"role": "state",
+"mask": 1,
+"twin_start": 98,
+"var_start": 100
+},
+{
+"lines": [
+103,
+107
+],
+"role": "state",
+"mask": 2,
+"twin_start": 103,
+"var_start": 105
+},
+{
+"lines": [
+108,
+112
+],
+"role": "state",
+"mask": 3,
+"twin_start": 108,
+"var_start": 110
+}
+]
+}
+],
+"skips": [
+[
+"summable_C",
+"no removable site"
+],
+[
+"L_zero",
+"no removable site"
+],
+[
+"PsiArch_zero",
+"no removable site"
+],
+[
+"Psi_zero",
+"no removable site"
+],
+[
+"G_symm",
+"no removable site"
+],
+[
+"G_diag",
+"no removable site"
+]
+]
+}

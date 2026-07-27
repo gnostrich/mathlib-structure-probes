@@ -1,0 +1,2960 @@
+{
+"rows": [
+{
+"theorem": "left_ne_zero_of_mul",
+"file": "V000",
+"math_res": NaN,
+"infra_res": 1.0,
+"n_amb": 1,
+"n_hyp": 0,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 25,
+"outdeg": 11,
+"matched": true
+},
+{
+"theorem": "right_ne_zero_of_mul",
+"file": "V001",
+"math_res": NaN,
+"infra_res": 1.0,
+"n_amb": 1,
+"n_hyp": 0,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 0,
+"outdeg": 0,
+"matched": false
+},
+{
+"theorem": "ne_zero_and_ne_zero_of_mul",
+"file": "V002",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 1,
+"n_hyp": 1,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 2,
+"outdeg": 12,
+"matched": true
+},
+{
+"theorem": "mul_eq_zero_of_ne_zero_imp_eq_zero",
+"file": "V003",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 1,
+"n_hyp": 1,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 19,
+"matched": true
+},
+{
+"theorem": "zero_mul_eq_const",
+"file": "V004",
+"math_res": NaN,
+"infra_res": 1.0,
+"n_amb": 1,
+"n_hyp": 0,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 0,
+"outdeg": 11,
+"matched": true
+},
+{
+"theorem": "mul_zero_eq_const",
+"file": "V005",
+"math_res": NaN,
+"infra_res": 1.0,
+"n_amb": 1,
+"n_hyp": 0,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 0,
+"outdeg": 11,
+"matched": true
+},
+{
+"theorem": "eq_zero_of_mul_self_eq_zero",
+"file": "V006",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 4,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 2,
+"outdeg": 11,
+"matched": true
+},
+{
+"theorem": "mul_ne_zero",
+"file": "V007",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 4,
+"n_hyp": 2,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M1_h1",
+"P2_M1xI2"
+],
+"indeg": 183,
+"outdeg": 17,
+"matched": true
+},
+{
+"theorem": "eq_zero_of_zero_eq_one",
+"file": "V008",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 1,
+"n_hyp": 2,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M1_h1",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 3,
+"outdeg": 21,
+"matched": true
+},
+{
+"theorem": "subsingleton_iff_zero_eq_one",
+"file": "V009",
+"math_res": NaN,
+"infra_res": 0.0,
+"n_amb": 1,
+"n_hyp": 0,
+"pattern": [
+[
+"I1_shadow",
+"BREAK"
+],
+[
+"I2_synthHB",
+"BREAK"
+],
+[
+"I3_synthSize",
+"BREAK"
+]
+],
+"breaks": [
+"I1_shadow",
+"I2_synthHB",
+"I3_synthSize"
+],
+"indeg": 6,
+"outdeg": 17,
+"matched": true
+},
+{
+"theorem": "eq_of_zero_eq_one",
+"file": "V010",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 1,
+"n_hyp": 2,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M1_h1",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 12,
+"matched": true
+},
+{
+"theorem": "zero_ne_one_or_forall_eq_0",
+"file": "V011",
+"math_res": NaN,
+"infra_res": 1.0,
+"n_amb": 1,
+"n_hyp": 0,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 0,
+"outdeg": 14,
+"matched": true
+},
+{
+"theorem": "left_ne_zero_of_mul_eq_one",
+"file": "V012",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 3,
+"n_hyp": 1,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"BREAK"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M3_Nontrivial",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 6,
+"outdeg": 18,
+"matched": true
+},
+{
+"theorem": "right_ne_zero_of_mul_eq_one",
+"file": "V013",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 3,
+"n_hyp": 1,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"BREAK"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M3_Nontrivial",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 0,
+"matched": false
+},
+{
+"theorem": "IsNilpotent.mk",
+"file": "V014",
+"math_res": 0.75,
+"infra_res": 1.0,
+"n_amb": 3,
+"n_hyp": 3,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"SURVIVE"
+],
+[
+"M1_h2",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"SURVIVE"
+]
+],
+"breaks": [
+"M1_h2"
+],
+"indeg": 1,
+"outdeg": 10,
+"matched": true
+},
+{
+"theorem": "isNilpotent_of_subsingleton",
+"file": "V015",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 3,
+"n_hyp": 0,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 0,
+"outdeg": 13,
+"matched": true
+},
+{
+"theorem": "IsNilpotent.zero",
+"file": "V016",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 3,
+"n_hyp": 0,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 5,
+"outdeg": 16,
+"matched": true
+},
+{
+"theorem": "not_isNilpotent_one",
+"file": "V017",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 3,
+"n_hyp": 0,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 0,
+"outdeg": 27,
+"matched": true
+},
+{
+"theorem": "IsNilpotent.pow_succ",
+"file": "V018",
+"math_res": 0.6666666666666666,
+"infra_res": 1.0,
+"n_amb": 3,
+"n_hyp": 2,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+]
+],
+"breaks": [
+"M1_h1"
+],
+"indeg": 1,
+"outdeg": 35,
+"matched": true
+},
+{
+"theorem": "IsNilpotent.of_pow",
+"file": "V019",
+"math_res": 0.6666666666666666,
+"infra_res": 1.0,
+"n_amb": 3,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 1,
+"outdeg": 24,
+"matched": true
+},
+{
+"theorem": "IsNilpotent.pow_of_pos",
+"file": "V020",
+"math_res": 0.5,
+"infra_res": 1.0,
+"n_amb": 3,
+"n_hyp": 2,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M1_h1",
+"P2_M1xI2"
+],
+"indeg": 3,
+"outdeg": 23,
+"matched": true
+},
+{
+"theorem": "IsNilpotent.pow_iff_pos",
+"file": "V021",
+"math_res": 0.0,
+"infra_res": 0.0,
+"n_amb": 3,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"BREAK"
+],
+[
+"I3_synthSize",
+"BREAK"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M2_MulZeroOneClass",
+"M3_Nontrivial",
+"I2_synthHB",
+"I3_synthSize",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 17,
+"matched": true
+},
+{
+"theorem": "eq_zero_of_pow_eq_zero",
+"file": "V022",
+"math_res": 0.6666666666666666,
+"infra_res": 1.0,
+"n_amb": 3,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 34,
+"outdeg": 11,
+"matched": true
+},
+{
+"theorem": "IsNilpotent.eq_zero",
+"file": "V023",
+"math_res": 0.6666666666666666,
+"infra_res": 1.0,
+"n_amb": 3,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 14,
+"outdeg": 9,
+"matched": true
+},
+{
+"theorem": "isNilpotent_iff_eq_zero",
+"file": "V024",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 3,
+"n_hyp": 0,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 9,
+"outdeg": 17,
+"matched": true
+},
+{
+"theorem": "exists_isNilpotent_of_not_isReduced",
+"file": "V025",
+"math_res": 0.6666666666666666,
+"infra_res": 1.0,
+"n_amb": 3,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 1,
+"outdeg": 22,
+"matched": true
+},
+{
+"theorem": "zero_pow_eq",
+"file": "V027",
+"math_res": 0.3333333333333333,
+"infra_res": 1.0,
+"n_amb": 4,
+"n_hyp": 1,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"BREAK"
+],
+[
+"P1_M1xI1",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"SURVIVE"
+]
+],
+"breaks": [
+"M2_MulZeroOneClass",
+"M3_Nontrivial"
+],
+"indeg": 7,
+"outdeg": 30,
+"matched": true
+},
+{
+"theorem": "zero_pow_eq_one\u2080",
+"file": "V028",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 4,
+"n_hyp": 0,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"BREAK"
+]
+],
+"breaks": [
+"M2_MulZeroOneClass",
+"M3_Nontrivial"
+],
+"indeg": 0,
+"outdeg": 30,
+"matched": true
+},
+{
+"theorem": "ne_zero_pow",
+"file": "V030",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 4,
+"n_hyp": 2,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"BREAK"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M1_h1",
+"M2_MulZeroOneClass",
+"M3_Nontrivial",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 1,
+"outdeg": 18,
+"matched": true
+},
+{
+"theorem": "zero_pow_eq_zero",
+"file": "V031",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 4,
+"n_hyp": 0,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"BREAK"
+]
+],
+"breaks": [
+"M2_MulZeroOneClass",
+"M3_Nontrivial"
+],
+"indeg": 1,
+"outdeg": 33,
+"matched": true
+},
+{
+"theorem": "pow_mul_eq_zero_of_le",
+"file": "V032",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 4,
+"n_hyp": 2,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"BREAK"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M1_h1",
+"M2_MulZeroOneClass",
+"M3_Nontrivial",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 1,
+"outdeg": 41,
+"matched": true
+},
+{
+"theorem": "pow_eq_zero_iff",
+"file": "V033",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 5,
+"n_hyp": 1,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"BREAK"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M2_MulZeroOneClass",
+"M3_Nontrivial",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 16,
+"outdeg": 21,
+"matched": true
+},
+{
+"theorem": "pow_ne_zero_iff",
+"file": "V034",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 5,
+"n_hyp": 1,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"BREAK"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M2_MulZeroOneClass",
+"M3_Nontrivial",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 4,
+"outdeg": 18,
+"matched": true
+},
+{
+"theorem": "pow_ne_zero",
+"file": "V035",
+"math_res": 0.75,
+"infra_res": 1.0,
+"n_amb": 5,
+"n_hyp": 2,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"SURVIVE"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P1_M1xI1",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"SURVIVE"
+]
+],
+"breaks": [
+"M1_h1"
+],
+"indeg": 199,
+"outdeg": 16,
+"matched": true
+},
+{
+"theorem": "sq_eq_zero_iff",
+"file": "V036",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 5,
+"n_hyp": 0,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"BREAK"
+]
+],
+"breaks": [
+"M2_MulZeroOneClass",
+"M3_Nontrivial"
+],
+"indeg": 10,
+"outdeg": 19,
+"matched": true
+},
+{
+"theorem": "pow_eq_zero_iff'",
+"file": "V037",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 5,
+"n_hyp": 0,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"BREAK"
+]
+],
+"breaks": [
+"M2_MulZeroOneClass",
+"M3_Nontrivial"
+],
+"indeg": 5,
+"outdeg": 46,
+"matched": true
+},
+{
+"theorem": "exists_right_inv_of_exists_left_inv",
+"file": "V038",
+"math_res": 0.5,
+"infra_res": 1.0,
+"n_amb": 5,
+"n_hyp": 2,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M1_h1",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 1,
+"outdeg": 41,
+"matched": true
+},
+{
+"theorem": "mul_right_eq_self\u2080",
+"file": "V039",
+"math_res": 0.5,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 0,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+]
+],
+"breaks": [
+"M2_MulZeroOneClass"
+],
+"indeg": 3,
+"outdeg": 25,
+"matched": true
+},
+{
+"theorem": "mul_left_eq_self\u2080",
+"file": "V040",
+"math_res": 0.5,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 0,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+]
+],
+"breaks": [
+"M2_MulZeroOneClass"
+],
+"indeg": 2,
+"outdeg": 25,
+"matched": true
+},
+{
+"theorem": "mul_eq_left\u2080",
+"file": "V041",
+"math_res": 0.3333333333333333,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M2_MulZeroOneClass",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 3,
+"outdeg": 26,
+"matched": true
+},
+{
+"theorem": "mul_eq_right\u2080",
+"file": "V042",
+"math_res": 0.3333333333333333,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M2_MulZeroOneClass",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 6,
+"outdeg": 26,
+"matched": true
+},
+{
+"theorem": "left_eq_mul\u2080",
+"file": "V043",
+"math_res": 0.3333333333333333,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M2_MulZeroOneClass",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 23,
+"matched": true
+},
+{
+"theorem": "right_eq_mul\u2080",
+"file": "V044",
+"math_res": 0.3333333333333333,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M2_MulZeroOneClass",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 0,
+"matched": false
+},
+{
+"theorem": "eq_zero_of_mul_eq_self_right",
+"file": "V045",
+"math_res": 0.25,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 2,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M1_h1",
+"M2_MulZeroOneClass",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 1,
+"outdeg": 22,
+"matched": true
+},
+{
+"theorem": "eq_zero_of_mul_eq_self_left",
+"file": "V046",
+"math_res": 0.25,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 2,
+"pattern": [
+[
+"I1_shadow",
+"SURVIVE"
+],
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"BREAK"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M1_h1",
+"M2_MulZeroOneClass",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 5,
+"outdeg": 22,
+"matched": true
+},
+{
+"theorem": "GroupWithZero.mul_right_injective",
+"file": "V047",
+"math_res": 0.6666666666666666,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 32,
+"matched": true
+},
+{
+"theorem": "GroupWithZero.mul_left_injective",
+"file": "V048",
+"math_res": 0.6666666666666666,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 31,
+"matched": true
+},
+{
+"theorem": "inv_mul_cancel_right\u2080",
+"file": "V049",
+"math_res": 0.5,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 2,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 27,
+"outdeg": 36,
+"matched": true
+},
+{
+"theorem": "inv_mul_cancel_left\u2080",
+"file": "V050",
+"math_res": 0.5,
+"infra_res": 0.0,
+"n_amb": 6,
+"n_hyp": 2,
+"pattern": [
+[
+"I2_synthHB",
+"BREAK"
+],
+[
+"I3_synthSize",
+"BREAK"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"SURVIVE"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"I2_synthHB",
+"I3_synthSize",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 47,
+"outdeg": 38,
+"matched": true
+},
+{
+"theorem": "inv_eq_of_mul",
+"file": "V051",
+"math_res": 0.0,
+"infra_res": 0.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"BREAK"
+],
+[
+"I3_synthSize",
+"BREAK"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"P1_M1xI1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"I2_synthHB",
+"I3_synthSize",
+"P1_M1xI1",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 0,
+"matched": false
+},
+{
+"theorem": "zero_div",
+"file": "V052",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 212,
+"outdeg": 27,
+"matched": true
+},
+{
+"theorem": "div_zero",
+"file": "V053",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 235,
+"outdeg": 28,
+"matched": true
+},
+{
+"theorem": "mul_self_mul_inv",
+"file": "V054",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 3,
+"outdeg": 38,
+"matched": true
+},
+{
+"theorem": "mul_inv_mul_cancel",
+"file": "V055",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 1,
+"outdeg": 34,
+"matched": true
+},
+{
+"theorem": "inv_mul_mul_self",
+"file": "V056",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 3,
+"outdeg": 34,
+"matched": true
+},
+{
+"theorem": "mul_self_div_self",
+"file": "V057",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 3,
+"outdeg": 28,
+"matched": true
+},
+{
+"theorem": "div_self_mul_self",
+"file": "V058",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 1,
+"outdeg": 28,
+"matched": true
+},
+{
+"theorem": "div_self_mul_self'",
+"file": "V059",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 6,
+"outdeg": 41,
+"matched": true
+},
+{
+"theorem": "one_div_ne_zero",
+"file": "V060",
+"math_res": 0.6666666666666666,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 0,
+"matched": false
+},
+{
+"theorem": "inv_eq_zero",
+"file": "V061",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 0,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 17,
+"outdeg": 25,
+"matched": true
+},
+{
+"theorem": "zero_eq_inv",
+"file": "V062",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 0,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 0,
+"outdeg": 17,
+"matched": true
+},
+{
+"theorem": "div_div_self",
+"file": "V063",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 1,
+"outdeg": 19,
+"matched": true
+},
+{
+"theorem": "ne_zero_of_one_div_ne_zero",
+"file": "V064",
+"math_res": 0.6666666666666666,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 24,
+"matched": true
+},
+{
+"theorem": "eq_zero_of_one_div_eq_zero",
+"file": "V065",
+"math_res": 0.6666666666666666,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 21,
+"matched": true
+},
+{
+"theorem": "mul_left_surjective\u2080",
+"file": "V066",
+"math_res": 0.6666666666666666,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 35,
+"matched": true
+},
+{
+"theorem": "mul_right_surjective\u2080",
+"file": "V067",
+"math_res": 0.6666666666666666,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 0,
+"outdeg": 35,
+"matched": true
+},
+{
+"theorem": "zero_zpow_eq",
+"file": "V069",
+"math_res": 0.6666666666666666,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 1,
+"outdeg": 35,
+"matched": true
+},
+{
+"theorem": "zero_zpow_eq_one\u2080",
+"file": "V070",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 0,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 1,
+"outdeg": 32,
+"matched": true
+},
+{
+"theorem": "zpow_sub_one\u2080",
+"file": "V072",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 2,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M1_h1",
+"P2_M1xI2"
+],
+"indeg": 2,
+"outdeg": 50,
+"matched": true
+},
+{
+"theorem": "zpow_add\u2080",
+"file": "V073",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 2,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M1_h1",
+"P2_M1xI2"
+],
+"indeg": 28,
+"outdeg": 63,
+"matched": true
+},
+{
+"theorem": "zpow_add'",
+"file": "V074",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"P2_M1xI2"
+],
+"indeg": 6,
+"outdeg": 60,
+"matched": true
+},
+{
+"theorem": "zpow_one_add\u2080",
+"file": "V075",
+"math_res": 0.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 2,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M1_h0",
+"BREAK"
+],
+[
+"M1_h1",
+"BREAK"
+],
+[
+"P2_M1xI2",
+"BREAK"
+]
+],
+"breaks": [
+"M1_h0",
+"M1_h1",
+"P2_M1xI2"
+],
+"indeg": 2,
+"outdeg": 27,
+"matched": true
+},
+{
+"theorem": "div_mul_eq_mul_div\u2080",
+"file": "V076",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 3,
+"outdeg": 43,
+"matched": true
+},
+{
+"theorem": "div_sq_cancel",
+"file": "V077",
+"math_res": 1.0,
+"infra_res": 1.0,
+"n_amb": 6,
+"n_hyp": 1,
+"pattern": [
+[
+"I2_synthHB",
+"SURVIVE"
+],
+[
+"I3_synthSize",
+"SURVIVE"
+],
+[
+"M2_MulZeroOneClass",
+"SURVIVE"
+],
+[
+"M3_Nontrivial",
+"SURVIVE"
+]
+],
+"breaks": [],
+"indeg": 0,
+"outdeg": 60,
+"matched": true
+}
+]
+}

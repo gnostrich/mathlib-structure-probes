@@ -1,0 +1,27 @@
+{
+ "B1": {
+  "verdict": "DEGENERATE",
+  "evaluable": 0,
+  "n": 20,
+  "step0": 0,
+  "hostile": 20,
+  "kgroups": {
+   "unsolved-goal": 20
+  }
+ },
+ "B2": {
+  "verdict": "COMPASS BLIND",
+  "evaluable": 15,
+  "n": 30,
+  "containment": 0.0,
+  "adv_steps": 6.0,
+  "blind_steps": 2.770666666666666,
+  "margin": 0.4617777777777777,
+  "step0": 0,
+  "hostile": 15,
+  "kgroups": {
+   "stmt-NA": 2,
+   "unsolved-goal": 13
+  }
+ }
+}

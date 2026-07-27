@@ -1,0 +1,15 @@
+fidelity: cells=300 run-mismatch=0 canary-failures run0=0 run1=0
+budget flip-rate: 0/300 = 0.000 (ok)
+
+== B1: goals=20 evaluable=0 step0-close=0 not-repairable/hostile=20
+   k-groups (irreducible remainder classes): {'unsolved-goal': 20}
+   VERDICT B1: DEGENERATE (evaluable 0/20)
+
+== B2: goals=30 evaluable=15 step0-close=0 not-repairable/hostile=15
+   k-groups (irreducible remainder classes): {'stmt-NA': 2, 'unsolved-goal': 13}
+   advised mean steps=6.00  blind mean steps=2.77  margin=0.46x  containment=0.00
+   mean advised cost-paid=0.00
+   VERDICT B2: COMPASS BLIND
+
+== STAGE B GATE ==
+  B3 LAUNCHES

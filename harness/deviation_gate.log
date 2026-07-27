@@ -1,0 +1,14 @@
+loading faithful graph ...
+nodes=333044 edges=7523067
+condensation + edge multiplicities ...
+depth (max-gen = back-actual) and g (mean-gen = back-guessed proxy) ...
+
+== DEVIATION GATE ==
+  raw agreement Spearman(g, depth) = 0.644
+  [T1 magnitude] unforced fraction 1-R2(rank g~rank depth) = 0.585  (line >=0.15) -> PASS
+  [T2 concentration] top-decile |dev| mass = 0.253  (noise~0.26; line >=0.40) -> fail
+  [T3 reproducibility] Spearman(dev, dev_perturbed) = 0.999  (line >=0.70) -> PASS
+  [T4 clusters] top-dev module-concentration obs=0.323 vs null=0.100 ratio=3.23x  (line >=1.5) -> cluster-structure
+
+== VERDICT (locked lines; proxy => DEAD is provisional) ==
+  DEAD (PROVISIONAL ON PROXY): failed ['concentration']. Guess vs truth differ by forced topology + noise; nothing learnable on THIS proxy. Retest only if the real Gibbs object is wired.

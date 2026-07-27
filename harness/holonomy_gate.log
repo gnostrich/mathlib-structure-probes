@@ -1,0 +1,18 @@
+loading faithful graph ...
+nodes=333044 edges=7523067
+
+== TAUTOLOGY CHECK: holonomy of a node-scalar order residual is ~0 ==
+  curl_fraction of a pure node-potential flow = 7.55e-05  (≈0 confirms node-order holonomy is tautologically zero)
+
+== MAIN: Hodge curl of the unit dependency comparison flow ==
+  curl_fraction (global) = 0.0760   [lsqr istop=7, resid=7.56e+02]
+
+== CONTROL: module conditioning (intra-module edges only) ==
+  intra-module edges: 828851/7523067 (11%)
+  curl_fraction (intra-module) = 0.1492   ratio intra/global = 1.96
+
+== REPRODUCIBILITY: second solve, shuffled edge order ==
+  curl_fraction (reordered) = 0.0760   |Δ| = 4.8369e-09
+
+== VERDICT (locked; intrinsic -> a null is a REAL kill) ==
+  DEAD (REAL, non-provisional): curl_fraction 0.076<0.15 (order ~ clean hierarchy). No intra-region circulation to learn -> back-then-forward collapses to forward. Thread ends here.

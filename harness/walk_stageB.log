@@ -1,0 +1,13 @@
+fidelity: cells=40 run-mismatch=0 canary-failures run0=0 run1=0
+budget flip-rate: 0/40 = 0.000 (ok)
+
+== B3A: goals=9 evaluable=0 step0-close=0 not-repairable/hostile=9
+   k-groups (irreducible remainder classes): {'unsolved-goal': 6, 'stmt-NA': 3}
+   VERDICT B3A: DEGENERATE (evaluable 0/9)
+
+== B3B: goals=5 evaluable=0 step0-close=0 not-repairable/hostile=5
+   k-groups (irreducible remainder classes): {'unsolved-goal': 5}
+   VERDICT B3B: DEGENERATE (evaluable 0/5)
+
+== STAGE B GATE ==
+  B3 DOES NOT LAUNCH (both A batches DEGENERATE)

@@ -97,3 +97,33 @@ NOTE: on the approx graph H2 does NOT clear the degree control, so wiring is NOT
     for the confirmation attempt. One round; no follow-ups.
   Files: probe17/PREREG-rfl-locus.md, RESULTS-rfl-locus.md, probe17_rfl_locus.py,
   probe17_perclass.py, p17_run.log, p17_perclass.log, p17_report.json.
+
+- PROBE 18 — harmonic-measure growth on a non-amenable graph (probes/18-harmonic-growth/).
+  Pre-registered and committed before any cluster was grown; solver committed before the registered
+  cells. Dielectric Breakdown Model (Niemeyer-Pietronero-Wiesmann 1984) at eta=1 == DLA, by DIRECT
+  Laplace solve per deposition (no walkers — the walker method VOIDed on T_3 x Z in probe 17b
+  because the walk is transient and 18-67% of depositions fell back to a deterministic rule).
+  * VERDICT: **VOID** — the pre-registered truncation-convergence cell failed. Z^2 DBM D at
+    R_out = R_max+10 vs +25 = 1.6462 vs 1.7479, |diff| = 0.1017 > 0.05. CLOSED, terminal.
+  * The exponent cells PASSED on the mean: Z^2 Eden D = 2.0597 (band [1.90,2.10]), Z^2 DBM(eta=1)
+    D = 1.6841 (band [1.60,1.85]), 3 seeds each at N=2500.
+  * Honest diagnosis: the convergence cell is single-seed, and the seed-to-seed spread of Z^2 DBM D
+    at FIXED margin is 0.256 — 5x its own 0.05 tolerance. The test as pre-registered cannot resolve
+    the question at this scale. Recorded, NOT repaired: re-running to get inside tolerance would be
+    the outcome-dependent adjustment the pre-registration forbids.
+  * Test cell reported but NON-ADJUDICATING: T_3 x Z c(Eden) = 0.2882 (N=500) vs c(DBM) = 0.2667
+    (N=146-185), diff 0.0214; ambient log 2 = 0.693. Every DBM run hit the pre-registered
+    MAX_DOMAIN guard (continuing needed a ball of 1,572,823 nodes vs the 1,200,000 cap), so the
+    arms are not N-matched and no N-matched comparison was pre-registered or introduced after.
+    No DBM cluster was a single path, so DEGENERATE does not apply.
+  * Instrument clean: 0 CG fallbacks over 8,000+ Dirichlet solves; max deviation vs exact spsolve
+    <= 3.6e-8; no cell hit the 90-min budget. The method change fixed 17b's contamination — no
+    deposition anywhere fell back to a different growth rule — and failed on a different cell.
+  * NOT claimed: that mathematics grows this way; anything about Mathlib/HM/FM; that harmonic
+    growth fails to filament on T_3 x Z; that truncation IS contaminating the field. The
+    resolvent-as-growth-driver precondition remains UNESTABLISHED. [proven-negative] for this
+    method at this scale. [occupied] for DBM/DLA (Witten-Sander 1981; NPW 1984; Benjamini-Yadin).
+  * Named successor (NOT authorised here): exact linear algebra on a smaller truncation, as a fresh
+    probe with a fresh prereg, which must state the convergence tolerance relative to the
+    estimator's seed variance rather than as an absolute 0.05.
+  Files: probes/18-harmonic-growth/PREREG.md, solver.py, RESULTS.md, cells/ (16 cell records).

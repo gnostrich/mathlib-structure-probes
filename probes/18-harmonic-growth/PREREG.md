@@ -144,3 +144,27 @@ precondition.
 `harness/STATUS.md`. PR. If the Laplace solver also fails, the named successor is exact linear
 algebra on a smaller truncation — a **fresh probe with a fresh pre-registration**, not a
 continuation of this one.
+
+---
+
+## PRE-RUN AMENDMENT (committed before any run; no results seen)
+
+**Feasibility guard on the truncation ball.** The pre-registration above fixes
+`R_out = R_max(cluster) + margin` and the directive fixes the domain as *all graph nodes within
+`R_out` of the origin*. On T₃ × Z that ball holds ≈ `3·2^R_out` nodes, so a cluster that grows
+*tall* — precisely what a filamenting DBM cluster would do — makes the domain explode
+super-exponentially (a 500-node filament up the tree would demand a ball of ~2^505 nodes).
+
+Therefore, fixed now:
+
+- **`MAX_DOMAIN = 1_200_000` nodes.** When the required ball would exceed this, the run **stops**
+  and reports its achieved `N`. It is **not** restarted with a smaller margin, a different
+  substrate, or a re-centred domain.
+- A stopped run is treated exactly like the wall-clock budget: **achieved N is reported**, and if
+  it falls below the pre-defined meaningful-fit threshold (fit band ≥ 4 distinct integer radii and
+  `R_max ≥ 6`), the verdict rung is **INCONCLUSIVE and terminal**, not a licence to re-run.
+- The guard applies to both substrates and both arms; on Z² it is not expected to bind
+  (`R_out ≈ 145` ⇒ ≈ 66,000 nodes).
+
+This is a computational-feasibility bound, not an outcome-dependent choice: it is a fixed number,
+fixed before any cluster was grown, and any run that hits it is reported as hitting it.

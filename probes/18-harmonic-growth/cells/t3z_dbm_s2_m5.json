@@ -1,0 +1,33 @@
+{
+ "graph": "T3xZ",
+ "rule": "dbm",
+ "seed": 2,
+ "margin": 5.0,
+ "N_target": 500,
+ "N": 167,
+ "Rmax": 13,
+ "stop": "MAX_DOMAIN guard: ball of radius 18.0 would hold ~1,572,823 nodes > 1,200,000",
+ "fallbacks": 0,
+ "solves": 166,
+ "spsolve_max_dev": 2.467258841676312e-08,
+ "seconds": 21.13010025024414,
+ "single_path": false,
+ "c": 0.27663936061060534,
+ "fit_radii": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "fit_counts": [
+  38,
+  59,
+  82,
+  112,
+  136,
+  150
+ ],
+ "fit_meaningful": true
+}

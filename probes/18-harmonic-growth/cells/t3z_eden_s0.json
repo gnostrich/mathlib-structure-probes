@@ -1,0 +1,35 @@
+{
+ "graph": "T3xZ",
+ "rule": "eden",
+ "seed": 0,
+ "margin": 5.0,
+ "N_target": 500,
+ "N": 500,
+ "Rmax": 14,
+ "stop": null,
+ "fallbacks": 0,
+ "solves": 0,
+ "spsolve_max_dev": 0.0,
+ "seconds": 0.004995822906494141,
+ "single_path": false,
+ "c": 0.3002048343365618,
+ "fit_radii": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "fit_counts": [
+  72,
+  129,
+  202,
+  283,
+  358,
+  412,
+  452
+ ],
+ "fit_meaningful": true
+}

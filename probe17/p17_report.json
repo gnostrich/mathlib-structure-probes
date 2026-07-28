@@ -1,0 +1,19 @@
+{
+ "D": 0.6508460371486946,
+ "S": 0.07696684344556637,
+ "S_all": 0.04269904366151678,
+ "S_weighted": 0.07329960484686726,
+ "max_depth": 192,
+ "n_classified": 170326,
+ "join": 0.9845825064875592,
+ "strict": 0.10757018893181311,
+ "simp": 0.05852893862358066,
+ "substantive": 0.8339008724446062,
+ "logic_init": 0.17955112219451372,
+ "analysis": 0.06594355922441927,
+ "target_rank": 6067,
+ "n_modules_primary": 2563,
+ "vertices": 467680,
+ "condensed": 467680,
+ "verdict": "PARTIAL (D=0.651, S=0.077) \u2014 report both, claim nothing beyond. TERMINAL."
+}

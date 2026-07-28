@@ -1,0 +1,27 @@
+building declaration-level dependency DAG (route (a)) ...
+  vertices=467680 edges=10463268 (Mathlib decls=333044; the remainder are core/primitive targets)
+collapsing SCCs ...
+  467680 -> 467680 vertices after condensation (0 non-trivial SCCs)
+longest path to primitives ...
+  max depth = 192  mean = 22.3  (paper reports max ~300)
+unwrapped size (multiplicity-blind, log10) ...
+  top-5 by unwrapped(log10): [('absolutelyContinuous_comp_of_absolutel', 29.9), ('posterior_boolKernel_apply_false', 29.8), ('posterior_eq_withDensity_of_countable', 29.8), ('posterior_boolKernel_apply_true', 29.8), ('posterior_eq_withDensity', 29.8)]
+  paper's named largest element rank here: 6067 of 333044 (present)
+
+classifying proofs from source text ...
+  classified 170326 theorem/lemma declarations
+  strict rfl = 0.1076   by simp = 0.0585   substantive = 0.8339
+
+join to graph: 167700/170326 (98.5%)
+  ** D = AUC(their depth -> substantive) = 0.6508 **
+  cross-check (elaborated proof-side value_deps): strict-rfl median=12 (n=18174) vs substantive median=29 (n=139674)
+
+  ** S (primary: 2563 modules >=20 thms, 26 subjects, unweighted) = 0.0770 **
+     S (all 6676 modules, 31 subjects) = 0.0427;  S (size-weighted) = 0.0733
+
+HARNESS: Logic+Init strict definitional = 0.1796 (n=1604) vs Analysis = 0.0659 (n=20836) -> PASS
+HARNESS: max depth = 192 (need 30-3000, paper ~300) -> PASS
+
+========================================================================
+VERDICT: PARTIAL (D=0.651, S=0.077) — report both, claim nothing beyond. TERMINAL.
+========================================================================

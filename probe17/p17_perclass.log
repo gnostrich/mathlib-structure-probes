@@ -1,0 +1,5 @@
+joined 167700 theorems
+  AUC(depth -> substantive ) = 0.6508
+  AUC(depth -> strict rfl  ) = 0.3103
+  AUC(depth -> by simp     ) = 0.4517
+  S(strict rfl) = 0.0770   S(by simp) = 0.0712   (n=2563 modules >=20 thms)

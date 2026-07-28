@@ -1,0 +1,22 @@
+files with logs: 275 / 275
+canary failures: 0 []
+baseline (unperturbed) failures -> theorems excluded: 4
+error classes on BREAK cells: {'unclassified': 140, 'lean.unknownIdentifier': 70, 'lean.synthInstanceFailed': 36}
+
+analysable theorems: corpus=159 trivialities=30
+direction coverage (measurable, cap_eff>=1): {'D1': '55%', 'D2': '67%', 'D3': '0%', 'D4': '6%', 'D5': '0%', 'D6': '1%'}
+directions entering the statistic (>= 30%): ['D1', 'D2']
+
+CEILING check: cells failing at depth 1 = 94.6% (>90% => ceiling); cells that ever fail = 95.1% (<10% => ceiling)
+
+HARNESS VALIDITY: mean R trivialities=1.000 (n=30) vs deep=0.133 (n=30); Mann-Whitney p=1.25e-12 (need p<0.01)
+/home/user/Structure-Backprop/probe16/probe16_analyze.py:94: RuntimeWarning: Mean of empty slice
+  rowmeans = np.nanmean(arr, axis=0)                  # per theorem
+
+ANISOTROPY: V_T=0.0430 V_D=0.0008  A_obs=51.999  A_shuffled=48.324  ratio=1.08x (need >=3x)
+
+FIDELITY: 230 duplicated cells, 0 disagreements = 0.00% (VOID if >2%)
+
+======================================================================
+VERDICT: CEILING (not a null) — no headroom; depths NOT re-tuned.
+======================================================================

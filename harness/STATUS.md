@@ -116,8 +116,22 @@ NOTE: on the approx graph H2 does NOT clear the degree control, so wiring is NOT
     data-starved in 7 of 12 cells, down to 1.0 counts per past, where rows are one-hot and singular
     values are pinned at 1 by construction. The estimator fails in BOTH directions on known ground
     truth — structurally unable to reach 3 at k=0,L=1 (only 3 pasts exist) and over-counting to 104.
-  * Ceiling vs null: no cell hit the SVD truncation bound; the operative ceiling is starvation
-    (7 cells). NO cell is a genuine null — a genuine null needs a working estimator.
+  * ESTIMABILITY CEILING (estimability.py, computed before any cell was interpreted): r_max per cell
+    = min(algebraic min(#pasts,#futures), minimax parameter-count bound N >= r(m+f-r) at N=20,000
+    independent declarations, per-row SNR bound r <= mean count per past). A cell with effective
+    rank >= 0.8*r_max is a CEILING cell and is excluded from any Rule-B growth-law fit.
+    **9 of 12 cells are CEILING on both the real and the synthetic arm** — only the three k=0 cells
+    are measurements at all, and reported ranks exceed the estimable bound by up to two orders of
+    magnitude (k=3 L=2: 165 against r_max=1). No growth law over L is fittable outside k=0.
+    This splits the harness failure cleanly: the seven k>=1 failures are estimability artifacts
+    exactly as the bound predicts, and the k=0 L=1 failure is structural (only 3 distinct pasts, so
+    the 95th percentile of a 3-value spectrum makes rank 3 unreachable by construction). The
+    synthetic arm PASSES at the only two cells that are both estimable and able to express the
+    answer (k=0, L=2 and L=3). VOID still stands and the real arm is still not interpreted, k=0
+    included; Rule A is NOT read off the k=0 column.
+  * Ceiling vs null: no cell hit the SVD truncation bound; the operative ceilings are estimability
+    (9 cells) and starvation (7 cells). NO cell is a genuine null — a genuine null needs a working
+    estimator.
   * Substrate limitations found and reported: k=0 alphabet is 3 not the declared 6 (DumpDeps folded
     instance/structure/abbrev away at extraction); k=2 head type constructor is a source-text
     surrogate with 37.9% NA; 2000-bucket hashing had to be extended from k=3 to k=2, which breaks

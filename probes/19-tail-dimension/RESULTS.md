@@ -19,23 +19,63 @@ Effective rank = number of singular values above the 95th percentile of the shuf
 same (k, L). Alphabets: k=0 → 3, k=1 → 95, k=2 → 2000 (hashed from 11,756), k=3 → 2000 (hashed from
 143,823). R = 3 throughout; 20,000 declarations; seed 20260729.
 
-| k | L | real | shuffle | **synthetic (must be 2–4)** | mean count / past (real / shuf / synth) |
-|---|---|---|---|---|---|
-| 0 | 1 | 2 | 1 | **1 ✗** | 81653 / 81653 / 81653 |
-| 0 | 2 | 2 | 1 | 2 ✓ | 25109 / 25109 / 25109 |
-| 0 | 3 | 12 | 2 | 3 ✓ | 7687 / 7687 / 7687 |
-| 1 | 1 | 40 | 5 | 3 ✓ | 2916 / 2916 / 2692 |
-| 1 | 2 | 52 | 15 | **73 ✗** | 369 / 65 / 58 |
-| 1 | 3 | 7 | 15 | **104 ✗** | 144 / 6.1 / 5.6 |
-| 2 | 1 | 79 | 15 | **18 ✗** | 168 / 168 / 139 |
-| 2 | 2 | 22 | 15 | **36 ✗** | 30 / 3.6 / 3.3 |
-| 2 | 3 | 12 | 15 | **46 ✗** | 19 / 1.2 / 1.2 |
-| 3 | 1 | 3 | 15 | 2 ✓ | 123 / 123 / 122 |
-| 3 | 2 | 165 | 15 | **59 ✗** | 16 / 1.7 / 1.5 |
-| 3 | 3 | 155 | 15 | **35 ✗** | 13 / 1.0 / 1.0 |
+`r_max` is the estimability ceiling (next section); a cell with effective rank ≥ 0.8·`r_max` is a
+**CEILING cell, not a measurement**.
+
+| k | L | real | shuffle | **synthetic (must be 2–4)** | `r_max` (real) | estimable? | mean count / past (real / shuf / synth) |
+|---|---|---|---|---|---|---|---|
+| 0 | 1 | 2 | 1 | **1 ✗** | 3 | yes | 81653 / 81653 / 81653 |
+| 0 | 2 | 2 | 1 | 2 ✓ | 9 | yes | 25109 / 25109 / 25109 |
+| 0 | 3 | 12 | 2 | 3 ✓ | 27 | yes | 7687 / 7687 / 7687 |
+| 1 | 1 | 40 | 5 | 3 ✓ | 8 | **CEILING** | 2916 / 2916 / 2692 |
+| 1 | 2 | 52 | 15 | **73 ✗** | 7 | **CEILING** | 369 / 65 / 58 |
+| 1 | 3 | 7 | 15 | **104 ✗** | 5 | **CEILING** | 144 / 6.1 / 5.6 |
+| 2 | 1 | 79 | 15 | **18 ✗** | 1 | **CEILING** | 168 / 168 / 139 |
+| 2 | 2 | 22 | 15 | **36 ✗** | 1 | **CEILING** | 30 / 3.6 / 3.3 |
+| 2 | 3 | 12 | 15 | **46 ✗** | 1 | **CEILING** | 19 / 1.2 / 1.2 |
+| 3 | 1 | 3 | 15 | 2 ✓ | 1 | **CEILING** | 123 / 123 / 122 |
+| 3 | 2 | 165 | 15 | **59 ✗** | 1 | **CEILING** | 16 / 1.7 / 1.5 |
+| 3 | 3 | 155 | 15 | **35 ✗** | 1 | **CEILING** | 13 / 1.0 / 1.0 |
 
 Spectra plotted (real vs shuffle vs synthetic, log scale, with the p95 threshold marked):
 `spectra.png`. Full per-cell spectra in `cells/cells.json`; run log in `cells/run.log`.
+
+## Estimability ceiling — `r_max` per cell
+
+Computed by `estimability.py` **before any cell was interpreted**. `r_max` is the minimum of three
+bounds, each reported per arm in `cells/estimability.json`:
+
+- **algebraic** — `r ≤ min(#pasts, #futures)`.
+- **minimax / parameter count** — a rank-`r` conditional matrix on `m × f` has `r(m+f−r)` free
+  parameters, and minimax risk for rank-`r` estimation scales as `r(m+f)/N`, so the model is not
+  distinguishable from a lower-rank one unless `N ≥ r(m+f−r)`. `N = 20,000` — the number of
+  **independent declarations**, as directed. (Windows drawn from one declaration's chain overlap and
+  are not independent; the permissive window-count version, `N ≈ 207k–245k`, is recorded alongside
+  and does not change any flag.)
+- **per-row SNR (Fano-flavoured)** — row `u` is a multinomial estimate from `n_u` draws, so
+  `E‖p̂_u − p_u‖² ≤ 1/n_u` and the stacked noise has spectral norm `~ √(m/n̄)`; since
+  `Σσ_i² = ‖H‖_F² ≤ m`, requiring `σ_r` to clear the noise forces `r ≤ n̄`, the mean count per past.
+
+**Result: 9 of 12 cells are CEILING cells on the real arm, and the same 9 on the synthetic arm.**
+Only the three k=0 cells are measurements at all. In the ceiling cells the reported effective rank
+exceeds what is estimable by up to **two orders of magnitude** (k=3, L=2: effective rank 165 against
+`r_max` = 1). Those cells are excluded from any Rule-B growth-law fit — and since every cell with
+k ≥ 1 is excluded, **no growth law over L is fittable outside k=0**, where only three points exist.
+
+This also fully explains the harness failure, and splits it in two:
+
+- **k ≥ 1 (8 of the 12 cells, 7 of the 8 failures)** — these were never measurements. The synthetic
+  arm's absurd ranks (73, 104, 36, 46, 59, 35 against a true 3) are estimability artifacts, exactly
+  as the ceiling bound predicts.
+- **k = 0, L = 1 (the remaining failure)** — structural, not statistical: with a 3-symbol alphabet
+  and L = 1 there are only 3 distinct pasts, so the 95th percentile of a 3-value shuffle spectrum is
+  essentially its maximum and **rank 3 is unreachable by construction**. The synthetic arm passes at
+  k=0 for L=2 (2 ✓) and L=3 (3 ✓) — the only two cells that are both estimable and structurally able
+  to express the answer.
+
+The pre-registered harness requires 2–4 at **every** (k, L). It did not hold. **VOID stands, and the
+real arm is not interpreted — including at k=0, where the cells are estimable.** Rule A is not read
+off the k=0 column.
 
 ## Why it failed — three defects, all in the estimator, none in the corpus
 
@@ -72,6 +112,9 @@ would require a working estimator, and this run does not have one.
   harness gates them, and it failed.
 - **Not** a claim that Mathlib has no past–future structure along the prerequisite axis, and **not**
   a claim that it has one.
+- **Not** a claim about anything at k ≥ 1 by anyone: 9 of 12 cells are above the estimability
+  ceiling and are not measurements. At N = 20,000 declarations this design could only ever have
+  measured the k=0 quotient.
 - **Not** a claim that the Hankel-rank approach is wrong — only that *this* effective-rank estimator
   does not recover a rank-3 process from tapes of this sparsity, which is a fact about the estimator.
 - **Not linked to the paraconsistent-metric line, which is CLOSED and stays closed.** Not a
@@ -104,6 +147,7 @@ would require a working estimator, and this run does not have one.
 ```
 python probes/19-tail-dimension/tape.py       # -> tape.npz, tape_meta.json
 python probes/19-tail-dimension/spectra.py    # -> cells.json, spectra.png
+python probes/19-tail-dimension/estimability.py  # -> estimability.json (r_max per cell)
 ```
 
 scipy 1.17.1, numpy 2.4.6, scikit-learn (randomized_svd, n_iter=7), matplotlib 3.11.1.

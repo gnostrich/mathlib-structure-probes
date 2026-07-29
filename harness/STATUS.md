@@ -97,3 +97,50 @@ NOTE: on the approx graph H2 does NOT clear the degree control, so wiring is NOT
     for the confirmation attempt. One round; no follow-ups.
   Files: probe17/PREREG-rfl-locus.md, RESULTS-rfl-locus.md, probe17_rfl_locus.py,
   probe17_perclass.py, p17_run.log, p17_perclass.log, p17_report.json.
+
+- PROBE 19 — tail dimension of Mathlib, Hankel rank of the prerequisite tape
+  (probes/19-tail-dimension/). Pre-registered before the tape was built; both scripts committed
+  before any spectrum was computed. NOT a conjecturer probe; NOT linked to the paraconsistent-metric
+  line (that line is CLOSED and stays closed). Rank measured directly, never as L(M) - M*h.
+  36 cells: k in {0,1,2,3} x L in {1,2,3} (R=3) x {real, shuffle, synthetic}; 20,000 declarations,
+  chain cap 24, seed 20260729; grading reused verbatim from probe 17 (max depth 192, mean 22.3).
+  * VERDICT: **VOID** — the harness-validity cell failed. The synthetic arm (hand-built 3-state HMM,
+    known ground truth) had to return effective rank 2-4 at every (k,L); it returned
+    1,2,3,3,73,104,18,36,46,2,59,35 — 8 of 12 cells fail. Real arm NOT interpreted, per the
+    pre-registration. CLOSED, terminal.
+  * Three estimator defects, none in the corpus: (1) whenever the shuffle spectrum reaches the
+    300-value truncation, exactly 15 values lie above its own 95th percentile — the shuffle column
+    reads 15 by arithmetic, not measurement; (2) arms are not dimension-matched, since shuffling
+    destroys the repetition that makes real contexts recur (k=1,L=3: 1,441 real pasts vs 34,299
+    shuffled), so the percentile comes from a differently-shaped matrix; (3) the floor is itself
+    data-starved in 7 of 12 cells, down to 1.0 counts per past, where rows are one-hot and singular
+    values are pinned at 1 by construction. The estimator fails in BOTH directions on known ground
+    truth — structurally unable to reach 3 at k=0,L=1 (only 3 pasts exist) and over-counting to 104.
+  * ESTIMABILITY CEILING (estimability.py, computed before any cell was interpreted): r_max per cell
+    = min(algebraic min(#pasts,#futures), minimax parameter-count bound N >= r(m+f-r) at N=20,000
+    independent declarations, per-row SNR bound r <= mean count per past). A cell with effective
+    rank >= 0.8*r_max is a CEILING cell and is excluded from any Rule-B growth-law fit.
+    **9 of 12 cells are CEILING on both the real and the synthetic arm** — only the three k=0 cells
+    are measurements at all, and reported ranks exceed the estimable bound by up to two orders of
+    magnitude (k=3 L=2: 165 against r_max=1). No growth law over L is fittable outside k=0.
+    This splits the harness failure cleanly: the seven k>=1 failures are estimability artifacts
+    exactly as the bound predicts, and the k=0 L=1 failure is structural (only 3 distinct pasts, so
+    the 95th percentile of a 3-value spectrum makes rank 3 unreachable by construction). The
+    synthetic arm PASSES at the only two cells that are both estimable and able to express the
+    answer (k=0, L=2 and L=3). VOID still stands and the real arm is still not interpreted, k=0
+    included; Rule A is NOT read off the k=0 column.
+  * Ceiling vs null: no cell hit the SVD truncation bound; the operative ceilings are estimability
+    (9 cells) and starvation (7 cells). NO cell is a genuine null — a genuine null needs a working
+    estimator.
+  * Substrate limitations found and reported: k=0 alphabet is 3 not the declared 6 (DumpDeps folded
+    instance/structure/abbrev away at extraction); k=2 head type constructor is a source-text
+    surrogate with 37.9% NA; 2000-bucket hashing had to be extended from k=3 to k=2, which breaks
+    nesting of the quotient chain above k=1.
+  * NOT claimed: anything about Mathlib's tail dimension in either direction; that the corpus is or
+    is not memoryless along the prerequisite axis; that Hankel-rank measurement is wrong in general.
+    This measures the FORMALIZED CORPUS under ONE DECLARED FILTRATION and is not a statement about
+    mathematics — Mathlib is a curated artifact with sociology in it. [proven-negative] for this
+    estimator at this scale; [occupied] for the machinery (Crutchfield-Young causal states,
+    Hankel-rank spectral learning). Prior art cited: arXiv:2604.24797, "The Network Structure of
+    Mathlib" — theirs is the finding that centrality captures infrastructure, not ours.
+  Files: probes/19-tail-dimension/PREREG.md, tape.py, spectra.py, RESULTS.md, spectra.png, cells/.

@@ -1,0 +1,79 @@
+public surface: 3000 nodes not owned by this account (across 26 owners)
+
+── RH / zeta / L-functions: 4 matches
+   205ba108-d425-42ed-bfc1-336cb7520c25  Connes Adelic Geometry / Weil Quadratic Form
+      owner=?  
+   26c09366-f042-46b9-863b-28c4142f41fc  Cauchy-Riemann on φ: B→Ā (Open Thread #4)
+      owner=?  
+   3787b01e-adb3-46f7-8165-ee88c424c78b  Hilbert-Pólya Wall / Selberg Analogy / Lee-Yang Mechanism
+      owner=?  
+   046c2395-18cf-5592-8c88-89efa11ee362  Relaunch: PR300 step-2700 RRE landing-control screen from deployed Modal funct
+      owner=?  
+
+── elliptic curves / modular: 2 matches
+   c867e83c-3e3a-4b0a-8cdf-2db9510282b4  Modular Forms / H¹ Physics / Ricci Flow
+      owner=?  
+   85d34419-bb9b-5bcc-afa9-59b139baf1ec  Campaign: BSD Elliptic-Curve Evidence and Formalization
+      owner=?  
+
+── operator theory / spectral: 10 matches
+   d436689d-4a4c-5ab8-abb0-7e70047f58dc  RH via Spectral-Arithmetic Framework
+      owner=?  
+   c7f57707-c488-4b0c-8047-12b96f27d3ca  Gabriel's Horn / Spectral RH (Hilbert-Pólya Candidate)
+      owner=?  
+   5b8f08d3-99ec-4b8b-b39c-3913d1576163  Spectral Compressibility / Prime Error Tower
+      owner=?  
+   088c3bc7-d9f9-4818-83c4-efaa35a8ddbf  RH via Spectral-Arithmetic Framework
+      owner=?  
+   e57f97e0-8a45-5471-a865-32c0e05af848  Aurora, radial-brake, SODA, and spectral shaping branch
+      owner=?  
+   8c1040d2-5ce7-55f6-aaf4-2bd352eb30c2  Upstream Track 3 PR #304: DynMuon dynamic spectral shaping reaches 3175 steps
+      owner=?  
+   ed8ba423-4769-5881-b970-d97a69573f7a  Conflict-adaptive spectral merger (Small / Hard10)
+      owner=?  
+   41dedbe8-2053-5d65-b2c2-9477ccf3445d  Conflict-adaptive spectral merger (Large / Hard10)
+      owner=?  
+   6d13e410-ea22-55ac-9a52-f2c8348ab61b  Hypothesis: the v2 RED's attribution is confounded — the unobservable trim-poi
+      owner=?  
+   af2e1d0b-cb10-5161-8dc4-7d75bdea3208  Attempt 1: Audit one HL1 spectral-cutoff label packet
+      owner=?  
+
+── information / entropy: 0 matches
+
+── formalisation / Lean: 15 matches
+   e3cca24a-c16a-4a42-90a9-b0756b1459fa  RP^n Cohomology / Arithmetic Hierarchy (Lean 4 Verified)
+      owner=?  
+   fff0645c-38ac-5e54-8312-c37ae1dcb58e  Campaign: RH-Adjacent Formalization and Certified Computation
+      owner=?  
+   85d34419-bb9b-5bcc-afa9-59b139baf1ec  Campaign: BSD Elliptic-Curve Evidence and Formalization
+      owner=?  
+   151ddac5-ae4c-559b-9e95-881f96ddc4ad  Blocked attempt: Lean setup needs authorization
+      owner=?  
+   3add5e00-fd9e-5f68-9901-19563c64090d  Attempt closed: p=5 Lean compiler unavailable
+      owner=?  
+   c8592099-faf1-529c-8a8c-34f64ae4121f  Attempt result: exact cancellation fixtures pass; Lean blocked
+      owner=?  
+   89acc581-a45a-5857-8c6f-d49cd968a007  Attempt result: pinned mathlib invocation blocked before Lean
+      owner=?  
+   2efaedf7-8489-54a2-abb0-2d236e63cf43  Invalid attempt: Lean prerequisite check hit repair limit
+      owner=?  
+   78d34f33-aa2f-55a3-b289-6305ab26dd00  Attempt result: pinned mathlib package has no runnable Lean
+      owner=?  
+   ae760ee0-1e06-5229-a9f1-c2f97f21eb53  Blocked attempt: Lean prerequisites remain 1/4
+      owner=?  
+   1bd0216c-e6ca-5a8a-998f-cd4d78eef78e  Attempt result: mathlib v4.16.0 cache blocked before Lean
+      owner=?  
+   a848fa88-5e13-5f4f-98cc-29424012060a  Attempt result: source build blocked before Lean
+      owner=?  
+   24857726-31f5-5e95-9794-4e5d45930f92  Attempt result: direct Lean path blocked; formal repair chain closed
+      owner=?  
+   02ddbb1f-7edb-57e3-b905-962acccc179f  Blocked attempt: Lean compile exhausted local storage
+      owner=?  
+   8975fe8f-bf03-5ccd-a9cb-dbac27f5f939  Blocked recheck: Lean storage remains saturated
+      owner=?  
+
+── complexity / GCT: 0 matches
+
+── sampling / dynamics: 0 matches
+
+wrote 30 candidate nodes -> public_matches.json

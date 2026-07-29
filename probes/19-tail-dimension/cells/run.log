@@ -1,0 +1,52 @@
+tape (4, 20000, 24), mean len 15.2
+  k=0 L=1 real      win= 244959 pasts=      3 futs=     27 mean/past=81653.00 sv[0]=0.785 nsv=3
+  k=0 L=1 shuffle   win= 244959 pasts=      3 futs=     27 mean/past=81653.00 sv[0]=0.457 nsv=3
+  k=0 L=1 synthetic win= 244959 pasts=      3 futs=     27 mean/past=81653.00 sv[0]=0.527 nsv=3
+  -> k=0 L=1 thr=0.4120 eff_rank real=2 shuffle=1 synth=1 | ceiling_sv=False starved=False
+  k=0 L=2 real      win= 225984 pasts=      9 futs=     27 mean/past=25109.33 sv[0]=1.401 nsv=9
+  k=0 L=2 shuffle   win= 225984 pasts=      9 futs=     27 mean/past=25109.33 sv[0]=0.790 nsv=9
+  k=0 L=2 synthetic win= 225984 pasts=      9 futs=     27 mean/past=25109.33 sv[0]=0.914 nsv=9
+  -> k=0 L=2 thr=0.4819 eff_rank real=2 shuffle=1 synth=2 | ceiling_sv=False starved=False
+  k=0 L=3 real      win= 207538 pasts=     27 futs=     27 mean/past=7686.59 sv[0]=2.521 nsv=27
+  k=0 L=3 shuffle   win= 207538 pasts=     27 futs=     27 mean/past=7686.59 sv[0]=1.369 nsv=27
+  k=0 L=3 synthetic win= 207538 pasts=     27 futs=     27 mean/past=7686.59 sv[0]=1.581 nsv=27
+  -> k=0 L=3 thr=0.0549 eff_rank real=12 shuffle=2 synth=3 | ceiling_sv=False starved=False
+  k=1 L=1 real      win= 244959 pasts=     84 futs=   2346 mean/past=2916.18 sv[0]=1.013 nsv=84
+  k=1 L=1 shuffle   win= 244959 pasts=     84 futs=  45783 mean/past=2916.18 sv[0]=0.707 nsv=84
+  k=1 L=1 synthetic win= 244959 pasts=     91 futs=  40024 mean/past=2691.86 sv[0]=0.708 nsv=91
+  -> k=1 L=1 thr=0.5657 eff_rank real=40 shuffle=5 synth=3 | ceiling_sv=False starved=False
+  k=1 L=2 real      win= 225984 pasts=    612 futs=   2244 mean/past=369.25 sv[0]=3.688 nsv=300
+  k=1 L=2 shuffle   win= 225984 pasts=   3481 futs=  44493 mean/past= 64.92 sv[0]=2.184 nsv=300
+  k=1 L=2 synthetic win= 225984 pasts=   3886 futs=  38412 mean/past= 58.15 sv[0]=2.672 nsv=300
+  -> k=1 L=2 thr=1.4479 eff_rank real=52 shuffle=15 synth=73 | ceiling_sv=False starved=False
+  k=1 L=3 real      win= 207538 pasts=   1441 futs=   2134 mean/past=144.02 sv[0]=5.593 nsv=300
+  k=1 L=3 shuffle   win= 207538 pasts=  34299 futs=  43014 mean/past=  6.05 sv[0]=5.280 nsv=300
+  k=1 L=3 synthetic win= 207538 pasts=  36826 futs=  36741 mean/past=  5.64 sv[0]=10.142 nsv=300
+  -> k=1 L=3 thr=4.3656 eff_rank real=7 shuffle=15 synth=104 | ceiling_sv=False starved=False
+  k=2 L=1 real      win= 244959 pasts=   1456 futs=  27431 mean/past=168.24 sv[0]=2.158 nsv=300
+  k=2 L=1 shuffle   win= 244959 pasts=   1456 futs= 208759 mean/past=168.24 sv[0]=1.020 nsv=300
+  k=2 L=1 synthetic win= 244959 pasts=   1764 futs= 200432 mean/past=138.87 sv[0]=1.013 nsv=300
+  -> k=2 L=1 thr=1.0000 eff_rank real=79 shuffle=15 synth=18 | ceiling_sv=False starved=False
+  k=2 L=2 real      win= 225984 pasts=   7520 futs=  26924 mean/past= 30.05 sv[0]=7.740 nsv=300
+  k=2 L=2 shuffle   win= 225984 pasts=  62038 futs= 194466 mean/past=  3.64 sv[0]=4.108 nsv=300
+  k=2 L=2 synthetic win= 225984 pasts=  68651 futs= 186329 mean/past=  3.29 sv[0]=9.050 nsv=300
+  -> k=2 L=2 thr=3.0813 eff_rank real=22 shuffle=15 synth=36 | ceiling_sv=False starved=False
+  k=2 L=3 real      win= 207538 pasts=  11107 futs=  26211 mean/past= 18.69 sv[0]=11.663 nsv=300
+  k=2 L=3 shuffle   win= 207538 pasts= 173369 futs= 180357 mean/past=  1.20 sv[0]=8.097 nsv=300
+  k=2 L=3 synthetic win= 207538 pasts= 172454 futs= 172457 mean/past=  1.20 sv[0]=16.282 nsv=300
+  -> k=2 L=3 thr=5.1648 eff_rank real=12 shuffle=15 synth=46 | ceiling_sv=False starved=False
+  k=3 L=1 real      win= 244959 pasts=   1985 futs=  43930 mean/past=123.41 sv[0]=1.124 nsv=300
+  k=3 L=1 shuffle   win= 244959 pasts=   1985 futs= 243164 mean/past=123.41 sv[0]=1.000 nsv=300
+  k=3 L=1 synthetic win= 244959 pasts=   2000 futs= 243052 mean/past=122.48 sv[0]=1.000 nsv=300
+  -> k=3 L=1 thr=1.0000 eff_rank real=3 shuffle=15 synth=2 | ceiling_sv=False starved=False
+  k=3 L=2 real      win= 225984 pasts=  14238 futs=  42436 mean/past= 15.87 sv[0]=4.537 nsv=300
+  k=3 L=2 shuffle   win= 225984 pasts= 135038 futs= 224584 mean/past=  1.67 sv[0]=1.766 nsv=300
+  k=3 L=2 synthetic win= 225984 pasts= 151912 futs= 224344 mean/past=  1.49 sv[0]=2.473 nsv=300
+  -> k=3 L=2 thr=1.4251 eff_rank real=165 shuffle=15 synth=59 | ceiling_sv=False starved=False
+  k=3 L=3 real      win= 207538 pasts=  16463 futs=  40503 mean/past= 12.61 sv[0]=5.863 nsv=300
+  k=3 L=3 shuffle   win= 207538 pasts= 205355 futs= 206440 mean/past=  1.01 sv[0]=2.236 nsv=300
+  k=3 L=3 synthetic win= 207538 pasts= 206174 futs= 206131 mean/past=  1.01 sv[0]=2.646 nsv=300
+  -> k=3 L=3 thr=1.7313 eff_rank real=155 shuffle=15 synth=35 | ceiling_sv=False starved=False
+
+HARNESS (synthetic must be 2-4 at every k,L): FAIL at [(0, 1, 1), (1, 2, 73), (1, 3, 104), (2, 1, 18), (2, 2, 36), (2, 3, 46), (3, 2, 59), (3, 3, 35)]
+wrote cells.json / spectra.png

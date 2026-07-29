@@ -1,0 +1,36 @@
+{
+ "seed": 20260729,
+ "n_sample": 20000,
+ "cap": 24,
+ "alphabets": [
+  {
+   "k": 0,
+   "alphabet": 3,
+   "hashed": false,
+   "raw_alphabet": 3
+  },
+  {
+   "k": 1,
+   "alphabet": 95,
+   "hashed": false,
+   "raw_alphabet": 95
+  },
+  {
+   "k": 2,
+   "alphabet": 2000,
+   "hashed": true,
+   "raw_alphabet": 11756
+  },
+  {
+   "k": 3,
+   "alphabet": 2000,
+   "hashed": true,
+   "raw_alphabet": 143823
+  }
+ ],
+ "head_NA_share": 0.3791871344326876,
+ "max_depth": 192,
+ "mean_chain": 15.2186,
+ "nodes": 467680,
+ "decls": 333044
+}

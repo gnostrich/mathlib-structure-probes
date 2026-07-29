@@ -23,7 +23,7 @@ OUT    = f"{SP}/p19"
 SEED   = 20260729
 NSAMP  = 20000
 CAP    = 24
-K3_MAX = 2000
+K3_MAX = 2000   # directive fixes this for k=3; applied to any k that exceeds it (recorded)
 KINDS  = {"def", "theorem", "instance", "structure", "abbrev"}
 
 os.makedirs(OUT, exist_ok=True)
@@ -193,9 +193,13 @@ for dp, _, fs in os.walk(os.path.join(MLROOT, "Mathlib")):
 print(f"  parsed {nfiles:,} files, {len(head):,} named declarations with a head token", flush=True)
 
 # ---------------------------------------------------------------- symbols per filtration
-def root_of(nm):
-    p = nm.split(".")
-    return p[0] if len(p) >= 2 else "_root_"
+def root_of(v):
+    """top-level namespace root as the directive names them (Algebra, Topology, Order,
+    CategoryTheory, ...): the second component of the MODULE path.  Lean-core constants,
+    which carry no Mathlib module, get CORE."""
+    m = module[v]
+    p = m.split(".")
+    return p[1] if len(p) >= 2 and p[0] == "Mathlib" else ("CORE" if not m else p[0])
 
 
 def nspath(nm):
@@ -212,9 +216,9 @@ for k in range(4):
         nm = names[v]
         kd = kind[v] if kind[v] in KINDS else "other"
         if k == 0: key = kd
-        elif k == 1: key = (kd, root_of(nm))
-        elif k == 2: key = (kd, root_of(nm), head.get(nm, "NA"))
-        else: key = (kd, root_of(nm), head.get(nm, "NA"), nspath(nm))
+        elif k == 1: key = (kd, root_of(v))
+        elif k == 2: key = (kd, root_of(v), head.get(nm, "NA"))
+        else: key = (kd, root_of(v), head.get(nm, "NA"), nspath(nm))
         j = tab.get(key)
         if j is None:
             j = len(tab); tab[key] = j
